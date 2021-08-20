@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.zhuyidian.lib_tools'
+
+//第二步：迁移androidX 有关Verdion要使用29
+android {
+    //    compileSdkVersion 29
+    //    buildToolsVersion '29.0.0'
+    compileSdkVersion rootProject.ext.android.compileSdkVersion    //Android10（API 29）getExternalStorageDirectory没权限，暂时使用28
+    buildToolsVersion rootProject.ext.android.buildToolsVersion    //Android10（API 29）getExternalStorageDirectory没权限，暂时使用28
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled rootProject.ext.android.multiDexEnabled
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled rootProject.ext.android.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
+    compileOnly rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies.gson7
+    implementation rootProject.ext.dependencies.aspectj
+}
+
+//上传系统设置 presenter的 aar到中央仓库.
+//def ARTIFACT_ID = 'anim' // 一般为别名
+////脚本：将Lib打成aar包上传至maven私有库
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            repository(url: MAVEN_LOCAL_PATH) {
+//                authentication(userName: ACCOUNT, password: PASSWORD)
+//            }
+//            pom.project {
+//                groupId GROUP_ID
+//                artifactId ARTIFACT_ID
+//                version android.defaultConfig.versionName
+//                packaging 'aar'
+//            }
+//        }
+//    }
+//}
