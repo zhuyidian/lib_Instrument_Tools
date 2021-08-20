@@ -29,7 +29,5 @@ dependencies {
     testImplementation rootProject.ext.dependencies.junit
     compileOnly rootProject.ext.dependencies["appcompat-v7"]
 
-    implementation project(path: ':Tools')
-    //implementation 'com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.35'
-    //implementation 'com.github.zhuyidian.lib_appbus:logger:V1.0.2'
+    implementation 'com.github.zhuyidian:lib_tools:V1.0.1'
 }
