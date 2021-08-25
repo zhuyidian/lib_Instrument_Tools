@@ -4,8 +4,8 @@ ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest
 INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:2:1-26:12
 INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:2:1-26:12
 INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:2:1-26:12
+MERGED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e4c01b36ef3125f9bcebff2c94120a1c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.zhuyidian:lib_tools:V1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\33b0faf9c536871446eacd5931250c38\AndroidManifest.xml:2:1-17:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\31509fa340e8dc480b91c89ad6436207\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\53e5acb41dce5b9b4164c646e8da57c9\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c8f526c8a4b139da66e1360d29ba9426\AndroidManifest.xml:17:1-22:12
@@ -63,8 +63,8 @@ ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest
 		ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:7:22-77
 application
 ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:9:5-24:19
-MERGED from [com.github.zhuyidian:lib_tools:V1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\33b0faf9c536871446eacd5931250c38\AndroidManifest.xml:11:5-15:19
-MERGED from [com.github.zhuyidian:lib_tools:V1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\33b0faf9c536871446eacd5931250c38\AndroidManifest.xml:11:5-15:19
+MERGED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-17:19
+MERGED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-17:19
 MERGED from [androidx.core:core:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\84368b089510d506637dc9796ba0b741\AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\84368b089510d506637dc9796ba0b741\AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\7d04dee7b0ccfa4a51039431f364d115\AndroidManifest.xml:22:5-23:19
@@ -83,7 +83,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Ad
 		ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:15:9-40
-activity#com.dunn.tools.sample.MainActivity
+activity#com.dunn.tools.sample.TimeActivity
 ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:16:9-23:20
 	android:theme
 		ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:18:13-69
@@ -103,10 +103,10 @@ uses-sdk
 INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml
 INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml
+MERGED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e4c01b36ef3125f9bcebff2c94120a1c\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e4c01b36ef3125f9bcebff2c94120a1c\AndroidManifest.xml:20:5-43
-MERGED from [com.github.zhuyidian:lib_tools:V1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\33b0faf9c536871446eacd5931250c38\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.zhuyidian:lib_tools:V1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\33b0faf9c536871446eacd5931250c38\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\31509fa340e8dc480b91c89ad6436207\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\31509fa340e8dc480b91c89ad6436207\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\53e5acb41dce5b9b4164c646e8da57c9\AndroidManifest.xml:20:5-44
@@ -169,9 +169,13 @@ INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManif
 		INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml
 		ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml
 		INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml
-meta-data#com.dunn.tools.get
-ADDED from [com.github.zhuyidian:lib_tools:V1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\33b0faf9c536871446eacd5931250c38\AndroidManifest.xml:12:9-14:36
-	android:value
-		ADDED from [com.github.zhuyidian:lib_tools:V1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\33b0faf9c536871446eacd5931250c38\AndroidManifest.xml:14:13-33
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from [com.github.zhuyidian:lib_tools:V1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\33b0faf9c536871446eacd5931250c38\AndroidManifest.xml:13:13-46
+		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-76
+meta-data#com.dunn.tools.get
+ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-16:36
+	android:value
+		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-33
+	android:name
+		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-46

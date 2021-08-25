@@ -27,13 +27,13 @@ public class AndroidUtil {
         // Retrieve all services that can match the given intent
         PackageManager pm = context.getPackageManager();
         List<ResolveInfo> resolveInfo = pm.queryIntentServices(implicitIntent, 0);
-        LogUtil.d("check action","createExplicitFromImplicitIntent: action="+implicitIntent.getAction());
-        LogUtil.d("check action","createExplicitFromImplicitIntent: localpackageName="+context.getPackageName());
-        LogUtil.d("check action","createExplicitFromImplicitIntent: resolveInfo.size="+(resolveInfo!=null?resolveInfo.size():"null"));
-        for(ResolveInfo info : resolveInfo){
-            LogUtil.d("check action","createExplicitFromImplicitIntent: packageName="+info.serviceInfo.packageName+
-                    ", className="+info.serviceInfo.name);
-        }
+//        LogUtil.d("check action","createExplicitFromImplicitIntent: action="+implicitIntent.getAction());
+//        LogUtil.d("check action","createExplicitFromImplicitIntent: localpackageName="+context.getPackageName());
+//        LogUtil.d("check action","createExplicitFromImplicitIntent: resolveInfo.size="+(resolveInfo!=null?resolveInfo.size():"null"));
+//        for(ResolveInfo info : resolveInfo){
+//            LogUtil.d("check action","createExplicitFromImplicitIntent: packageName="+info.serviceInfo.packageName+
+//                    ", className="+info.serviceInfo.name);
+//        }
 
         // Make sure only one match was found
         if (resolveInfo == null || resolveInfo.size() <=0) {
@@ -51,7 +51,7 @@ public class AndroidUtil {
                 String packageName = serviceInfo.serviceInfo.packageName;
                 String className = serviceInfo.serviceInfo.name;
                 String action = implicitIntent.getAction();
-                LogUtil.d("check action","createExplicitFromImplicitIntent: !!!go to bind!!! packageName="+packageName+", className="+className+", action="+action);
+//                LogUtil.d("check action","createExplicitFromImplicitIntent: !!!go to bind!!! packageName="+packageName+", className="+className+", action="+action);
                 ComponentName component = new ComponentName(packageName, className);
 
                 // Set the component to be explicit
