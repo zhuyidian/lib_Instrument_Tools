@@ -1,0 +1,2 @@
+int id back_tv 0x7f0b0001
+int layout ui_defualt_navigation_bar 0x7f0e0001

@@ -9,4 +9,14 @@ package com.dunn.tools;
 public final class R {
     private R() {}
 
+    public static final class id {
+        private id() {}
+
+        public static final int back_tv = 0x7f07001e;
+    }
+    public static final class layout {
+        private layout() {}
+
+        public static final int ui_defualt_navigation_bar = 0x7f090028;
+    }
 }

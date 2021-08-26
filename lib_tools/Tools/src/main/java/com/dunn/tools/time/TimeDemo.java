@@ -32,135 +32,135 @@ public class TimeDemo {
         Gson gson = new Gson();
 
 
-        TimePlan alarm = gson.fromJson(content5, TimePlan.class);
+        TimeBean alarm = gson.fromJson(content5, TimeBean.class);
         LogUtil.i("timedemo","alarm="+alarm);
         if (alarm == null) {
             return;
         }
 
-        setAlarm(alarm);
+//        setAlarm(alarm);
     }
 
-    public static boolean setAlarm(TimePlan alarm) {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date beginTime = new Date();
-        Date endTime = new Date();
-        List<String> timePattern;
-        Calendar mCalendar = Calendar.getInstance();
-        mCalendar.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
-        boolean isFindBeginTime = false;
-        boolean isFindEndTime = false;
-        LogUtil.i("timedemo","PlanType="+alarm.getPlanType());
-        LogUtil.i("timedemo","switch="+alarm.getSwitchX());
-        LogUtil.i("timedemo","delay="+alarm.getDelay());
-        LogUtil.i("timedemo","weak="+alarm.getWeek());
-        switch (alarm.getPlanType()) {
-            case 0:
-
-                break;
-            case 1:
-                break;
-            case 2:
-                List<String> timeList = alarm.getTime();
-                String time = "";
-                for (String t : timeList) {
-                    time = t;
-                }
-                LogUtil.i("timedemo","time="+time);
-                getDataByOffset(mCalendar, 0);
-                LogUtil.i("timedemo","------start------mCalendar="+TimeUtil.date2string(mCalendar.getTime()));
-                //找出离目前最近的开关机时间
-                while (!isFindBeginTime || !isFindEndTime) {
-                    timePattern = timePattern(time);
-                    LogUtil.i("timedemo","timePattern="+timePattern);
-                    if (timePattern.size() < 2) {
-                        return false;
-                    }
-                    Date tempBeginTime;
-                    Date tempEndTime;
-                    try {
-                        tempBeginTime = simpleDateFormat.parse(year + "-" + month + "-" + day + " " + timePattern.get(0));
-                        tempEndTime = simpleDateFormat.parse(year + "-" + month + "-" + day + " " + timePattern.get(1));
-                        LogUtil.i("timedemo","tempBeginTime="+TimeUtil.date2string(tempBeginTime)+
-                                ", tempEndTime="+TimeUtil.date2string(tempEndTime));
-                    } catch (ParseException e) {
-                        e.printStackTrace();
-                        return false;
-                    }
-
-                    LogUtil.i("timedemo","compare tempBeginTime&currentTime="+(tempBeginTime.getTime()-System.currentTimeMillis()));
-                    if (!isFindBeginTime && (tempBeginTime.getTime() > System.currentTimeMillis())) {
-                        beginTime = tempBeginTime;
-                        isFindBeginTime = true;
-                    }
-                    LogUtil.i("timedemo","compare tempEndTime&currentTime="+(tempEndTime.getTime()-System.currentTimeMillis()));
-                    if (!isFindEndTime && (tempEndTime.getTime() > System.currentTimeMillis())) {
-                        endTime = tempEndTime;
-                        isFindEndTime = true;
-                    }
-                    getDataByOffset(mCalendar, 1);
-                    LogUtil.i("timedemo","end mCalendar="+TimeUtil.date2string(mCalendar.getTime()));
-                }
-                LogUtil.i("timedemo","------end------beginTime="+TimeUtil.date2string(beginTime)+
-                        ", endTime="+TimeUtil.date2string(endTime));
-            case 3:
-                break;
-            case 4:
-                break;
-            case 5:
-                List<TimePlan.Day> week = alarm.getWeek();
-                LogUtil.i("timedemo","------start------week size="+(week!=null?week.size():"null"));
-                if (week.size() <= 0) {
-                    return false;
-                }
-                //返回的json数据是有序的
-                getDataByOffset(mCalendar, 0);
-                LogUtil.i("timedemo","mCalendar="+TimeUtil.date2string(mCalendar.getTime()));
-                while (!isFindBeginTime || !isFindEndTime) {
-                    for (TimePlan.Day weekDay : week) {
-                        LogUtil.i("timedemo","for week day="+weekDay.getNumber()+", dayOfWeek="+dayOfWeek);
-                        if (weekDay.getNumber() >= dayOfWeek) {
-                            getDataByOffset(mCalendar, weekDay.getNumber() - dayOfWeek);
-                            timePattern = timePattern(/*weekDay.getTimeX()*/null);
-                            if (timePattern.size() < 2) {
-                                return false;
-                            }
-                            Date tempBeginTime;
-                            Date tempEndTime;
-                            try {
-                                tempBeginTime = simpleDateFormat.parse(year + "-" + month + "-" + day + " " + timePattern.get(0));
-                                tempEndTime = simpleDateFormat.parse(year + "-" + month + "-" + day + " " + timePattern.get(1));
-                                LogUtil.i("timedemo","tempBeginTime="+TimeUtil.date2string(tempBeginTime)+
-                                        ", tempEndTime="+TimeUtil.date2string(tempEndTime));
-                            } catch (ParseException e) {
-                                e.printStackTrace();
-                                return false;
-                            }
-
-                            LogUtil.i("timedemo","compare tempBeginTime&currentTime="+(tempBeginTime.getTime()-System.currentTimeMillis()));
-                            if (!isFindBeginTime && (tempBeginTime.getTime() > System.currentTimeMillis())) {
-                                beginTime = tempBeginTime;
-                                isFindBeginTime = true;
-                            }
-                            LogUtil.i("timedemo","compare tempEndTime&currentTime="+(tempEndTime.getTime()-System.currentTimeMillis()));
-                            if (!isFindEndTime && (tempEndTime.getTime() > System.currentTimeMillis())) {
-                                endTime = tempEndTime;
-                                isFindEndTime = true;
-                            }
-                            if (isFindBeginTime && isFindEndTime) {
-                                break;
-                            }
-                        }
-                    }
-                    mCalendar = getNextMonday();
-                    getDataByOffset(mCalendar, 0);
-                }
-                LogUtil.i("timedemo","------end------beginTime="+TimeUtil.date2string(beginTime)+
-                        ", endTime="+TimeUtil.date2string(endTime));
-                //return setAlarm(beginTime, endTime, context);
-        }
-        return true;
-    }
+//    public static boolean setAlarm(TimeBean alarm) {
+//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        Date beginTime = new Date();
+//        Date endTime = new Date();
+//        List<String> timePattern;
+//        Calendar mCalendar = Calendar.getInstance();
+//        mCalendar.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
+//        boolean isFindBeginTime = false;
+//        boolean isFindEndTime = false;
+//        LogUtil.i("timedemo","PlanType="+alarm.getPlanType());
+//        LogUtil.i("timedemo","switch="+alarm.getSwitchX());
+//        LogUtil.i("timedemo","delay="+alarm.getDelay());
+//        LogUtil.i("timedemo","weak="+alarm.getWeek());
+//        switch (alarm.getPlanType()) {
+//            case 0:
+//
+//                break;
+//            case 1:
+//                break;
+//            case 2:
+//                List<String> timeList = alarm.getTime();
+//                String time = "";
+//                for (String t : timeList) {
+//                    time = t;
+//                }
+//                LogUtil.i("timedemo","time="+time);
+//                getDataByOffset(mCalendar, 0);
+//                LogUtil.i("timedemo","------start------mCalendar="+TimeUtil.date2string(mCalendar.getTime()));
+//                //找出离目前最近的开关机时间
+//                while (!isFindBeginTime || !isFindEndTime) {
+//                    timePattern = timePattern(time);
+//                    LogUtil.i("timedemo","timePattern="+timePattern);
+//                    if (timePattern.size() < 2) {
+//                        return false;
+//                    }
+//                    Date tempBeginTime;
+//                    Date tempEndTime;
+//                    try {
+//                        tempBeginTime = simpleDateFormat.parse(year + "-" + month + "-" + day + " " + timePattern.get(0));
+//                        tempEndTime = simpleDateFormat.parse(year + "-" + month + "-" + day + " " + timePattern.get(1));
+//                        LogUtil.i("timedemo","tempBeginTime="+TimeUtil.date2string(tempBeginTime)+
+//                                ", tempEndTime="+TimeUtil.date2string(tempEndTime));
+//                    } catch (ParseException e) {
+//                        e.printStackTrace();
+//                        return false;
+//                    }
+//
+//                    LogUtil.i("timedemo","compare tempBeginTime&currentTime="+(tempBeginTime.getTime()-System.currentTimeMillis()));
+//                    if (!isFindBeginTime && (tempBeginTime.getTime() > System.currentTimeMillis())) {
+//                        beginTime = tempBeginTime;
+//                        isFindBeginTime = true;
+//                    }
+//                    LogUtil.i("timedemo","compare tempEndTime&currentTime="+(tempEndTime.getTime()-System.currentTimeMillis()));
+//                    if (!isFindEndTime && (tempEndTime.getTime() > System.currentTimeMillis())) {
+//                        endTime = tempEndTime;
+//                        isFindEndTime = true;
+//                    }
+//                    getDataByOffset(mCalendar, 1);
+//                    LogUtil.i("timedemo","end mCalendar="+TimeUtil.date2string(mCalendar.getTime()));
+//                }
+//                LogUtil.i("timedemo","------end------beginTime="+TimeUtil.date2string(beginTime)+
+//                        ", endTime="+TimeUtil.date2string(endTime));
+//            case 3:
+//                break;
+//            case 4:
+//                break;
+//            case 5:
+//                List<TimeBean.Day> week = alarm.getWeek();
+//                LogUtil.i("timedemo","------start------week size="+(week!=null?week.size():"null"));
+//                if (week.size() <= 0) {
+//                    return false;
+//                }
+//                //返回的json数据是有序的
+//                getDataByOffset(mCalendar, 0);
+//                LogUtil.i("timedemo","mCalendar="+TimeUtil.date2string(mCalendar.getTime()));
+//                while (!isFindBeginTime || !isFindEndTime) {
+//                    for (TimeBean.Day weekDay : week) {
+//                        LogUtil.i("timedemo","for week day="+weekDay.getNumber()+", dayOfWeek="+dayOfWeek);
+//                        if (weekDay.getNumber() >= dayOfWeek) {
+//                            getDataByOffset(mCalendar, weekDay.getNumber() - dayOfWeek);
+//                            timePattern = timePattern(/*weekDay.getTimeX()*/null);
+//                            if (timePattern.size() < 2) {
+//                                return false;
+//                            }
+//                            Date tempBeginTime;
+//                            Date tempEndTime;
+//                            try {
+//                                tempBeginTime = simpleDateFormat.parse(year + "-" + month + "-" + day + " " + timePattern.get(0));
+//                                tempEndTime = simpleDateFormat.parse(year + "-" + month + "-" + day + " " + timePattern.get(1));
+//                                LogUtil.i("timedemo","tempBeginTime="+TimeUtil.date2string(tempBeginTime)+
+//                                        ", tempEndTime="+TimeUtil.date2string(tempEndTime));
+//                            } catch (ParseException e) {
+//                                e.printStackTrace();
+//                                return false;
+//                            }
+//
+//                            LogUtil.i("timedemo","compare tempBeginTime&currentTime="+(tempBeginTime.getTime()-System.currentTimeMillis()));
+//                            if (!isFindBeginTime && (tempBeginTime.getTime() > System.currentTimeMillis())) {
+//                                beginTime = tempBeginTime;
+//                                isFindBeginTime = true;
+//                            }
+//                            LogUtil.i("timedemo","compare tempEndTime&currentTime="+(tempEndTime.getTime()-System.currentTimeMillis()));
+//                            if (!isFindEndTime && (tempEndTime.getTime() > System.currentTimeMillis())) {
+//                                endTime = tempEndTime;
+//                                isFindEndTime = true;
+//                            }
+//                            if (isFindBeginTime && isFindEndTime) {
+//                                break;
+//                            }
+//                        }
+//                    }
+//                    mCalendar = getNextMonday();
+//                    getDataByOffset(mCalendar, 0);
+//                }
+//                LogUtil.i("timedemo","------end------beginTime="+TimeUtil.date2string(beginTime)+
+//                        ", endTime="+TimeUtil.date2string(endTime));
+//                //return setAlarm(beginTime, endTime, context);
+//        }
+//        return true;
+//    }
 
     private static void getDataByOffset(Calendar mCalendar, int dayOffset) {
         mCalendar.add(Calendar.DAY_OF_MONTH, dayOffset);

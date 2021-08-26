@@ -8,7 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.dunn.tools.ActivityManager;
 import com.dunn.tools.time.AbilityManager;
+import com.dunn.tools.time.TimeAnalysis;
 import com.dunn.tools.time.TimeDemo;
+import com.dunn.tools.time.TimeTest;
 import com.dunn.tools.time.TimeUtil;
 
 import java.util.ArrayList;
@@ -39,24 +41,12 @@ public class TimeActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        String jsonShutDown = "{\"planType\":0}";
-        String jsonVolume = "{\"volume\":80,\"planType\":0}";
-
 
         String jsonCacle = "{\"planType\":-1}";
-        /**
-         * 定时关机
-         */
-        //一次性
-        String jsonDelay = "{\"planType\":1,\"delay\":\"2021-08-26 17:30:40\",\"time\":[\"17:30:40\"],\"switch\":0}";
-        //每天
-        String jsonDay = "{\"planType\":2,\"time\":[\"17:30:40\"],\"switch\":0}";
-        //每周
-        String jsonWeek = "{\"planType\":5,\"week\":[{\"day\":{\"number\":\"1\",\"time\":[\"17:30:40\"]}},{\"day\":{\"number\":\"2\",\"time\":[\"17:30:40\"]}},{\"day\":{\"number\":\"3\",\"time\":[\"17:30:40\"]}},{\"day\":{\"number\":\"4\",\"time\":[\"17:30:40\"]}},{\"day\":{\"number\":\"5\",\"time\":[\"17:30:40\"]}},{\"day\":{\"number\":\"6\",\"time\":[\"17:30:40\"]}},{\"day\":{\"number\":\"7\",\"time\":[\"17:30:40\"]}}],\"time\":[\"17:30:40\"],\"switch\":0}";
-        //每月
-        String jsonMonth = "{\"planType\":6,\"month\":[{\"number\":\"5\",\"time\":[\"17:30:40\"]},{\"number\":\"5\",\"time\":[\"17:30:40\"]},{\"number\":\"5\",\"time\":[\"17:30:40\"]},{\"number\":\"5\",\"time\":[\"17:30:40\"]},{\"number\":\"5\",\"time\":[\"17:30:40\"]}],\"time\":[\"17:30:40\"],\"switch\":0}";
 
-        AbilityManager.getInstance().onNewMessage(this,2,jsonMonth);
+
+//        AbilityManager.getInstance().onNewMessage(this,2,jsonMonth);
+        TimeAnalysis.onMessage(TimeTest.json_volume);
     }
 
     @Override
