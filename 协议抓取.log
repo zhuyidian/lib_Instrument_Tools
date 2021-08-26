@@ -55,7 +55,7 @@ onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability",
 每月 1 2 3 4 5  17:30:40
 onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":0,"content":{"planType":6,"month":[{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}}],"time":["17:30:40"],"switch":0},"timestamp":1629878471138}', msgId='2531153632749945863', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
 【重启】onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":2,"content":{"planType":6,"month":[{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}}],"time":["17:30:40"],"switch":2},"timestamp":1629878607509}', msgId='2531153778778833927', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
-
+【重启】onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":2,"content":{"planType":6,"month":[{"day":{"number":"1","time":["17:30:40"]}},{"day":{"number":"2","time":["17:30:40"]}},{"day":{"number":"3","time":["17:30:40"]}},{"day":{"number":"4","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}}],"time":["17:30:40"],"switch":2},"timestamp":1629960474918}', msgId='2531241682800739335', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
 
 定时音量-------------------------------------------
 取消控制：
@@ -72,3 +72,8 @@ onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability",
 onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"volume":50,"planType":6,"month":[{"day":{"number":"5","time":["16:31:39"]}},{"day":{"number":"5","time":["16:31:39"]}},{"day":{"number":"5","time":["16:31:39"]}}],"time":["16:31:39"],"switch":3},"timestamp":1629877569626}', msgId='2531152664234820615', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
 每月 11 12 13 14 15   16:31:39
 onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"volume":50,"planType":6,"month":[{"day":{"number":"15","time":["16:31:39"]}},{"day":{"number":"15","time":["16:31:39"]}},{"day":{"number":"15","time":["16:31:39"]}},{"day":{"number":"15","time":["16:31:39"]}},{"day":{"number":"15","time":["16:31:39"]}}],"time":["16:31:39"],"switch":3},"timestamp":1629877933105}', msgId='2531153055076844551', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"volume":50,"planType":6,"month":[{"day":{"number":"10","time":["16:31:39"]}},{"day":{"number":"11","time":["16:31:39"]}},{"day":{"number":"12","time":["16:31:39"]}},{"day":{"number":"13","time":["16:31:39"]}},{"day":{"number":"14","time":["16:31:39"]}},{"day":{"number":"15","time":["16:31:39"]}}],"time":["16:31:39"],"switch":3},"timestamp":1629960562665}', msgId='2531241777290019847', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+
+
+项目分析：
+1，之前的立即实时控制指令和现在的定时控制指令没有办法区分

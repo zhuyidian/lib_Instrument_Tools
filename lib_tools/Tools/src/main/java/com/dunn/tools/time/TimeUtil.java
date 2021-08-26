@@ -1,5 +1,11 @@
 package com.dunn.tools.time;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -167,6 +173,30 @@ public class TimeUtil {
             return "0" + num;
         } else {
             return "" + num;
+        }
+    }
+
+    public static void setRtc(Context context){
+        Intent intent = new Intent(context, AlarmReceiver.class);
+        intent.putExtra("shutdown", false);
+        PendingIntent pi = PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        //这里是模拟开机广播，当开机闹钟到达，但目前机器实际并不是从关机到开机的状态。即设定的开机时间小于关机时间的情况
+        Intent bootIntent = new Intent(context, AlarmReceiver.class);
+        bootIntent.putExtra("boot", true);
+        PendingIntent bootPi = PendingIntent.getBroadcast(context, 1, bootIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        //If the time occurs in the past, the alarm will be triggered immediately.
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+60 * 1000, bootPi);
+            alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+120 * 1000, pi);
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            alarmManager.setExact(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+60 * 1000, bootPi);
+            alarmManager.setExact(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+120 * 1000, pi);
+        } else {
+            alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+60 * 1000, bootPi);
+            alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+120 * 1000, pi);
         }
     }
 }

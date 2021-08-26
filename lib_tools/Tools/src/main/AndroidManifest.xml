@@ -6,6 +6,11 @@
         <meta-data
             android:name="com.dunn.tools.get"
             android:value="true" />
+
+        <receiver
+            android:name="com.dunn.tools.time.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>
