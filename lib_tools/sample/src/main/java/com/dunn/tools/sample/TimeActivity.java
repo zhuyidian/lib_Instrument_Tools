@@ -6,12 +6,12 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.dunn.tools.ActivityManager;
-import com.dunn.tools.time.AbilityManager;
+import com.dunn.tools.log.LogUtil;
 import com.dunn.tools.time.TimeAnalysis;
-import com.dunn.tools.time.TimeDemo;
+import com.dunn.tools.time.TimeManager;
 import com.dunn.tools.time.TimeTest;
 import com.dunn.tools.time.TimeUtil;
+import com.dunn.tools.time.temp.RemoteCommand;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -41,12 +41,31 @@ public class TimeActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        //即使实时
+        boolean shutdown_isReal = TimeManager.getInstance().onMessage(0,TimeTest.json_shutdown,new RemoteCommand());
+        LogUtil.i("time", "----shutdown_isReal----=" + shutdown_isReal);
+        boolean reboot_isReal = TimeManager.getInstance().onMessage(2,TimeTest.json_reboot,new RemoteCommand());
+        LogUtil.i("time", "----reboot_isReal----=" + reboot_isReal);
+        boolean volume_isReal = TimeManager.getInstance().onMessage(3,TimeTest.json_volume,new RemoteCommand());
+        LogUtil.i("time", "----volume_isReal----=" + volume_isReal);
 
-        String jsonCacle = "{\"planType\":-1}";
+        //定时关机
+        //TimeManager.getInstance().onMessage(0,TimeTest.jsonDelay_shutDown,new RemoteCommand());
+        //TimeManager.getInstance().onMessage(0,TimeTest.jsonDay_shutDown,new RemoteCommand());
+        //TimeManager.getInstance().onMessage(0,TimeTest.jsonWeek_shutDown,new RemoteCommand());
+        TimeManager.getInstance().onMessage(0,TimeTest.jsonMonth_shutDown,new RemoteCommand());
 
+        //定时重启
+//        TimeManager.getInstance().onMessage(2,TimeTest.jsonDelay_reboot,new RemoteCommand());
+//        TimeManager.getInstance().onMessage(2,TimeTest.jsonDay_reboot,new RemoteCommand());
+        TimeManager.getInstance().onMessage(2,TimeTest.jsonWeek_reboot,new RemoteCommand());
+//        TimeManager.getInstance().onMessage(2,TimeTest.jsonMonth_reboot,new RemoteCommand());
 
-//        AbilityManager.getInstance().onNewMessage(this,2,jsonMonth);
-        TimeAnalysis.onMessage(TimeTest.json_volume);
+        //定时音量
+//        TimeManager.getInstance().onMessage(3,TimeTest.jsonDelay_volume,new RemoteCommand());
+        TimeManager.getInstance().onMessage(3,TimeTest.jsonDay_volume,new RemoteCommand());
+//        TimeManager.getInstance().onMessage(3,TimeTest.jsonWeek_volume,new RemoteCommand());
+//        TimeManager.getInstance().onMessage(3,TimeTest.jsonMonth_volume,new RemoteCommand());
     }
 
     @Override

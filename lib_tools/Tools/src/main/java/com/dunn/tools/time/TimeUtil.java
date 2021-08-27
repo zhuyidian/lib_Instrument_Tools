@@ -6,6 +6,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 
+import com.dunn.tools.log.LogUtil;
+import com.dunn.tools.time.temp.AlarmReceiver;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -96,6 +99,23 @@ public class TimeUtil {
     public static String date2string(Date date){
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return format.format(date);
+    }
+
+    /**
+     * 说明：将时间字符串转化为date
+     * 输入：timeStr 时间字符串 (yyyy-MM-dd HH:mm:ss)
+     * 返回：Date
+     */
+    public static Date string2date(String timeStr) {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = null;
+        try {
+            date = format.parse(timeStr);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        return date;
     }
 
     /**
