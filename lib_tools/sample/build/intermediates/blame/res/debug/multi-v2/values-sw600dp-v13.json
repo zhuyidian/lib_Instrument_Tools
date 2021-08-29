@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\sample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "/home/dunn/project/lib_tools/lib_tools/sample/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\31509fa340e8dc480b91c89ad6436207\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/955db18f7e6cd5681a1bd88f0b42cdec/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

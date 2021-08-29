@@ -2,11 +2,20 @@ package com.dunn.tools.time;
 
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.util.Log;
 
+import com.dunn.tools.log.LogUtil;
 import com.dunn.tools.time.bean.TimeBean;
+import com.dunn.tools.time.bean.TimeTaskBean;
 import com.dunn.tools.time.constant.TimeConstant;
-import com.dunn.tools.time.queue.TimeMessageQueue;
+import com.dunn.tools.time.task.Call;
+import com.dunn.tools.time.task.Callback;
+import com.dunn.tools.time.task.TimeClient;
+import com.dunn.tools.time.task.TimeMessageQueue;
+import com.dunn.tools.time.task.TimeTaskQueue;
 import com.dunn.tools.time.temp.RemoteCommand;
+
+import java.io.IOException;
 
 /**
  * Author:zhuyidian
@@ -30,15 +39,10 @@ public class TimeManager {
             return cmdType;
         }
     }
-    private TimeMessageQueue timeQueue;
-    private final HandlerThread handlerThread;
-    private final Handler delayHandler;
+    private TimeTaskQueue timeTaskQueue;
 
     private TimeManager(){
-        timeQueue = new TimeMessageQueue();
-        handlerThread = new HandlerThread(TAG);
-        handlerThread.start();
-        delayHandler = new Handler(handlerThread.getLooper());
+        timeTaskQueue = new TimeTaskQueue();
     }
 
     public static class InstanceClass {
@@ -76,7 +80,7 @@ public class TimeManager {
 
         //定时命令
         checkTimeQueue();
-        if(timeQueue.addTimeTask(cmdType,bean,command)){
+        if(timeTaskQueue.addTimeTask(cmdType,bean,command)){
             enqueue();
         }
 
@@ -84,14 +88,33 @@ public class TimeManager {
     }
 
     private boolean enqueue(){
-        timeQueue.getNearestTimeTask();
+        TimeTaskBean timeTaskBean = timeTaskQueue.getNearestTimeTask();
 
+        if(timeTaskBean!=null){
+            for(int i=0;i<5;i++){
+                long delayMs = timeTaskBean.getTime() - System.currentTimeMillis();
+                LogUtil.i("time", "delayMs ---> delayMs="+delayMs+", timeStr="+TimeUtil.long2string(timeTaskBean.getTime()));
+                TimeClient client = new TimeClient();
+                Call call = client.newCall(timeTaskBean);
+                call.enqueue(new Callback() {
+                    @Override
+                    public void onFailure(Call call, IOException e) {
+                        LogUtil.i("time", "callback <--- onFailure");
+                    }
+
+                    @Override
+                    public void onSuccess(Call call, String msg) throws IOException {
+                        LogUtil.i("time", "callback <--- onSuccess");
+                    }
+                }, 2000);
+            }
+        }
         return false;
     }
 
     private void checkTimeQueue(){
-        if(timeQueue==null){
-            timeQueue = new TimeMessageQueue();
+        if(timeTaskQueue==null){
+            timeTaskQueue = new TimeTaskQueue();
         }
     }
 }

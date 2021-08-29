@@ -128,5 +128,26 @@ public class TimeBean {
         public void setTimeX(List<String> timeX) {
             this.timeX = timeX;
         }
+
+        @Override
+        public String toString() {
+            return "DayBean{" +
+                    "number=" + number +
+                    ", timeX=" + timeX +
+                    '}';
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "TimeBean{" +
+                "planType=" + planType +
+                ", switchX=" + switchX +
+                ", volume=" + volume +
+                ", delay='" + delay + '\'' +
+                ", time=" + time +
+                ", week=" + week +
+                ", month=" + month +
+                '}';
     }
 }

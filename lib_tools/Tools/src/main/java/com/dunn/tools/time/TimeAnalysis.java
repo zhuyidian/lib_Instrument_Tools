@@ -18,7 +18,7 @@ public class TimeAnalysis {
     /**
      * 解析content
      * @param content
-     * @return TimeBean
+     * @return null:解析失败  TimeBean:解析成功
      */
     public static TimeBean parseContent(String content){
         if(content==null) return null;
@@ -27,61 +27,23 @@ public class TimeAnalysis {
         java.lang.reflect.Type type = new TypeToken<TimeBean>() {}.getType();
         try {
             //TimeBean plan = gson.fromJson(content, TimeBean.class);
-            final TimeBean bean = gsonBuilder.fromJson(content, type);
+            final TimeBean timeBean = gsonBuilder.fromJson(content, type);
 
-//            LogUtil.i("time", "bean=" + bean);
-//            LogUtil.i("time", "planType=" + bean.getPlanType());
-//            LogUtil.i("time", "switch=" + bean.getSwitchX());
-//            LogUtil.i("time", "volume=" + bean.getVolume());
-//            LogUtil.i("time", "delay=" + bean.getDelay());
-//            if (bean.getTime() != null) {
-//                List<String> listTime = bean.getTime();
-//                int size = listTime.size();
-//                LogUtil.i("time", "time.size=" + size);
-//                for (int i = 0; i < size; i++) {
-//                    LogUtil.i("time", "time.str=" + listTime.get(i));
-//                }
-//            } else {
-//                LogUtil.i("time", "time=null");
-//            }
-//
-//            if (bean.getWeek() != null) {
-//                List<TimeBean.DayBean> listWeek = bean.getWeek();
-//                int size = listWeek.size();
-//                LogUtil.i("time", "week.size=" + size);
-//                for (int i = 0; i < size; i++) {
-//                    LogUtil.i("time", "week.number=" + listWeek.get(i).getNumber() + ", week.time=" + listWeek.get(i).getTimeX());
-//                }
-//            } else {
-//                LogUtil.i("time", "week=null");
-//            }
-//
-//            if (bean.getMonth() != null) {
-//                List<TimeBean.DayBean> listMonth = bean.getMonth();
-//                int size = listMonth.size();
-//                LogUtil.i("time", "month.size=" + size);
-//                for (int i = 0; i < size; i++) {
-//                    LogUtil.i("time", "month.number=" + listMonth.get(i).getNumber() + ", month.time=" + listMonth.get(i).getTimeX());
-//                }
-//            } else {
-//                LogUtil.i("time", "month=null");
-//            }
+            if(timeBean==null) return null;
 
-            if(bean==null) return null;
-
-            return bean;
+            return timeBean;
         }catch (Exception e){
             e.printStackTrace();
-            LogUtil.i("time", "e=" + e);
+            LogUtil.e("time", "content=" + content+", e="+e);
         }
 
         return null;
     }
 
     /**
-     * 获取delay timetask的时间戳
+     * 获取delay timetask的时间戳，确定的固定时间戳
      * @param delay
-     * @return 时间戳
+     * @return 0:失败&没有未来时间戳  其它:未来的时间戳
      */
     public static long getDelayTime(String delay){
         if(delay==null) return 0l;
@@ -91,17 +53,17 @@ public class TimeAnalysis {
             return timeLong;
         }catch (Exception e){
             e.printStackTrace();
-            LogUtil.i("time", "e=" + e);
+            LogUtil.e("time", "delay=" + delay+", e="+e);
         }
 
         return 0l;
     }
 
     /**
-     * 获取day timetask的时间戳 注：距离当前时间最近的未来的时间戳
+     * 获取day timetask的时间戳，当天的未来时间戳
      * @param time
      * @param currentTime
-     * @return 时间戳
+     * @return 0:失败&没有当天的未来时间戳  其它:当天的未来时间戳
      */
     public static long getDayTime(List<String> time, long currentTime){
         if(time==null) return 0l;
@@ -116,6 +78,13 @@ public class TimeAnalysis {
                 int month = mCalendar.get(Calendar.MONTH) + 1;
                 int day = mCalendar.get(Calendar.DAY_OF_MONTH);
                 long value = TimeUtil.string2long(year + "-" + month + "-" + day + " " + time.get(i));
+                timeLong.add(value);
+
+                mCalendar.add(Calendar.DAY_OF_MONTH, 1);
+                year = mCalendar.get(Calendar.YEAR);
+                month = mCalendar.get(Calendar.MONTH) + 1;
+                day = mCalendar.get(Calendar.DAY_OF_MONTH);
+                value = TimeUtil.string2long(year + "-" + month + "-" + day + " " + time.get(i));
                 timeLong.add(value);
             }
 
@@ -134,17 +103,17 @@ public class TimeAnalysis {
             }
         }catch (Exception e){
             e.printStackTrace();
-            LogUtil.i("time", "e=" + e);
+            LogUtil.e("time", "time=" + time+", e="+e);
         }
 
         return 0l;
     }
 
     /**
-     * 获取week timetask的时间戳 注：距离当前时间最近的未来的时间戳
+     * 获取week timetask的时间戳，本周的未来时间戳
      * @param time
      * @param currentTime
-     * @return 时间戳
+     * @return 0:失败&没有本周的未来时间戳  其它:本周的未来时间戳
      */
     public static long getWeekTime(List<TimeBean.DayBean> time, long currentTime){
         if(time==null) return 0l;
@@ -158,6 +127,8 @@ public class TimeAnalysis {
                 Calendar mCalendar = Calendar.getInstance();
                 mCalendar.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
                 mCalendar.add(Calendar.DAY_OF_MONTH, 0);
+                int year = mCalendar.get(Calendar.YEAR);
+                int month = mCalendar.get(Calendar.MONTH) + 1;
                 int dayOfWeek = mCalendar.get(Calendar.DAY_OF_WEEK);
                 if (dayOfWeek == Calendar.SUNDAY) {
                     dayOfWeek = 7;
@@ -165,11 +136,18 @@ public class TimeAnalysis {
                     dayOfWeek = dayOfWeek - 1;
                 }
                 mCalendar.add(Calendar.DAY_OF_MONTH, week - dayOfWeek);
-                int year = mCalendar.get(Calendar.YEAR);
-                int month = mCalendar.get(Calendar.MONTH) + 1;
                 int day = mCalendar.get(Calendar.DAY_OF_MONTH);
 
                 if (timeValue == null) continue;
+                for (int j = 0; j < timeValue.size(); j++) {
+                    long value = TimeUtil.string2long(year + "-" + month + "-" + day + " " + timeValue.get(j));
+                    timeLong.add(value);
+                }
+
+                mCalendar.add(Calendar.DAY_OF_MONTH, 7);
+                year = mCalendar.get(Calendar.YEAR);
+                month = mCalendar.get(Calendar.MONTH) + 1;
+                day = mCalendar.get(Calendar.DAY_OF_MONTH);
                 for (int j = 0; j < timeValue.size(); j++) {
                     long value = TimeUtil.string2long(year + "-" + month + "-" + day + " " + timeValue.get(j));
                     timeLong.add(value);
@@ -191,17 +169,17 @@ public class TimeAnalysis {
             }
         }catch (Exception e){
             e.printStackTrace();
-            LogUtil.i("time", "e=" + e);
+            LogUtil.e("time", "time=" + time+", e="+e);
         }
 
         return 0l;
     }
 
     /**
-     * 获取month timetask的时间戳 注：距离当前时间最近的未来的时间戳
+     * 获取month timetask的时间戳，本月的未来时间戳
      * @param time
      * @param currentTime
-     * @return 时间戳
+     * @return 0:失败&没有本周的未来时间戳  其它:本月的未来时间戳
      */
     public static long getMonthTime(List<TimeBean.DayBean> time, long currentTime){
         if(time==null) return 0l;
@@ -219,12 +197,25 @@ public class TimeAnalysis {
                     continue;
                 }
                 mCalendar.set(Calendar.DAY_OF_MONTH, monthDay);
-
                 int year = mCalendar.get(Calendar.YEAR);
                 int month = mCalendar.get(Calendar.MONTH) + 1;
                 int day = mCalendar.get(Calendar.DAY_OF_MONTH);
 
                 if (timeValue == null) continue;
+                for (int j = 0; j < timeValue.size(); j++) {
+                    long value = TimeUtil.string2long(year + "-" + month + "-" + day + " " + timeValue.get(j));
+                    timeLong.add(value);
+                }
+
+                mCalendar.add(Calendar.MONTH, 1);
+                maxDay = mCalendar.getActualMaximum(Calendar.DAY_OF_MONTH);
+                if(monthDay>maxDay){
+                    continue;
+                }
+                mCalendar.set(Calendar.DAY_OF_MONTH, monthDay);
+                year = mCalendar.get(Calendar.YEAR);
+                month = mCalendar.get(Calendar.MONTH) + 1;
+                day = mCalendar.get(Calendar.DAY_OF_MONTH);
                 for (int j = 0; j < timeValue.size(); j++) {
                     long value = TimeUtil.string2long(year + "-" + month + "-" + day + " " + timeValue.get(j));
                     timeLong.add(value);
@@ -246,7 +237,7 @@ public class TimeAnalysis {
             }
         }catch (Exception e){
             e.printStackTrace();
-            LogUtil.i("time", "e=" + e);
+            LogUtil.e("time", "time=" + time+", e="+e);
         }
 
         return 0l;

@@ -14,7 +14,7 @@ public class TimeTaskBean implements Serializable {
     private int cmdType;
     private TimeBean bean;
     private RemoteCommand command;
-    private List<Long> time;
+    private long time;
 
     public TimeTaskBean(int cmdType, TimeBean bean, RemoteCommand command) {
         this.cmdType = cmdType;
@@ -22,7 +22,7 @@ public class TimeTaskBean implements Serializable {
         this.command = command;
     }
 
-    public TimeTaskBean(int cmdType, TimeBean bean, RemoteCommand command, List<Long> time) {
+    public TimeTaskBean(int cmdType, TimeBean bean, RemoteCommand command, long time) {
         this.cmdType = cmdType;
         this.bean = bean;
         this.command = command;
@@ -53,11 +53,21 @@ public class TimeTaskBean implements Serializable {
         this.command = command;
     }
 
-    public List<Long> getTime() {
+    public long getTime() {
         return time;
     }
 
-    public void setTime(List<Long> time) {
+    public void setTime(long time) {
         this.time = time;
+    }
+
+    @Override
+    public String toString() {
+        return "TimeTaskBean{" +
+                "cmdType=" + cmdType +
+                ", bean=" + bean +
+                ", command=" + command +
+                ", time=" + time +
+                '}';
     }
 }

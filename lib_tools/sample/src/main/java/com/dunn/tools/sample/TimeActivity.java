@@ -50,20 +50,20 @@ public class TimeActivity extends AppCompatActivity {
         LogUtil.i("time", "----volume_isReal----=" + volume_isReal);
 
         //定时关机
-        //TimeManager.getInstance().onMessage(0,TimeTest.jsonDelay_shutDown,new RemoteCommand());
-        //TimeManager.getInstance().onMessage(0,TimeTest.jsonDay_shutDown,new RemoteCommand());
+//        TimeManager.getInstance().onMessage(0,TimeTest.jsonDelay_shutDown,new RemoteCommand());
+        TimeManager.getInstance().onMessage(0,TimeTest.jsonDay_shutDown,new RemoteCommand());
         //TimeManager.getInstance().onMessage(0,TimeTest.jsonWeek_shutDown,new RemoteCommand());
-        TimeManager.getInstance().onMessage(0,TimeTest.jsonMonth_shutDown,new RemoteCommand());
+        //TimeManager.getInstance().onMessage(0,TimeTest.jsonMonth_shutDown,new RemoteCommand());
 
         //定时重启
 //        TimeManager.getInstance().onMessage(2,TimeTest.jsonDelay_reboot,new RemoteCommand());
 //        TimeManager.getInstance().onMessage(2,TimeTest.jsonDay_reboot,new RemoteCommand());
-        TimeManager.getInstance().onMessage(2,TimeTest.jsonWeek_reboot,new RemoteCommand());
+//        TimeManager.getInstance().onMessage(2,TimeTest.jsonWeek_reboot,new RemoteCommand());
 //        TimeManager.getInstance().onMessage(2,TimeTest.jsonMonth_reboot,new RemoteCommand());
 
         //定时音量
 //        TimeManager.getInstance().onMessage(3,TimeTest.jsonDelay_volume,new RemoteCommand());
-        TimeManager.getInstance().onMessage(3,TimeTest.jsonDay_volume,new RemoteCommand());
+//        TimeManager.getInstance().onMessage(3,TimeTest.jsonDay_volume,new RemoteCommand());
 //        TimeManager.getInstance().onMessage(3,TimeTest.jsonWeek_volume,new RemoteCommand());
 //        TimeManager.getInstance().onMessage(3,TimeTest.jsonMonth_volume,new RemoteCommand());
     }

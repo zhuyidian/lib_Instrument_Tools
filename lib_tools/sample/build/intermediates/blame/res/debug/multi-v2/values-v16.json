@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\sample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "/home/dunn/project/lib_tools/lib_tools/sample/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-v16\\values-v16.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\31509fa340e8dc480b91c89ad6436207\\res\\values-v16\\values-v16.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/955db18f7e6cd5681a1bd88f0b42cdec/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
