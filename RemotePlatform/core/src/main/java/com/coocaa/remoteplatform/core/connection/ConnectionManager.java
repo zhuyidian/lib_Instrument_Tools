@@ -49,6 +49,7 @@ public class ConnectionManager implements IConnectionManager {
             boolean result = System.currentTimeMillis() - command.timestamp > COMMAND_OVERDUE_MS;
             if (result) {
                 command.replyError(mContext).withMessage("command timestamp > 30s").reply();
+                Log.i(TAG, "overdueCheckFilter filter is exe");
             }
             return result;
         }
@@ -65,6 +66,7 @@ public class ConnectionManager implements IConnectionManager {
             if (HOST_PACKAGE_NAME.equalsIgnoreCase(command.clientId)) {
                 if (CMD_TYPE_OPEN_SOCKET_CHANNEL == command.cmdType || CMD_TYPE_CLOSE_SOCKET_CHANNEL == command.cmdType) {
                     mSocketChannel.handleMessage(command);
+                    Log.i(TAG, "connectionCommandFilter filter is exe");
                     return true;
                 }
             }
@@ -86,6 +88,7 @@ public class ConnectionManager implements IConnectionManager {
     private final IChannelReceiveCallback channelReceiveCallback = new IChannelReceiveCallback() {
         @Override
         public void onReceiveCommand(RemoteCommand command) {
+            Log.i(TAG, "channelReceiveCallback onReceiveCommand command=" + command);
             if (command == null) {
                 return;
             }

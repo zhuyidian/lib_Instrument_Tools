@@ -9,6 +9,8 @@ import com.coocaa.remoteplatform.baseability.abilities.logcat.LogcatImpl;
 import com.coocaa.remoteplatform.baseability.abilities.reboot.RebootImpl;
 import com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmImpl;
 import com.coocaa.remoteplatform.baseability.abilities.screenshot.ScreenShotImpl;
+import com.coocaa.remoteplatform.baseability.abilities.shutdown.Shutdown;
+import com.coocaa.remoteplatform.baseability.abilities.shutdown.ShutdownImpl;
 import com.coocaa.remoteplatform.baseability.abilities.socket.SocketImpl;
 import com.coocaa.remoteplatform.baseability.abilities.volume.VolumeImpl;
 
@@ -28,6 +30,7 @@ public class AbilityFactory {
     private static final Map<Integer, IAbility> INSTANCES = new ConcurrentHashMap<>();
 
     static {
+        COMMAND_HANDLERS.put(0, ShutdownImpl.class);
         COMMAND_HANDLERS.put(1, AlarmImpl.class);
         COMMAND_HANDLERS.put(2, RebootImpl.class);
         COMMAND_HANDLERS.put(3, VolumeImpl.class);

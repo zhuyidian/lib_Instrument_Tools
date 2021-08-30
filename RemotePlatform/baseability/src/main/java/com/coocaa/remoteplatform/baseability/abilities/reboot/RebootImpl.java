@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.PowerManager;
 import android.os.SystemClock;
+import android.util.Log;
 
 import com.coocaa.remoteplatform.baseability.abilities.AbsAbility;
 import com.coocaa.remoteplatform.core.common.RemoteCommand;
@@ -24,6 +25,8 @@ import java.util.Date;
  * @Description:
  */
 public class RebootImpl extends AbsAbility {
+    private static final String TAG = "RebootImpl";
+
     @Override
     public void handleMessage(RemoteCommand command) {
         Gson gson = new Gson();
@@ -32,6 +35,8 @@ public class RebootImpl extends AbsAbility {
             command.replyError(mContext).reply();
             return;
         }
+        // I/RebootImpl: handleMessage reboot.planType0, reboot.delay=null
+        Log.i(TAG, "handleMessage reboot.planType=" + reboot.getPlanType()+", reboot.delay="+reboot.getDelay());
         if (reboot.getPlanType() == 0) {
             PowerManager pManager = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
             pManager.reboot(null); //重启,需要系统权限

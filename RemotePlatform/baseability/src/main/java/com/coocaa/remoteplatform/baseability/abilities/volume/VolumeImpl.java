@@ -2,6 +2,7 @@ package com.coocaa.remoteplatform.baseability.abilities.volume;
 
 import android.content.Context;
 import android.media.AudioManager;
+import android.util.Log;
 
 import com.coocaa.remoteplatform.baseability.abilities.AbsAbility;
 import com.coocaa.remoteplatform.core.common.RemoteCommand;
@@ -39,6 +40,7 @@ public class VolumeImpl extends AbsAbility {
             e.printStackTrace();
         }
         int targetVolume = 0;
+        Log.i(TAG, "handleMessage volume.Type=" + volume.getType()+", reboot.Volume="+volume.getVolume());
         switch (volume.getType()) {
             case 0:
                 targetVolume = volume.getVolume();

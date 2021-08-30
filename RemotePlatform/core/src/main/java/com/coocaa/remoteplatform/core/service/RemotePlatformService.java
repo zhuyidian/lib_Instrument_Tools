@@ -3,11 +3,12 @@ package com.coocaa.remoteplatform.core.service;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.text.TextUtils;
 import android.util.Log;
 
 import com.coocaa.remoteplatform.core.R;
 import com.coocaa.remoteplatform.core.common.Utils;
+import com.coocaa.remoteplatform.core.request.HomeHeader;
+import com.coocaa.remoteplatform.core.request.TimeHttpMethod;
 
 /**
  * @ClassName: RemotePlatformService
@@ -31,6 +32,7 @@ public class RemotePlatformService extends Service {
         Log.i(TAG, "onCreate: ");
         main = Main.getInstance(getApplicationContext());
         stub = new ServiceStubImpl(getApplicationContext());
+        HomeHeader.init(getApplicationContext());
     }
 
     @Override
@@ -67,6 +69,9 @@ public class RemotePlatformService extends Service {
         if (intent.hasExtra(DEVICE_ID)) {
             String deviceId = intent.getStringExtra(DEVICE_ID);
             Log.i(TAG, "handleIntent: deviceId="+deviceId);
+
+            TimeHttpMethod mWeatherHttpMethod = new TimeHttpMethod(getApplicationContext());
+            mWeatherHttpMethod.getTimeData(getApplicationContext(),deviceId);
             main.getAttachInfo().setDeviceId(deviceId);
         }
     }

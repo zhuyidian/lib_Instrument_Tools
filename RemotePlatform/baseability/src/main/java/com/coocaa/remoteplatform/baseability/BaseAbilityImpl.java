@@ -37,6 +37,7 @@ public class BaseAbilityImpl implements IBaseAbility {
             Log.e(TAG, "no ability match command: " + command.toString());
             return;
         }
+        Log.i(TAG, "handleMessage command: " + command.toString());
         ability.handleMessage(command);
     }
 }

@@ -99,6 +99,12 @@ public class PushChannel implements IConnectChannel {
         }
     }
 
+    public void onReceiveMessage(RemoteCommand command){
+        if (mCallback != null && command!=null) {
+            mCallback.onReceiveCommand(command);
+        }
+    }
+
     RemoteCommand convertPushCommandToCommand(PushCommand pushCommand) {
         RemoteCommand result = null;
         try {
