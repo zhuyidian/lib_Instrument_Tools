@@ -40,9 +40,10 @@ public class TimeManager {
         }
     }
     private TimeTaskQueue timeTaskQueue;
+    private TimeClient client;
 
     private TimeManager(){
-        timeTaskQueue = new TimeTaskQueue();
+        checkTimeParams();
     }
 
     public static class InstanceClass {
@@ -73,48 +74,66 @@ public class TimeManager {
 
         if(bean==null) return true;
 
-        int planType = bean.getPlanType();
-        if(planType == TimeConstant.CMD_REAL){
+        //判断即时指令
+        if(bean.getPlanType() == TimeConstant.CMD_REAL){
             return true;
         }
 
         //定时命令
-        checkTimeQueue();
-        if(timeTaskQueue.addTimeTask(cmdType,bean,command)){
-            enqueue();
+        checkTimeParams();
+        if(bean.getPlanType() == TimeConstant.CMD_CANCEL){
+            timeTaskQueue.removeTimeTask(cmdType);
+        }else{
+            timeTaskQueue.addTimeTask(cmdType,bean,command);
         }
+
+        enqueue();
 
         return false;
     }
 
     private boolean enqueue(){
-        TimeTaskBean timeTaskBean = timeTaskQueue.getNearestTimeTask();
-
-        if(timeTaskBean!=null){
-            for(int i=0;i<5;i++){
-                long delayMs = timeTaskBean.getTime() - System.currentTimeMillis();
-                LogUtil.i("time", "delayMs ---> delayMs="+delayMs+", timeStr="+TimeUtil.long2string(timeTaskBean.getTime()));
-                TimeClient client = new TimeClient();
-                Call call = client.newCall(timeTaskBean);
-                call.enqueue(new Callback() {
-                    @Override
-                    public void onFailure(Call call, IOException e) {
-                        LogUtil.i("time", "callback <--- onFailure");
-                    }
-
-                    @Override
-                    public void onSuccess(Call call, String msg) throws IOException {
-                        LogUtil.i("time", "callback <--- onSuccess");
-                    }
-                }, 2000);
+        try {
+            final TimeTaskBean timeTaskBean = timeTaskQueue.getNearestTimeTask();
+            long delayMs = 0l;
+            if (timeTaskBean != null) {
+                delayMs = timeTaskBean.getTime() - System.currentTimeMillis();
+                //LogUtil.i("time", "delayMs ---> delayMs=" + delayMs + ", timeStr=" + TimeUtil.long2string(timeTaskBean.getTime()) + ", cmdType=" + timeTaskBean.getCmdType() + ", planType=" + timeTaskBean.getBean().getPlanType());
             }
+
+            Call call = client.newCall(timeTaskBean);
+            call.enqueue(new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+                    LogUtil.i("time", "callback <--- onFailure");
+                    if (timeTaskQueue != null && timeTaskQueue.isTimeTask()) {
+                        enqueue();
+                    }
+                }
+
+                @Override
+                public void onSuccess(Call call, String msg) throws IOException {
+                    LogUtil.i("time", "callback <--- onSuccess");
+                    if (timeTaskQueue != null && timeTaskQueue.isTimeTask()) {
+                        enqueue();
+                    }
+                }
+            }, delayMs);
+        }catch (Exception e){
+            e.printStackTrace();
+            LogUtil.i("time", "callback <--- e="+e);
         }
         return false;
     }
 
-    private void checkTimeQueue(){
+    private void checkTimeParams(){
         if(timeTaskQueue==null){
             timeTaskQueue = new TimeTaskQueue();
+        }
+
+        if(client==null){
+            client = new TimeClient.Builder()
+                    .build();
         }
     }
 }

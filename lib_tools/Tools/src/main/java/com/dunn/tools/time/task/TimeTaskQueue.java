@@ -36,9 +36,10 @@ public class TimeTaskQueue {
         }
 
         TimeTaskBean timeTaskBean = new TimeTaskBean(cmdType,bean,command);
-        findNearestTime(timeTaskBean,false);
+        long timeLong = findNearestTime(timeTaskBean,false);
         timeTaskMap.put(cmdType,timeTaskBean);
-        LogUtil.i("time", "add time task success cmdType="+cmdType);
+        LogUtil.i("time", "add time task success cmdType="+cmdType+", planType="+bean.getPlanType()+
+                ", exe time="+TimeUtil.long2string(timeLong));
         return true;
     }
 
@@ -57,6 +58,13 @@ public class TimeTaskQueue {
         if(timeTaskMap.isEmpty()) return false;
 
         timeTaskMap.clear();
+        return true;
+    }
+
+    public boolean isTimeTask(){
+        if(timeTaskMap==null) return false;
+        if(timeTaskMap.isEmpty()) return false;
+
         return true;
     }
 
@@ -112,13 +120,14 @@ public class TimeTaskQueue {
         return list.get(0);
     }
 
-    private void findNearestTime(TimeTaskBean timeTaskBean,boolean isRemove){
-        if(timeTaskBean==null) return;
-        if(timeTaskBean.getBean()==null) return;
+    private long findNearestTime(TimeTaskBean timeTaskBean,boolean isRemove){
+        if(timeTaskBean==null) return 0l;
+        if(timeTaskBean.getBean()==null) return 0l;
+        long timeLong = 0l;
 
         switch (timeTaskBean.getBean().getPlanType()){
             case TimeConstant.CMD_DELAY:
-                long timeLong = TimeAnalysis.getDelayTime(timeTaskBean.getBean().getDelay());
+                timeLong = TimeAnalysis.getDelayTime(timeTaskBean.getBean().getDelay());
                 if(timeLong<System.currentTimeMillis() && isRemove){
                     removeTimeTask(timeTaskBean.getCmdType());
                 }else {
@@ -126,16 +135,21 @@ public class TimeTaskQueue {
                 }
                 break;
             case TimeConstant.CMD_DAY:
-                timeTaskBean.setTime(TimeAnalysis.getDayTime(timeTaskBean.getBean().getTime(),System.currentTimeMillis()));
+                timeLong = TimeAnalysis.getDayTime(timeTaskBean.getBean().getTime(),System.currentTimeMillis());
+                timeTaskBean.setTime(timeLong);
                 break;
             case TimeConstant.CMD_WEEK:
-                timeTaskBean.setTime(TimeAnalysis.getWeekTime(timeTaskBean.getBean().getWeek(),System.currentTimeMillis()));
+                timeLong = TimeAnalysis.getWeekTime(timeTaskBean.getBean().getWeek(),System.currentTimeMillis());
+                timeTaskBean.setTime(timeLong);
                 break;
             case TimeConstant.CMD_MONTH:
-                timeTaskBean.setTime(TimeAnalysis.getMonthTime(timeTaskBean.getBean().getMonth(),System.currentTimeMillis()));
+                timeLong = TimeAnalysis.getMonthTime(timeTaskBean.getBean().getMonth(),System.currentTimeMillis());
+                timeTaskBean.setTime(timeLong);
                 break;
             default:
                 break;
         }
+
+        return timeLong;
     }
 }

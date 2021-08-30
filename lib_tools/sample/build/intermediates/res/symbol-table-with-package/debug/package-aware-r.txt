@@ -766,7 +766,11 @@ id back_tv
 id beginning
 id blocking
 id bottom
-id btn
+id btn0
+id btn1
+id btn2
+id btn3
+id btn4
 id buttonPanel
 id center
 id center_horizontal
@@ -862,6 +866,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id tv
 id uniform
 id up
 id useLogo

@@ -1,6 +1,7 @@
 package com.dunn.tools.time.task;
 
 import com.dunn.tools.log.LogUtil;
+import com.dunn.tools.time.TimeUtil;
 import com.dunn.tools.time.bean.TimeTaskBean;
 import java.io.IOException;
 
@@ -26,10 +27,21 @@ public class RealCall implements Call{
 
     @Override
     public void enqueue(Callback callback, long delay) {
-        // 异步的
-        AsyncCall asyncCall = new AsyncCall(callback);
+        //清除队列定时任务，重新调整
+        LogUtil.i("time", "call clear");
+        client.dispatcher.clearDelayCall();
         // 交给线程
-        client.dispatcher.enqueue(asyncCall,delay);
+        if(orignalBean!=null){
+            LogUtil.i("time", "call enqueue add task delay="+delay+", timeStr="+ TimeUtil.long2string(orignalBean.getTime())+", orignalBean="+orignalBean);
+        }else{
+            LogUtil.e("time", "call enqueue add task delay="+delay+", orignalBean is null !!!!!!");
+        }
+
+        if(orignalBean!=null){
+            // 异步的
+            AsyncCall asyncCall = new AsyncCall(callback);
+            client.dispatcher.enqueue(asyncCall,delay);
+        }
     }
 
     @Override
@@ -46,7 +58,11 @@ public class RealCall implements Call{
         @Override
         protected void execute() {
             try {
-                LogUtil.i("time", "execute ---> orignalBean="+orignalBean);
+                if(orignalBean!=null){
+                    LogUtil.i("time", "call execute ---> timeStr="+ TimeUtil.long2string(orignalBean.getTime())+", orignalBean="+orignalBean);
+                }else{
+                    LogUtil.e("time", "call execute ---> orignalBean is null !!!!!!");
+                }
                 callback.onSuccess(RealCall.this,null);
             } catch (IOException e) {
                 callback.onFailure(RealCall.this,e);

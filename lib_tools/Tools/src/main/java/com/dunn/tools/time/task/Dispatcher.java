@@ -51,4 +51,9 @@ public class Dispatcher {
     public void enqueue(RealCall.AsyncCall call, long delay) {
         executorDelay().postDelayed(call, delay);
     }
+
+    public void clearDelayCall(){
+        //executorDelay().removeCallbacks(null);
+        executorDelay().removeCallbacksAndMessages(null);
+    }
 }

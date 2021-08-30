@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/dunn/project/lib_tools/lib_tools/sample/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\sample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
-                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/955db18f7e6cd5681a1bd88f0b42cdec/res/values-watch-v21/values-watch-v21.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\31509fa340e8dc480b91c89ad6436207\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

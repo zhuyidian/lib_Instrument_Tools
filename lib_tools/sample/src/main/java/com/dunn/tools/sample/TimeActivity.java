@@ -3,11 +3,12 @@ package com.dunn.tools.sample;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.dunn.tools.log.LogUtil;
-import com.dunn.tools.time.TimeAnalysis;
 import com.dunn.tools.time.TimeManager;
 import com.dunn.tools.time.TimeTest;
 import com.dunn.tools.time.TimeUtil;
@@ -18,12 +19,22 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Iterator;
 
-public class TimeActivity extends AppCompatActivity {
+public class TimeActivity extends AppCompatActivity implements View.OnClickListener {
+    private TextView cmdTypeView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        cmdTypeView = findViewById(R.id.tv);
+        findViewById(R.id.btn0).setOnClickListener(this);
+        findViewById(R.id.btn1).setOnClickListener(this);
+        findViewById(R.id.btn2).setOnClickListener(this);
+        findViewById(R.id.btn3).setOnClickListener(this);
+        findViewById(R.id.btn4).setOnClickListener(this);
+        cmdType = 0;
+        cmdTypeView.setText("关机");
 
         getN_day_Pamams(this, 2, "test");
         Date mDate = new Date();
@@ -32,15 +43,6 @@ public class TimeActivity extends AppCompatActivity {
         getHourBAPamams(this, cal.getTimeInMillis(), 3, "test");
         getHourBPamams(this, cal.getTimeInMillis(), 3, "test");
 
-
-        //TimeDemo.init();
-        //TimeUtil.setRtc(TimeActivity.this);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
         //即使实时
         boolean shutdown_isReal = TimeManager.getInstance().onMessage(0,TimeTest.json_shutdown,new RemoteCommand());
         LogUtil.i("time", "----shutdown_isReal----=" + shutdown_isReal);
@@ -48,24 +50,73 @@ public class TimeActivity extends AppCompatActivity {
         LogUtil.i("time", "----reboot_isReal----=" + reboot_isReal);
         boolean volume_isReal = TimeManager.getInstance().onMessage(3,TimeTest.json_volume,new RemoteCommand());
         LogUtil.i("time", "----volume_isReal----=" + volume_isReal);
+        //TimeDemo.init();
+        //TimeUtil.setRtc(TimeActivity.this);
+    }
 
-        //定时关机
-//        TimeManager.getInstance().onMessage(0,TimeTest.jsonDelay_shutDown,new RemoteCommand());
-        TimeManager.getInstance().onMessage(0,TimeTest.jsonDay_shutDown,new RemoteCommand());
-        //TimeManager.getInstance().onMessage(0,TimeTest.jsonWeek_shutDown,new RemoteCommand());
-        //TimeManager.getInstance().onMessage(0,TimeTest.jsonMonth_shutDown,new RemoteCommand());
+    int cmdType = 0;
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn0:   //指令类型选择
+                if(cmdType==0){
+                    cmdType = 2;
+                    cmdTypeView.setText("重启");
+                }else if(cmdType==2){
+                    cmdType = 3;
+                    cmdTypeView.setText("音量");
+                }else{
+                    cmdType = 0;
+                    cmdTypeView.setText("关机");
+                }
+                break;
+            case R.id.btn1:  //一次性执行
+                if(cmdType==0){  //定时关机
+                    TimeManager.getInstance().onMessage(0,TimeTest.jsonDelay_shutDown,new RemoteCommand());
+                }else if(cmdType==2) {  //定时重启
+                    TimeManager.getInstance().onMessage(2,TimeTest.jsonDelay_reboot,new RemoteCommand());
+                }else if(cmdType==3) {  //定时音量
+                    TimeManager.getInstance().onMessage(3,TimeTest.jsonDelay_volume,new RemoteCommand());
+                }
+                break;
+            case R.id.btn2:  //每天执行
+                if(cmdType==0){  //定时关机
+                    TimeManager.getInstance().onMessage(0,TimeTest.jsonDay_shutDown,new RemoteCommand());
+                }else if(cmdType==2) {  //定时重启
+                    TimeManager.getInstance().onMessage(2,TimeTest.jsonDay_reboot,new RemoteCommand());
+                }else if(cmdType==3) {  //定时音量
+                    TimeManager.getInstance().onMessage(3,TimeTest.jsonDay_volume,new RemoteCommand());
+                }
+                break;
+            case R.id.btn3:  //每周执行
+                if(cmdType==0){  //定时关机
+                    TimeManager.getInstance().onMessage(0,TimeTest.jsonWeek_shutDown,new RemoteCommand());
+                }else if(cmdType==2) {  //定时重启
+                    TimeManager.getInstance().onMessage(2,TimeTest.jsonWeek_reboot,new RemoteCommand());
+                }else if(cmdType==3) {  //定时音量
+                    TimeManager.getInstance().onMessage(3,TimeTest.jsonWeek_volume,new RemoteCommand());
+                }
+                break;
+            case R.id.btn4:  //每月执行
+                if(cmdType==0){  //定时关机
+                    TimeManager.getInstance().onMessage(0,TimeTest.jsonMonth_shutDown,new RemoteCommand());
+                }else if(cmdType==2) {  //定时重启
+                    TimeManager.getInstance().onMessage(2,TimeTest.jsonMonth_reboot,new RemoteCommand());
+                }else if(cmdType==3) {  //定时音量
+                    TimeManager.getInstance().onMessage(3,TimeTest.jsonMonth_volume,new RemoteCommand());
+                }
+                break;
+        }
+    }
 
-        //定时重启
-//        TimeManager.getInstance().onMessage(2,TimeTest.jsonDelay_reboot,new RemoteCommand());
-//        TimeManager.getInstance().onMessage(2,TimeTest.jsonDay_reboot,new RemoteCommand());
-//        TimeManager.getInstance().onMessage(2,TimeTest.jsonWeek_reboot,new RemoteCommand());
-//        TimeManager.getInstance().onMessage(2,TimeTest.jsonMonth_reboot,new RemoteCommand());
+    @Override
+    protected void onResume() {
+        super.onResume();
 
-        //定时音量
-//        TimeManager.getInstance().onMessage(3,TimeTest.jsonDelay_volume,new RemoteCommand());
-//        TimeManager.getInstance().onMessage(3,TimeTest.jsonDay_volume,new RemoteCommand());
-//        TimeManager.getInstance().onMessage(3,TimeTest.jsonWeek_volume,new RemoteCommand());
-//        TimeManager.getInstance().onMessage(3,TimeTest.jsonMonth_volume,new RemoteCommand());
+        TimeTest.delay_test();
+        TimeTest.day_test();
+        TimeTest.week_test();
+        TimeTest.month_test();
     }
 
     @Override
