@@ -1,20 +1,23 @@
 package com.dunn.tools.time.task;
 
+
 import com.dunn.tools.log.LogUtil;
-import com.dunn.tools.time.TimeUtil;
+import com.dunn.tools.time.bean.TimeAnalysis;
 import com.dunn.tools.time.bean.TimeTaskBean;
+
 import java.io.IOException;
 
-public class RealCall implements Call{
+public class RealCall implements Call {
     private final TimeTaskBean orignalBean;
     private final TimeClient client;
+
     public RealCall(TimeTaskBean bean, TimeClient client) {
         orignalBean = bean;
         this.client = client;
     }
 
     public static Call newCall(TimeTaskBean bean, TimeClient client) {
-        return new RealCall(bean,client);
+        return new RealCall(bean, client);
     }
 
     @Override
@@ -31,16 +34,16 @@ public class RealCall implements Call{
         LogUtil.i("time", "call clear");
         client.dispatcher.clearDelayCall();
         // 交给线程
-        if(orignalBean!=null){
-            LogUtil.i("time", "call enqueue add task delay="+delay+", timeStr="+ TimeUtil.long2string(orignalBean.getTime())+", orignalBean="+orignalBean);
-        }else{
-            LogUtil.e("time", "call enqueue add task delay="+delay+", orignalBean is null !!!!!!");
+        if (orignalBean != null) {
+            LogUtil.i("time", "call enqueue add task delay=" + delay + ", timeStr=" + TimeAnalysis.long2string(orignalBean.getTime()) + ", orignalBean=" + orignalBean);
+        } else {
+            LogUtil.e("time", "call enqueue add task delay=" + delay + ", orignalBean is null !!!!!!");
         }
 
-        if(orignalBean!=null){
+        if (orignalBean != null && delay >= -2000) {
             // 异步的
             AsyncCall asyncCall = new AsyncCall(callback);
-            client.dispatcher.enqueue(asyncCall,delay);
+            client.dispatcher.enqueue(asyncCall, delay);
         }
     }
 
@@ -51,6 +54,7 @@ public class RealCall implements Call{
 
     final class AsyncCall extends TimeRunnable {
         Callback callback;
+
         public AsyncCall(Callback callback) {
             this.callback = callback;
         }
@@ -58,14 +62,17 @@ public class RealCall implements Call{
         @Override
         protected void execute() {
             try {
-                if(orignalBean!=null){
-                    LogUtil.i("time", "call execute ---> timeStr="+ TimeUtil.long2string(orignalBean.getTime())+", orignalBean="+orignalBean);
-                }else{
+                if (orignalBean != null) {
+                    LogUtil.i("time", "call execute ---> timeStr=" + TimeAnalysis.long2string(orignalBean.getTime()) + ", orignalBean=" + orignalBean);
+                } else {
                     LogUtil.e("time", "call execute ---> orignalBean is null !!!!!!");
                 }
-                callback.onSuccess(RealCall.this,null);
+                if (orignalBean.getAbility() != null) {
+                    orignalBean.getAbility().realMessage(orignalBean.getCommand());
+                }
+                callback.onSuccess(RealCall.this, null);
             } catch (IOException e) {
-                callback.onFailure(RealCall.this,e);
+                callback.onFailure(RealCall.this, e);
             }
         }
     }

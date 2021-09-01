@@ -1,0 +1,76 @@
+[16:24:49]08-24 16:23:19.856   801   858 I PackageManager: Update package com.coocaa.remoteplatform code path from /data/app/com.coocaa.remoteplatform-kSir1vQdgh6hOlEooFseMA== to /data/app/com.coocaa.remoteplatform-yXrxWAoBU-NK2QksfHBMOg==; Retain data and using new
+[16:24:49]08-24 16:23:19.856   801   858 I PackageManager: Update package com.coocaa.remoteplatform resource path from /data/app/com.coocaa.remoteplatform-kSir1vQdgh6hOlEooFseMA== to /data/app/com.coocaa.remoteplatform-yXrxWAoBU-NK2QksfHBMOg==; Retain data and using new
+
+
+[16:24:49]08-24 16:23:20.185  3122  3122 D app     : androidPackageReceiver  action:android.intent.action.PACKAGE_REMOVED pkg:com.coocaa.remoteplatform
+[16:24:49]08-24 16:23:20.185  1364  1364 D SSE_PUSH: 应用状态变化：android.intent.action.PACKAGE_REMOVED
+[16:24:49]08-24 16:23:20.186  2424  2424 D app     : androidPackageReceiver  action:android.intent.action.PACKAGE_REMOVED pkg:com.coocaa.remoteplatform
+
+
+[16:24:50]08-24 16:23:20.224  2424  2424 D app     : androidPackageReceiver  action:android.intent.action.PACKAGE_ADDED pkg:com.coocaa.remoteplatform
+
+
+全天运行：
+on command receive: {"activeId":"540","clientId":"com.coocaa.remoteplatform.baseability","cmdType":1,"content":{"planType":2,"time":["00:00:00-23:59:59"]},"deviceId":"6574334c7527645511eed9b13d698f2c","msgId":"ed8807fe2ac04a33a19891b1267a2666","timestamp":1629863246688,"userId":"1"}
+
+星期定时运行:
+on command receive: {"activeId":"540","clientId":"com.coocaa.remoteplatform.baseability","cmdType":1,"content":{"planType":5,"week":[{"number":4,"time":"00:00:00-23:59:59"},{"number":5,"time":"00:00:00-23:59:59"},{"number":6,"time":"00:00:00-23:59:59"},{"number":7,"time":"00:00:00-23:59:59"}]},"deviceId":"6574334c7527645511eed9b13d698f2c","msgId":"c999b26ce58643a6a13a742f05198c8f","timestamp":1629863331242,"userId":"1"}
+
+每天定时运行：
+on command receive: {"activeId":"540","clientId":"com.coocaa.remoteplatform.baseability","cmdType":1,"content":{"planType":2,"time":["02:01:08-23:59:59"]},"deviceId":"6574334c7527645511eed9b13d698f2c","msgId":"11e25690943d4174a25098bcbe342584","timestamp":1629863385311,"userId":"1"}
+
+
+on command receive: 
+{"activeId":"540","clientId":"com.coocaa.remoteplatform.baseability","cmdType":1,
+"content":{"planType":5,"week":[{"number":3,"time":"00:00:00-23:59:59"},{"number":4,"time":"00:00:00-23:59:59"},{"number":5,"time":"00:00:00-23:59:59"},{"number":6,"time":"00:00:00-23:59:59"},{"number":7,"time":"00:00:00-23:59:59"}]},
+"deviceId":"6574334c7527645511eed9b13d698f2c",
+"msgId":"a5d4c8cde8cd4541a903050eff9aa52b",
+"timestamp":1629799256922,
+"userId":"1"
+}
+
+
+
+
+关机：
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":0,"content":{"planType":0},"timestamp":1629876990570}', msgId='2531152042538311687', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+重启：
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":2,"content":{"planType":0},"timestamp":1629877029394}', msgId='2531152084414234631', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+暂停：
+onReceive: PushCommand{msg='{"clientId":"com.fusionmedia.show","cmdType":0,"content":{"type":"MESSAGE_TYPE_PLAN_PLAY_PAUSE"},"timestamp":1629877097105}', msgId='2531152157428678663', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+音量：
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"volume":80,"planType":0},"timestamp":1629877126382}', msgId='2531152188567191559', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+
+
+定时关机-------------------------------------------
+取消控制
+{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":0,"content":{"planType":-1},"timestamp":1629878471098}
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":0,"content":{"planType":-1},"timestamp":1629878471098}', msgId='2531153632749944839', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+一次性，不循环 2021-08-26 17:30:40
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":0,"content":{"planType":1,"delay":"2021-08-26 17:30:40","time":["17:30:40"],"switch":0},"timestamp":1629878234099}', msgId='2531153378273133575', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+每天  17:30:40
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":0,"content":{"planType":2,"time":["17:30:40"],"switch":0},"timestamp":1629878335494}', msgId='2531153486721057799', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+每周 星期一 星期二 星期三 星期四 星期五 星期六 星期天   17:30:40
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":0,"content":{"planType":5,"week":[{"day":{"number":"1","time":["17:30:40"]}},{"day":{"number":"2","time":["17:30:40"]}},{"day":{"number":"3","time":["17:30:40"]}},{"day":{"number":"4","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"6","time":["17:30:40"]}},{"day":{"number":"7","time":["17:30:40"]}}],"time":["17:30:40"],"switch":0},"timestamp":1629878406457}', msgId='2531153562956727303', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+【重启】onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":2,"content":{"planType":5,"week":[{"day":{"number":"1","time":["17:30:40"]}},{"day":{"number":"2","time":["17:30:40"]}},{"day":{"number":"3","time":["17:30:40"]}},{"day":{"number":"4","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"6","time":["17:30:40"]}},{"day":{"number":"7","time":["17:30:40"]}}],"time":["17:30:40"],"switch":2},"timestamp":1629878679350}', msgId='2531153856088245255', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+每月 1 2 3 4 5  17:30:40
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":0,"content":{"planType":6,"month":[{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}}],"time":["17:30:40"],"switch":0},"timestamp":1629878471138}', msgId='2531153632749945863', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+【重启】onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":2,"content":{"planType":6,"month":[{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}}],"time":["17:30:40"],"switch":2},"timestamp":1629878607509}', msgId='2531153778778833927', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+【重启】onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":2,"content":{"planType":6,"month":[{"day":{"number":"1","time":["17:30:40"]}},{"day":{"number":"2","time":["17:30:40"]}},{"day":{"number":"3","time":["17:30:40"]}},{"day":{"number":"4","time":["17:30:40"]}},{"day":{"number":"5","time":["17:30:40"]}}],"time":["17:30:40"],"switch":2},"timestamp":1629960474918}', msgId='2531241682800739335', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+
+定时音量-------------------------------------------
+取消控制：
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"planType":-1},"timestamp":1629877345300}', msgId='2531152423716651015', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+一次性，不循环  2021-08-26 16:31:39
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"volume":50,"planType":1,"delay":"2021-08-26 16:31:39","time":["16:31:39"],"switch":3},"timestamp":1629878046909}', msgId='2531153176409670663', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+每天16:31:39
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"volume":50,"planType":2,"time":["16:31:39"],"switch":3},"timestamp":1629877261707}', msgId='2531152333522337799', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+每周 星期一 星期二 星期三   16:31:39
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"volume":50,"planType":5,"week":[{"day":{"number":"1","time":["16:31:39"]}},{"day":{"number":"2","time":["16:31:39"]}},{"day":{"number":"3","time":["16:31:39"]}}],"time":["16:31:39"],"switch":3},"timestamp":1629877690047}', msgId='2531152794157581319', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+每周 星期一 星期二 星期三 星期四 星期五 星期六 星期天   16:31:39
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"volume":50,"planType":5,"week":[{"day":{"number":"1","time":["16:31:39"]}},{"day":{"number":"2","time":["16:31:39"]}},{"day":{"number":"3","time":["16:31:39"]}},{"day":{"number":"4","time":["16:31:39"]}},{"day":{"number":"5","time":["16:31:39"]}},{"day":{"number":"6","time":["16:31:39"]}},{"day":{"number":"7","time":["16:31:39"]}}],"time":["16:31:39"],"switch":3},"timestamp":1629877757888}', msgId='2531152866098283527', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+每月 3 4 5  16:31:39
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"volume":50,"planType":6,"month":[{"day":{"number":"5","time":["16:31:39"]}},{"day":{"number":"5","time":["16:31:39"]}},{"day":{"number":"5","time":["16:31:39"]}}],"time":["16:31:39"],"switch":3},"timestamp":1629877569626}', msgId='2531152664234820615', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+每月 11 12 13 14 15   16:31:39
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"volume":50,"planType":6,"month":[{"day":{"number":"15","time":["16:31:39"]}},{"day":{"number":"15","time":["16:31:39"]}},{"day":{"number":"15","time":["16:31:39"]}},{"day":{"number":"15","time":["16:31:39"]}},{"day":{"number":"15","time":["16:31:39"]}}],"time":["16:31:39"],"switch":3},"timestamp":1629877933105}', msgId='2531153055076844551', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}
+onReceive: PushCommand{msg='{"clientId":"com.coocaa.remoteplatform.baseability","cmdType":3,"content":{"volume":50,"planType":6,"month":[{"day":{"number":"10","time":["16:31:39"]}},{"day":{"number":"11","time":["16:31:39"]}},{"day":{"number":"12","time":["16:31:39"]}},{"day":{"number":"13","time":["16:31:39"]}},{"day":{"number":"14","time":["16:31:39"]}},{"day":{"number":"15","time":["16:31:39"]}}],"time":["16:31:39"],"switch":3},"timestamp":1629960562665}', msgId='2531241777290019847', pushId='9db5257125bc42648466fc59133da25dvq5jOXoD'}

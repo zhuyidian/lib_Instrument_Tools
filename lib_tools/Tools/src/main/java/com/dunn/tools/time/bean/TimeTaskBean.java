@@ -1,9 +1,8 @@
 package com.dunn.tools.time.bean;
 
-import com.dunn.tools.time.temp.RemoteCommand;
+import com.dunn.tools.time.Ability.IAbility;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * @ClassName: TimeTaskBean
@@ -15,17 +14,20 @@ public class TimeTaskBean implements Serializable {
     private TimeBean bean;
     private RemoteCommand command;
     private long time;
+    private IAbility ability;
 
-    public TimeTaskBean(int cmdType, TimeBean bean, RemoteCommand command) {
+    public TimeTaskBean(int cmdType, TimeBean bean, RemoteCommand command, IAbility ability) {
         this.cmdType = cmdType;
         this.bean = bean;
         this.command = command;
+        this.ability = ability;
     }
 
-    public TimeTaskBean(int cmdType, TimeBean bean, RemoteCommand command, long time) {
+    public TimeTaskBean(int cmdType, TimeBean bean, RemoteCommand command, IAbility ability, long time) {
         this.cmdType = cmdType;
         this.bean = bean;
         this.command = command;
+        this.ability = ability;
         this.time = time;
     }
 
@@ -61,6 +63,14 @@ public class TimeTaskBean implements Serializable {
         this.time = time;
     }
 
+    public IAbility getAbility() {
+        return ability;
+    }
+
+    public void setAbility(IAbility ability) {
+        this.ability = ability;
+    }
+
     @Override
     public String toString() {
         return "TimeTaskBean{" +
@@ -68,6 +78,7 @@ public class TimeTaskBean implements Serializable {
                 ", bean=" + bean +
                 ", command=" + command +
                 ", time=" + time +
+                ", ability=" + ability +
                 '}';
     }
 }

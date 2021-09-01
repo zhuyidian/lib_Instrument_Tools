@@ -1,14 +1,5 @@
 package com.dunn.tools.time;
 
-import com.dunn.tools.log.LogUtil;
-import com.dunn.tools.time.bean.TimeBean;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class TimeTest {
     /**
      * 说明:
@@ -57,47 +48,16 @@ public class TimeTest {
             "  ]," +
             "  \"switch\": 0" +
             "}";
-    public static void delay_test(){
-        TimeBean content = new TimeBean();
-        content.setPlanType(1);
-        content.setDelay("2021-08-30 11:53:40");  //必须写
-        content.setSwitchX(0);
-        List<String> time = new ArrayList<>();
-        time.add("11:53:40");
-        content.setTime(time);
-        LogUtil.i("time", "----delay-content----=" + content.toString());
-
-        final Gson gsonBuilder = new GsonBuilder().create();
-        java.lang.reflect.Type type = new TypeToken<TimeBean>() {}.getType();
-        String json = gsonBuilder.toJson(content,type);
-        LogUtil.i("time", "----delay-content json----=" + json);
-    }
     //每天
     //public static String jsonDay1_shutDown = "{\"planType\":2,\"time\":[\"17:30:40\",\"18:30:40\"],\"switch\":0}";
     public static String jsonDay_shutDown = "{" +
             "  \"planType\": 2," +
             "  \"time\": [" +
-            "    \"12:07:40\"," +
+            "    \"17:42:40\"," +
             "    \"14:07:00\"" +
             "  ]," +
             "  \"switch\": 0" +
             "}";
-    public static void day_test(){
-        TimeBean content = new TimeBean();
-        content.setPlanType(2);
-        //content.setDelay("2021-08-30 11:53:40");  //必须写
-        content.setSwitchX(0);
-        List<String> time = new ArrayList<>();
-        time.add("12:07:40");
-        time.add("14:07:00");
-        content.setTime(time);
-        LogUtil.i("time", "----day-content----=" + content.toString());
-
-        final Gson gsonBuilder = new GsonBuilder().create();
-        java.lang.reflect.Type type = new TypeToken<TimeBean>() {}.getType();
-        String json = gsonBuilder.toJson(content,type);
-        LogUtil.i("time", "----day-content json----=" + json);
-    }
     //每周
     //public static String jsonWeek1_shutDown = "{\"planType\":5,\"week\":[{\"number\":\"1\",\"time\":[\"17:30:40\",\"18:30:40\"]},{\"number\":\"2\",\"time\":[\"17:30:40\",\"18:30:40\"]},{\"number\":\"3\",\"time\":[\"17:30:40\",\"18:30:40\"]},{\"number\":\"4\",\"time\":[\"17:30:40\",\"18:30:40\"]},{\"number\":\"5\",\"time\":[\"17:30:40\",\"18:30:40\"]},{\"number\":\"6\",\"time\":[\"17:30:40\",\"18:30:40\"]},{\"number\":\"7\",\"time\":[\"17:30:40\",\"18:30:40\"]}],\"time\":[\"17:30:40\",\"18:30:40\"],\"switch\":0}";
     public static String jsonWeek_shutDown = "{" +
@@ -160,36 +120,6 @@ public class TimeTest {
             "  ]," +
             "  \"switch\": 0" +
             "}";
-    public static void week_test(){
-        TimeBean content = new TimeBean();
-        content.setPlanType(5);
-        //content.setDelay("2021-08-30 11:53:40");  //必须写
-        content.setSwitchX(0);
-        List<String> time = new ArrayList<>();
-        time.add("12:07:40");
-        time.add("14:07:00");
-        content.setTime(time);
-        List<TimeBean.DayBean> weekList = new ArrayList<>();
-        TimeBean.DayBean weekBean = new TimeBean.DayBean();
-        weekBean.setNumber(1);
-        weekBean.setTimeX(time);
-        weekList.add(weekBean);
-        TimeBean.DayBean weekBean2 = new TimeBean.DayBean();
-        weekBean2.setNumber(2);
-        weekBean2.setTimeX(time);
-        weekList.add(weekBean2);
-        TimeBean.DayBean weekBean3 = new TimeBean.DayBean();
-        weekBean3.setNumber(3);
-        weekBean3.setTimeX(time);
-        weekList.add(weekBean3);
-        content.setWeek(weekList);
-        LogUtil.i("time", "----week-content----=" + content.toString());
-
-        final Gson gsonBuilder = new GsonBuilder().create();
-        java.lang.reflect.Type type = new TypeToken<TimeBean>() {}.getType();
-        String json = gsonBuilder.toJson(content,type);
-        LogUtil.i("time", "----week-content json----=" + json);
-    }
     //每月
     //public static String jsonMonth1_shutDown = "{\"planType\":6,\"month\":[{\"number\":\"1\",\"time\":[\"17:30:40\",\"18:30:40\"]},{\"number\":\"2\",\"time\":[\"17:30:40\",\"18:30:40\"]},{\"number\":\"3\",\"time\":[\"17:30:40\",\"18:30:40\"]},{\"number\":\"4\",\"time\":[\"17:30:40\",\"18:30:40\"]},{\"number\":\"5\",\"time\":[\"17:30:40\",\"18:30:40\"]}],\"time\":[\"17:30:40\",\"18:30:40\"],\"switch\":0}";
     public static String jsonMonth_shutDown = "{" +
@@ -251,36 +181,6 @@ public class TimeTest {
             "  ]," +
             "  \"switch\": 0" +
             "}";
-    public static void month_test(){
-        TimeBean content = new TimeBean();
-        content.setPlanType(5);
-        //content.setDelay("2021-08-30 11:53:40");  //必须写
-        content.setSwitchX(0);
-        List<String> time = new ArrayList<>();
-        time.add("12:07:40");
-        time.add("14:07:00");
-        content.setTime(time);
-        List<TimeBean.DayBean> monthList = new ArrayList<>();
-        TimeBean.DayBean weekBean = new TimeBean.DayBean();
-        weekBean.setNumber(1);
-        weekBean.setTimeX(time);
-        monthList.add(weekBean);
-        TimeBean.DayBean weekBean2 = new TimeBean.DayBean();
-        weekBean2.setNumber(2);
-        weekBean2.setTimeX(time);
-        monthList.add(weekBean2);
-        TimeBean.DayBean weekBean3 = new TimeBean.DayBean();
-        weekBean3.setNumber(3);
-        weekBean3.setTimeX(time);
-        monthList.add(weekBean3);
-        content.setMonth(monthList);
-        LogUtil.i("time", "----week-content----=" + content.toString());
-
-        final Gson gsonBuilder = new GsonBuilder().create();
-        java.lang.reflect.Type type = new TypeToken<TimeBean>() {}.getType();
-        String json = gsonBuilder.toJson(content,type);
-        LogUtil.i("time", "----week-content json----=" + json);
-    }
 
     /**
      * 定时重启
@@ -301,7 +201,7 @@ public class TimeTest {
             "  \"planType\": 2," +
             "  \"time\": [" +
             "    \"14:08:40\"," +
-            "    \"18:30:40\"" +
+            "    \"17:47:40\"" +
             "  ]," +
             "  \"switch\": 2" +
             "}";
@@ -422,7 +322,7 @@ public class TimeTest {
             "  \"planType\": 2," +
             "  \"time\": [" +
             "    \"14:30:39\"," +
-            "    \"22:33:39\"" +
+            "    \"17:49:39\"" +
             "  ]," +
             "  \"switch\": 3" +
             "}";

@@ -1,21 +1,24 @@
 package com.dunn.tools.time;
 
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.util.Log;
 
 import com.dunn.tools.log.LogUtil;
+import com.dunn.tools.time.Ability.IAbility;
+import com.dunn.tools.time.bean.RemoteCommand;
+import com.dunn.tools.time.bean.TimeAnalysis;
 import com.dunn.tools.time.bean.TimeBean;
 import com.dunn.tools.time.bean.TimeTaskBean;
 import com.dunn.tools.time.constant.TimeConstant;
+import com.dunn.tools.time.filter.ITimeTaskFilter;
+import com.dunn.tools.time.filter.checkCmdTypeFilter;
+import com.dunn.tools.time.filter.checkPlanTypeFilter;
 import com.dunn.tools.time.task.Call;
 import com.dunn.tools.time.task.Callback;
 import com.dunn.tools.time.task.TimeClient;
-import com.dunn.tools.time.task.TimeMessageQueue;
 import com.dunn.tools.time.task.TimeTaskQueue;
-import com.dunn.tools.time.temp.RemoteCommand;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Author:zhuyidian
@@ -23,26 +26,11 @@ import java.io.IOException;
  * Description:TimeManager
  */
 public class TimeManager {
-    private static final String TAG = "TimeManager";
-    private enum CMD_TYPE {
-        shutdown(0),
-        reboot(2),
-        volume(3);
-
-        private final int cmdType;
-
-        CMD_TYPE(int value) {
-            this.cmdType = value;
-        }
-
-        public int getValue() {
-            return cmdType;
-        }
-    }
     private TimeTaskQueue timeTaskQueue;
     private TimeClient client;
+    private final List<ITimeTaskFilter> mTimeTaskFilters = new ArrayList<>();
 
-    private TimeManager(){
+    private TimeManager() {
         checkTimeParams();
     }
 
@@ -55,44 +43,45 @@ public class TimeManager {
     }
 
     /**
-     * 预处理一条命令
+     * 预处理一条定时命令
+     *
      * @param command
-     * @return true:即使实时命令  false:定时/取消命令
+     * @return false:即使实时命令  true:定时/取消命令
      */
-    public boolean onMessage(RemoteCommand command){
-        return onMessage(command.cmdType,command.content,command);
+    public boolean onMessage(RemoteCommand command, IAbility ability) {
+        LogUtil.i("time", "on message command=" + command + ", ability=" + ability);
+        if (command == null || ability == null) return false;
+
+        if (filterTimeTask(command)) return false;
+
+        return onMessage(command.cmdType, command.content, command, ability);
     }
 
     /**
      * 预处理一条命令
+     *
      * @param cmdType: 命令类型
      * @param content
-     * @return true:即使实时命令  false:定时/取消命令
+     * @return false:即使实时命令  true:定时/取消命令
      */
-    public boolean onMessage(int cmdType, String content, RemoteCommand command){
+    public boolean onMessage(int cmdType, String content, RemoteCommand command, IAbility ability) {
         TimeBean bean = TimeAnalysis.parseContent(content);
-
-        if(bean==null) return true;
-
-        //判断即时指令
-        if(bean.getPlanType() == TimeConstant.CMD_REAL){
-            return true;
-        }
+        if (bean == null) return false;
 
         //定时命令
         checkTimeParams();
-        if(bean.getPlanType() == TimeConstant.CMD_CANCEL){
+        if (bean.getPlanType() == TimeConstant.CMD_CANCEL) {
             timeTaskQueue.removeTimeTask(cmdType);
-        }else{
-            timeTaskQueue.addTimeTask(cmdType,bean,command);
+        } else {
+            timeTaskQueue.addTimeTask(cmdType, bean, command, ability);
         }
 
         enqueue();
 
-        return false;
+        return true;
     }
 
-    private boolean enqueue(){
+    private boolean enqueue() {
         try {
             final TimeTaskBean timeTaskBean = timeTaskQueue.getNearestTimeTask();
             long delayMs = 0l;
@@ -119,21 +108,43 @@ public class TimeManager {
                     }
                 }
             }, delayMs);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-            LogUtil.i("time", "callback <--- e="+e);
+            LogUtil.i("time", "callback <--- e=" + e);
         }
         return false;
     }
 
-    private void checkTimeParams(){
-        if(timeTaskQueue==null){
+    private void checkTimeParams() {
+        if (timeTaskQueue == null) {
             timeTaskQueue = new TimeTaskQueue();
         }
 
-        if(client==null){
+        if (client == null) {
             client = new TimeClient.Builder()
                     .build();
         }
+
+        if (mTimeTaskFilters != null && mTimeTaskFilters.isEmpty()) {
+            mTimeTaskFilters.add(new checkPlanTypeFilter());
+            mTimeTaskFilters.add(new checkCmdTypeFilter());
+        }
+    }
+
+    /**
+     * @param command
+     * @return true:过滤  false:不过滤
+     */
+    private boolean filterTimeTask(RemoteCommand command) {
+        if (mTimeTaskFilters == null) return false;
+
+        for (ITimeTaskFilter filter : mTimeTaskFilters) {
+            if (filter.filter(command)) {
+                LogUtil.i("time", "message handle by filter: " + filter.filterName());
+                return true;
+            }
+        }
+
+        return false;
     }
 }

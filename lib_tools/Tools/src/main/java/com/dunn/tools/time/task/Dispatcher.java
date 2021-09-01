@@ -14,9 +14,12 @@ import java.util.concurrent.TimeUnit;
 
 
 public class Dispatcher {
-    private @Nullable ExecutorService executorService;
-    private @Nullable HandlerThread handlerThread;
-    private @Nullable Handler delayHandler;
+    private @Nullable
+    ExecutorService executorService;
+    private @Nullable
+    HandlerThread handlerThread;
+    private @Nullable
+    Handler delayHandler;
 
     public synchronized ExecutorService executor() {
         if (executorService == null) {
@@ -24,7 +27,7 @@ public class Dispatcher {
                     new SynchronousQueue<Runnable>(), new ThreadFactory() {
                 @Override
                 public Thread newThread(@NonNull Runnable r) {
-                    Thread thread = new Thread(r,"TimeTask-io");
+                    Thread thread = new Thread(r, "TimeTask-io");
                     thread.setDaemon(false);
                     return thread;
                 }
@@ -35,7 +38,7 @@ public class Dispatcher {
     }
 
     public synchronized Handler executorDelay() {
-        if(delayHandler == null){
+        if (delayHandler == null) {
             handlerThread = new HandlerThread("TimeTask-handler");
             handlerThread.start();
             delayHandler = new Handler(handlerThread.getLooper());
@@ -52,7 +55,7 @@ public class Dispatcher {
         executorDelay().postDelayed(call, delay);
     }
 
-    public void clearDelayCall(){
+    public void clearDelayCall() {
         //executorDelay().removeCallbacks(null);
         executorDelay().removeCallbacksAndMessages(null);
     }

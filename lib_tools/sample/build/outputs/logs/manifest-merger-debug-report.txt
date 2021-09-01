@@ -179,11 +179,11 @@ ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermedia
 		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-33
 	android:name
 		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-46
-receiver#com.dunn.tools.time.temp.AlarmReceiver
+receiver#com.dunn.tools.time.AlarmReceiver
 ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-21:39
 	android:enabled
 		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-35
 	android:exported
 		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-36
 	android:name
-		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-66
+		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-61

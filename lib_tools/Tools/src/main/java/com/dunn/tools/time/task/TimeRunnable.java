@@ -1,7 +1,7 @@
 package com.dunn.tools.time.task;
 
 
-public abstract class TimeRunnable implements Runnable{
+public abstract class TimeRunnable implements Runnable {
     @Override
     public void run() {
         execute();
