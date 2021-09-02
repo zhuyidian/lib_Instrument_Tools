@@ -17,6 +17,6 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int ui_defualt_navigation_bar = 0x7f090028;
+        public static final int ui_defualt_navigation_bar = 0x7f090029;
     }
 }
