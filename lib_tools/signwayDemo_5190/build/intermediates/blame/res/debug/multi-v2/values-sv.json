@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-sv\\values-sv.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-sv/values-sv.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

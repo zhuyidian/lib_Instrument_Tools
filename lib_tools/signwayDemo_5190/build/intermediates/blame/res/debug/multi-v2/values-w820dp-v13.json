@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "source": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/src/main/res/values-w820dp/dimens.xml",
                     "from": {
                         "startLines": "7",
                         "startColumns": "4",
-                        "startOffsets": "310",
+                        "startOffsets": "305",
                         "endColumns": "57",
-                        "endOffsets": "363"
+                        "endOffsets": "358"
                     },
                     "to": {
                         "startLines": "2",
