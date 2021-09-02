@@ -1,3 +1,0 @@
-com.dunn.tools
-id back_tv
-layout ui_defualt_navigation_bar
