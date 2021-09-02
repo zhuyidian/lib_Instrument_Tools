@@ -46,6 +46,18 @@ public class TimeActivity extends AppCompatActivity implements View.OnClickListe
         TimeUtil.getHourBPamams(this, cal.getTimeInMillis(), 3, "test");
 
         //TimeUtil.setRtc(TimeActivity.this);
+
+        //test
+        convertVolume(60,100);
+    }
+
+    private int convertVolume(int targetVolume, int maxValue) {
+        LogUtil.i("time", "########### targetVolume=" + targetVolume+", maxValue="+maxValue);
+        int target = (int) ((float)targetVolume / 100 * maxValue);
+        LogUtil.i("time", "########### target=" + target);
+        if (target > maxValue) target = maxValue;
+        if (target < 0) target = 0;
+        return target;
     }
 
     int cmdType = 0;
