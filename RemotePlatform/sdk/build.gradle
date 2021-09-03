@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.library'
+}
+ext {
+    major = 1
+    minor = 0
+}
+def ver_build = getCommitNum()
+
+android {
+    compileSdkVersion rootProject.ext.compile_sdk_version
+    buildToolsVersion rootProject.ext.build_tools_version
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.min_sdk_version
+        targetSdkVersion rootProject.ext.target_sdk_version
+        versionCode getSelfDefinedVersion()
+        versionName major.toString() + "." + minor.toString() + "." + ver_build
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        android.libraryVariants.all {
+            variant ->
+                variant.outputs.all {
+                    outputFileName = applicationId + '-' + major + '.' + minor + '.' + ver_build + '.aar'
+                }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+def getCommitNum() {
+    Process process = "git rev-list --count HEAD".execute()
+    process.waitFor()
+    return process.getText().toInteger()
+}
+
+def getSelfDefinedVersion() {
+    int commit_num = getCommitNum()
+    return (Integer.valueOf(major) * 100 + Integer.valueOf(minor)) * 1000000 + commit_num
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
