@@ -1,53 +1,326 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-v21_values-v21.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ml_values-ml.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-v21\\values-v21.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ml/values-ml.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,13",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,159,223,290,354,470,596,722,850,1022",
-                        "endLines": "2,3,4,5,6,7,8,9,12,17",
-                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-it_values-it.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-it/values-it.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-w820dp-v13_values-w820dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/src/main/res/values-w820dp/dimens.xml",
+                    "from": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "305",
+                        "endColumns": "57",
+                        "endOffsets": "358"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,14,18,22,25",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,159,223,290,354,470,927,1221,1516,1688",
-                        "endLines": "2,3,4,5,6,7,14,18,24,29",
-                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "154,218,285,349,465,591,1048,1344,1683,2021"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "57",
+                        "endOffsets": "108"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat",
+            "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\2f0458243022d0fac0cb80fc7bd2e7df\\res\\values-v21\\values-v21.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
-                        "startLines": "2,5,8,11",
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-be_values-be.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-be/values-be.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-da_values-da.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-da/values-da.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-pt-rPT/values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ky_values-ky.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ky/values-ky.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-si_values-si.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-si/values-si.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-v24_values-v24.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/503cb92ba71af9c62eeef40ff7b694d1/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-sr_values-sr.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-sr/values-sr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-bn_values-bn.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-bn/values-bn.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-sk_values-sk.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-sk/values-sk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ar/values-ar.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-mn_values-mn.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-mn/values-mn.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-zh-rTW/values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-en-rGB_values-en-rGB.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-en-rGB/values-en-rGB.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-es-rUS_values-es-rUS.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-es-rUS/values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-te_values-te.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-te/values-te.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/src/main/res/values-v11/styles.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "177",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "309"
                     },
                     "to": {
-                        "startLines": "8,11,15,19",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "596,764,1053,1349",
-                        "endLines": "10,13,17,21",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "759,922,1216,1511"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "187"
                     }
                 }
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-kn_values-kn.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-fr-rCA_values-fr-rCA.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-kn\\values-kn.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-fr-rCA/values-fr-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -59,10 +332,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-en-rIN_values-en-rIN.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-my_values-my.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-my/values-my.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -74,10 +347,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-bn_values-bn.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-nl_values-nl.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-bn\\values-bn.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-nl/values-nl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -89,10 +362,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ca_values-ca.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ur_values-ur.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ca\\values-ca.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ur/values-ur.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -104,10 +377,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-si_values-si.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ms_values-ms.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-si\\values-si.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ms/values-ms.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -119,10 +392,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ky_values-ky.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ky\\values-ky.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-zh-rHK/values-zh-rHK.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -134,10 +407,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-hi_values-hi.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-es_values-es.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-hi\\values-hi.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-es/values-es.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -149,10 +422,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-sr_values-sr.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-tr_values-tr.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-sr\\values-sr.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-tr/values-tr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -164,10 +437,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-te_values-te.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-kn_values-kn.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-te\\values-te.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-kn/values-kn.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -179,10 +452,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-da_values-da.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-da\\values-da.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-pt-rBR/values-pt-rBR.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -194,25 +467,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-en-rXC_values-en-rXC.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-en-rCA_values-en-rCA.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-en-rXC\\values-en-rXC.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "202",
-                        "endOffsets": "253"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-cs_values-cs.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-cs\\values-cs.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -224,10 +482,25 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-it_values-it.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-v16_values-v16.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-it\\values-it.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-zh-rCN/values-zh-rCN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -239,10 +512,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-sk_values-sk.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-sk\\values-sk.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ka/values-ka.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -254,10 +527,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-zh-rHK_values-zh-rHK.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-fa_values-fa.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-fa/values-fa.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -269,10 +542,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-bg_values-bg.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-bg\\values-bg.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-cs/values-cs.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -284,10 +557,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-bs_values-bs.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ro_values-ro.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-bs\\values-bs.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ro/values-ro.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -299,10 +572,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-my_values-my.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-my\\values-my.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -314,10 +587,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-es-rUS_values-es-rUS.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-el_values-el.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-el/values-el.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -329,10 +602,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ja_values-ja.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-hr_values-hr.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ja\\values-ja.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-hr/values-hr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -344,10 +617,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-fi_values-fi.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-sq_values-sq.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-fi\\values-fi.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-sq/values-sq.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -359,10 +632,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ka_values-ka.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ka\\values-ka.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ja/values-ja.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -374,10 +647,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-eu_values-eu.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-as_values-as.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-eu\\values-eu.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-as/values-as.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -389,10 +662,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-sl_values-sl.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-sl\\values-sl.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-zu/values-zu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -404,10 +677,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-lo_values-lo.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-hy_values-hy.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-lo\\values-lo.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-hy/values-hy.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -419,10 +692,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-el_values-el.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-en-rIN_values-en-rIN.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-el\\values-el.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -434,10 +707,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-es_values-es.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-es\\values-es.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-pl/values-pl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -449,10 +722,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-en-rCA_values-en-rCA.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-de_values-de.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-de/values-de.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -464,10 +737,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-or_values-or.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-nb_values-nb.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-or\\values-or.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-nb/values-nb.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -479,10 +752,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-mr_values-mr.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-az_values-az.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-mr\\values-mr.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-az/values-az.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -494,10 +767,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-zh-rCN_values-zh-rCN.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-bg_values-bg.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -509,98 +782,17 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ar_values-ar.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ar\\values-ar.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-lt_values-lt.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-lt\\values-lt.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ru_values-ru.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ru\\values-ru.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
-            "map": [
-                {
-                    "source": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "58,5,14,9,10,8,3,13,11,37,42,38,39,41,50,48,47,35,51,43,36,4,7,30,12,32,22,19,21,20,6,54,26,25,15,17,29,52,53,55,40,46,45,49,34,18,44,24,23,16,57,28,31,33,27,56",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3059,158,638,349,404,298,56,583,463,1829,2112,1892,1946,2051,2600,2470,2409,1715,2660,2169,1768,105,253,1423,525,1541,1047,911,999,956,211,2854,1241,1195,697,803,1372,2722,2780,2910,1995,2346,2285,2533,1662,855,2227,1144,1097,750,3021,1325,1480,1605,1280,2968",
-                        "endLines": "79,5,14,9,10,8,3,13,11,37,42,38,39,41,50,48,47,35,51,43,36,4,7,30,12,32,22,19,21,20,6,54,26,25,15,17,29,52,53,55,40,46,45,49,34,18,44,24,23,16,57,28,31,33,27,56",
-                        "endColumns": "19,52,58,54,58,50,48,54,61,58,56,53,48,60,59,62,60,52,61,57,60,52,44,56,57,63,49,44,47,42,41,55,38,45,52,51,50,57,73,57,55,62,60,66,52,55,57,50,46,52,37,46,60,56,44,52",
-                        "endOffsets": "3764,206,692,399,458,344,100,633,520,1883,2164,1941,1990,2107,2655,2528,2465,1763,2717,2222,1824,153,293,1475,578,1600,1092,951,1042,994,248,2905,1275,1236,745,850,1418,2775,2849,2963,2046,2404,2341,2595,1710,906,2280,1190,1139,798,3054,1367,1536,1657,1320,3016"
-                    },
-                    "to": {
-                        "startLines": "2,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,138,139,140,141,142,143,144",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,4531,4584,4643,4698,4757,4808,4857,4912,4974,5033,5090,5144,5193,5254,5314,5377,5438,5491,5553,5611,5672,5725,5770,5827,5885,5949,5999,6044,6092,6135,6177,6233,6272,6318,6371,6423,6474,6532,6606,6664,6720,6783,6844,6911,6964,7020,7078,7129,7247,7300,7338,7385,7446,7503,7548",
-                        "endLines": "23,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,138,139,140,141,142,143,144",
-                        "endColumns": "19,52,58,54,58,50,48,54,61,58,56,53,48,60,59,62,60,52,61,57,60,52,44,56,57,63,49,44,47,42,41,55,38,45,52,51,50,57,73,57,55,62,60,66,52,55,57,50,46,52,37,46,60,56,44,52",
-                        "endOffsets": "760,4579,4638,4693,4752,4803,4852,4907,4969,5028,5085,5139,5188,5249,5309,5372,5433,5486,5548,5606,5667,5720,5765,5822,5880,5944,5994,6039,6087,6130,6172,6228,6267,6313,6366,6418,6469,6527,6601,6659,6715,6778,6839,6906,6959,7015,7073,7124,7171,7295,7333,7380,7441,7498,7543,7596"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\2f0458243022d0fac0cb80fc7bd2e7df\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,144,215,288,341,394,447,500,560,626,748,809,875",
-                        "endColumns": "88,70,72,52,52,52,52,59,65,121,60,65,66",
-                        "endOffsets": "139,210,283,336,389,442,495,555,621,743,804,870,937"
-                    },
-                    "to": {
-                        "startLines": "30,31,33,72,73,74,75,87,160,162,163,168,170",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1102,1191,1320,3651,3704,3757,3810,4401,8370,8546,8668,8930,9125",
-                        "endColumns": "88,70,72,52,52,52,52,59,65,121,60,65,66",
-                        "endOffsets": "1186,1257,1388,3699,3752,3805,3858,4456,8431,8663,8724,8991,9187"
-                    }
-                },
-                {
-                    "source": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\src\\main\\res\\values\\styles.xml",
+                    "source": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "6,15",
                         "startColumns": "4,4",
-                        "startOffsets": "191,522",
+                        "startOffsets": "186,510",
                         "endLines": "12,17",
                         "endColumns": "12,12",
-                        "endOffsets": "481,679"
+                        "endOffsets": "472,665"
                     },
                     "to": {
                         "startLines": "145,152",
@@ -612,43 +804,7 @@
                     }
                 },
                 {
-                    "source": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "153,55,102",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "194,97,148"
-                    },
-                    "to": {
-                        "startLines": "25,26,27",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "826,872,919",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "867,914,965"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,171,172,176,177,178,6,13,56,88,125",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,187,245,7725,7795,7863,7935,8005,8066,8140,8213,8274,8335,8397,8461,8523,8584,8652,8752,8812,8878,8951,9020,9077,9129,9191,9263,9339,9374,9409,9459,9520,9577,9611,9646,9681,9751,9822,9939,10140,10250,10451,10580,10652,319,617,3523,5588,7348",
-                        "endLines": "2,3,4,5,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,170,171,175,176,177,178,12,55,87,124,131",
-                        "endColumns": "68,62,57,73,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,49,60,56,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24",
-                        "endOffsets": "119,182,240,314,7790,7858,7930,8000,8061,8135,8208,8269,8330,8392,8456,8518,8579,8647,8747,8807,8873,8946,9015,9072,9124,9186,9258,9334,9369,9404,9454,9515,9572,9606,9641,9676,9746,9817,9934,10135,10245,10446,10575,10647,10714,612,3518,5583,7343,7720"
-                    },
-                    "to": {
-                        "startLines": "28,29,32,34,38,39,40,41,42,43,44,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,77,78,79,80,81,82,83,84,85,86,88,137,155,156,161,164,169,171,172,176,282,325,357,394",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "970,1039,1262,1393,1629,1699,1767,1839,1909,1970,2044,2444,2505,2566,2628,2692,2754,2815,2883,2983,3043,3109,3182,3251,3308,3360,3911,3983,4059,4094,4129,4179,4240,4297,4331,4366,4461,7176,8052,8169,8436,8729,8996,9192,9264,9476,15593,18499,20564,22324",
-                        "endLines": "28,29,32,34,38,39,40,41,42,43,44,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,77,78,79,80,81,82,83,84,85,86,88,137,155,159,161,167,169,171,172,182,324,356,393,400",
-                        "endColumns": "68,62,57,73,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,49,60,56,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24",
-                        "endOffsets": "1034,1097,1315,1462,1694,1762,1834,1904,1965,2039,2112,2500,2561,2623,2687,2749,2810,2878,2978,3038,3104,3177,3246,3303,3355,3417,3978,4054,4089,4124,4174,4235,4292,4326,4361,4396,4526,7242,8164,8365,8541,8925,9120,9259,9326,9769,18494,20559,22319,22696"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\28706b569c558db23be99458407bc66c\\res\\values\\values.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/47cd4de445f181695345626d017680b8/res/values/values.xml",
                     "from": {
                         "startLines": "2,102,3,13",
                         "startColumns": "4,4,4,4",
@@ -667,13 +823,13 @@
                     }
                 },
                 {
-                    "source": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\src\\main\\res\\values\\dimens.xml",
+                    "source": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/src/main/res/values/dimens.xml",
                     "from": {
                         "startLines": "3,4,9,7,12,11,6,5,8,10,14,15,18,17,13,16",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "92,151,394,301,537,489,254,208,346,443,639,683,825,776,591,727",
+                        "startOffsets": "89,147,385,294,525,478,248,203,338,433,625,668,807,759,578,711",
                         "endColumns": "57,55,47,43,52,46,45,44,46,44,42,42,47,47,46,47",
-                        "endOffsets": "145,202,437,340,585,531,295,248,388,483,677,721,868,819,633,770"
+                        "endOffsets": "142,198,428,333,573,520,289,243,380,473,663,706,850,802,620,754"
                     },
                     "to": {
                         "startLines": "35,36,37,45,46,47,48,49,50,51,67,68,69,70,71,76",
@@ -682,14 +838,86 @@
                         "endColumns": "57,55,47,43,52,46,45,44,46,44,42,42,47,47,46,47",
                         "endOffsets": "1520,1576,1624,2156,2209,2256,2302,2347,2394,2439,3460,3503,3551,3599,3646,3906"
                     }
+                },
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/503cb92ba71af9c62eeef40ff7b694d1/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,144,215,288,341,394,447,500,560,626,748,809,875",
+                        "endColumns": "88,70,72,52,52,52,52,59,65,121,60,65,66",
+                        "endOffsets": "139,210,283,336,389,442,495,555,621,743,804,870,937"
+                    },
+                    "to": {
+                        "startLines": "30,31,33,72,73,74,75,87,160,162,163,168,170",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1102,1191,1320,3651,3704,3757,3810,4401,8370,8546,8668,8930,9125",
+                        "endColumns": "88,70,72,52,52,52,52,59,65,121,60,65,66",
+                        "endOffsets": "1186,1257,1388,3699,3752,3805,3858,4456,8431,8663,8724,8991,9187"
+                    }
+                },
+                {
+                    "source": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "153,55,102",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "194,97,148"
+                    },
+                    "to": {
+                        "startLines": "25,26,27",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "826,872,919",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "867,914,965"
+                    }
+                },
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,171,172,176,177,178,6,13,56,88,125",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,187,245,7725,7795,7863,7935,8005,8066,8140,8213,8274,8335,8397,8461,8523,8584,8652,8752,8812,8878,8951,9020,9077,9129,9191,9263,9339,9374,9409,9459,9520,9577,9611,9646,9681,9751,9822,9939,10140,10250,10451,10580,10652,319,617,3523,5588,7348",
+                        "endLines": "2,3,4,5,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,170,171,175,176,177,178,12,55,87,124,131",
+                        "endColumns": "68,62,57,73,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,49,60,56,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24",
+                        "endOffsets": "119,182,240,314,7790,7858,7930,8000,8061,8135,8208,8269,8330,8392,8456,8518,8579,8647,8747,8807,8873,8946,9015,9072,9124,9186,9258,9334,9369,9404,9454,9515,9572,9606,9641,9676,9746,9817,9934,10135,10245,10446,10575,10647,10714,612,3518,5583,7343,7720"
+                    },
+                    "to": {
+                        "startLines": "28,29,32,34,38,39,40,41,42,43,44,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,77,78,79,80,81,82,83,84,85,86,88,137,155,156,161,164,169,171,172,176,282,325,357,394",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "970,1039,1262,1393,1629,1699,1767,1839,1909,1970,2044,2444,2505,2566,2628,2692,2754,2815,2883,2983,3043,3109,3182,3251,3308,3360,3911,3983,4059,4094,4129,4179,4240,4297,4331,4366,4461,7176,8052,8169,8436,8729,8996,9192,9264,9476,15593,18499,20564,22324",
+                        "endLines": "28,29,32,34,38,39,40,41,42,43,44,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,77,78,79,80,81,82,83,84,85,86,88,137,155,159,161,167,169,171,172,182,324,356,393,400",
+                        "endColumns": "68,62,57,73,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,49,60,56,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24",
+                        "endOffsets": "1034,1097,1315,1462,1694,1762,1834,1904,1965,2039,2112,2500,2561,2623,2687,2749,2810,2878,2978,3038,3104,3177,3246,3303,3355,3417,3978,4054,4089,4124,4174,4235,4292,4326,4361,4396,4526,7242,8164,8365,8541,8925,9120,9259,9326,9769,18494,20559,22319,22696"
+                    }
+                },
+                {
+                    "source": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "58,5,14,9,10,8,3,13,11,37,42,38,39,41,50,48,47,35,51,43,36,4,7,30,12,32,22,19,21,20,6,54,26,25,15,17,29,52,53,55,40,46,45,49,34,18,44,24,23,16,57,28,31,33,27,56",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3059,158,638,349,404,298,56,583,463,1829,2112,1892,1946,2051,2600,2470,2409,1715,2660,2169,1768,105,253,1423,525,1541,1047,911,999,956,211,2854,1241,1195,697,803,1372,2722,2780,2910,1995,2346,2285,2533,1662,855,2227,1144,1097,750,3021,1325,1480,1605,1280,2968",
+                        "endLines": "79,5,14,9,10,8,3,13,11,37,42,38,39,41,50,48,47,35,51,43,36,4,7,30,12,32,22,19,21,20,6,54,26,25,15,17,29,52,53,55,40,46,45,49,34,18,44,24,23,16,57,28,31,33,27,56",
+                        "endColumns": "19,52,58,54,58,50,48,54,61,58,56,53,48,60,59,62,60,52,61,57,60,52,44,56,57,63,49,44,47,42,41,55,38,45,52,51,50,57,73,57,55,62,60,66,52,55,57,50,46,52,37,46,60,56,44,52",
+                        "endOffsets": "3764,206,692,399,458,344,100,633,520,1883,2164,1941,1990,2107,2655,2528,2465,1763,2717,2222,1824,153,293,1475,578,1600,1092,951,1042,994,248,2905,1275,1236,745,850,1418,2775,2849,2963,2046,2404,2341,2595,1710,906,2280,1190,1139,798,3054,1367,1536,1657,1320,3016"
+                    },
+                    "to": {
+                        "startLines": "2,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,138,139,140,141,142,143,144",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,4531,4584,4643,4698,4757,4808,4857,4912,4974,5033,5090,5144,5193,5254,5314,5377,5438,5491,5553,5611,5672,5725,5770,5827,5885,5949,5999,6044,6092,6135,6177,6233,6272,6318,6371,6423,6474,6532,6606,6664,6720,6783,6844,6911,6964,7020,7078,7129,7247,7300,7338,7385,7446,7503,7548",
+                        "endLines": "23,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,138,139,140,141,142,143,144",
+                        "endColumns": "19,52,58,54,58,50,48,54,61,58,56,53,48,60,59,62,60,52,61,57,60,52,44,56,57,63,49,44,47,42,41,55,38,45,52,51,50,57,73,57,55,62,60,66,52,55,57,50,46,52,37,46,60,56,44,52",
+                        "endOffsets": "760,4579,4638,4693,4752,4803,4852,4907,4969,5028,5085,5139,5188,5249,5309,5372,5433,5486,5548,5606,5667,5720,5765,5822,5880,5944,5994,6039,6087,6130,6172,6228,6267,6313,6366,6418,6469,6527,6601,6659,6715,6778,6839,6906,6959,7015,7073,7124,7171,7295,7333,7380,7441,7498,7543,7596"
+                    }
                 }
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-tl_values-tl.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-bs_values-bs.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-tl\\values-tl.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-bs/values-bs.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -701,10 +929,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-gl_values-gl.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-kk_values-kk.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-gl\\values-gl.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-kk/values-kk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -716,10 +944,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-lv_values-lv.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-sv_values-sv.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-lv\\values-lv.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-sv/values-sv.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -731,10 +959,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-fr-rCA_values-fr-rCA.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ru/values-ru.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -746,10 +974,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-af_values-af.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-th_values-th.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-af\\values-af.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-th/values-th.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -761,10 +989,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-sq_values-sq.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-af_values-af.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-sq\\values-sq.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-af/values-af.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -776,10 +1004,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ko_values-ko.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-hu_values-hu.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ko\\values-ko.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-hu/values-hu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -791,10 +1019,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-km_values-km.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ko_values-ko.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-km\\values-km.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ko/values-ko.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -806,10 +1034,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-hu_values-hu.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-mk_values-mk.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-hu\\values-hu.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-mk/values-mk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -821,10 +1049,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-zu_values-zu.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-lo_values-lo.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-zu\\values-zu.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-lo/values-lo.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -836,10 +1064,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-mk_values-mk.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-b+sr+Latn_values-b+sr+Latn.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-mk\\values-mk.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-b+sr+Latn/values-b+sr+Latn.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -851,10 +1079,25 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-en-rGB_values-en-rGB.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-en-rXC_values-en-rXC.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "202",
+                        "endOffsets": "253"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-or_values-or.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-or/values-or.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -866,10 +1109,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-vi_values-vi.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-sl_values-sl.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-vi\\values-vi.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-sl/values-sl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -881,10 +1124,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-th_values-th.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-gl_values-gl.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-th\\values-th.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-gl/values-gl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -896,10 +1139,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-en-rAU_values-en-rAU.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-km_values-km.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-km/values-km.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -911,10 +1154,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-am_values-am.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ta_values-ta.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-am\\values-am.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ta/values-ta.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -926,10 +1169,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-uz_values-uz.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-et_values-et.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-uz\\values-uz.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-et/values-et.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -941,25 +1184,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-v16_values-v16.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-mr_values-mr.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-pl_values-pl.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-pl\\values-pl.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-mr/values-mr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -971,10 +1199,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-b+sr+Latn_values-b+sr+Latn.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-fr_values-fr.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-fr/values-fr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -986,107 +1214,17 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-pt-rPT_values-pt-rPT.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-pt-rPT\\values-pt-rPT.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-az_values-az.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-az\\values-az.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-nb_values-nb.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-nb\\values-nb.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-gu_values-gu.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-gu\\values-gu.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-kk_values-kk.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-kk\\values-kk.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-de_values-de.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-de\\values-de.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-v14_values-v14.arsc.flat",
-            "map": [
-                {
-                    "source": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\src\\main\\res\\values-v14\\styles.xml",
+                    "source": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/src/main/res/values-v14/styles.xml",
                     "from": {
                         "startLines": "7",
                         "startColumns": "4",
-                        "startOffsets": "225",
+                        "startOffsets": "220",
                         "endLines": "9",
                         "endColumns": "12",
-                        "endOffsets": "373"
+                        "endOffsets": "366"
                     },
                     "to": {
                         "startLines": "2",
@@ -1100,10 +1238,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-pa_values-pa.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-uk_values-uk.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-pa\\values-pa.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-uk/values-uk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1115,10 +1253,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-pt-rBR_values-pt-rBR.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-tl_values-tl.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-tl/values-tl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1130,10 +1268,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-is_values-is.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ne_values-ne.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-is\\values-is.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ne/values-ne.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1145,10 +1283,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-hy_values-hy.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-pa_values-pa.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-hy\\values-hy.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-pa/values-pa.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1160,10 +1298,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ur_values-ur.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-am_values-am.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ur\\values-ur.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-am/values-am.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1175,10 +1313,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-iw_values-iw.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-iw\\values-iw.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-lt/values-lt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1190,10 +1328,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-sv_values-sv.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-in_values-in.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-sv\\values-sv.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-in/values-in.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1205,32 +1343,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13_values-w820dp-v13.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat",
             "map": [
                 {
-                    "source": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\src\\main\\res\\values-w820dp\\dimens.xml",
-                    "from": {
-                        "startLines": "7",
-                        "startColumns": "4",
-                        "startOffsets": "310",
-                        "endColumns": "57",
-                        "endOffsets": "363"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "57",
-                        "endOffsets": "108"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-in_values-in.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-in\\values-in.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-hi/values-hi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1242,10 +1358,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ro_values-ro.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-sw_values-sw.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ro\\values-ro.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-sw/values-sw.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1257,34 +1373,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-v11_values-v11.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat",
             "map": [
                 {
-                    "source": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\src\\main\\res\\values-v11\\styles.xml",
-                    "from": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "182",
-                        "endLines": "8",
-                        "endColumns": "12",
-                        "endOffsets": "316"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "187"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-sw_values-sw.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-sw\\values-sw.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1296,10 +1388,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ta_values-ta.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ta\\values-ta.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-vi/values-vi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1311,10 +1403,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-as_values-as.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-eu_values-eu.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-as\\values-as.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-eu/values-eu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1326,145 +1418,53 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-pt_values-pt.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-pt\\values-pt.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/503cb92ba71af9c62eeef40ff7b694d1/res/values-v21/values-v21.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-zh-rTW_values-zh-rTW.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-zh-rTW\\values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-mn_values-mn.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-mn\\values-mn.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-uk_values-uk.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-uk\\values-uk.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-hr_values-hr.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-hr\\values-hr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-tr_values-tr.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-tr\\values-tr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ml_values-ml.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ml\\values-ml.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ne_values-ne.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ne\\values-ne.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-v24_values-v24.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\2f0458243022d0fac0cb80fc7bd2e7df\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
+                        "startLines": "2,5,8,11",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "55,121,182,248",
-                        "endColumns": "65,60,65,66",
-                        "endOffsets": "116,177,243,310"
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "8,11,15,19",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "596,764,1053,1349",
+                        "endLines": "10,13,17,21",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "759,922,1216,1511"
+                    }
+                },
+                {
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,223,290,354,470,596,722,850,1022",
+                        "endLines": "2,3,4,5,6,7,8,9,12,17",
+                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,14,18,22,25",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,223,290,354,470,927,1221,1516,1688",
+                        "endLines": "2,3,4,5,6,7,14,18,24,29",
+                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "154,218,285,349,465,591,1048,1344,1683,2021"
                     }
                 }
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-be_values-be.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-ca_values-ca.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-be\\values-be.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-ca/values-ca.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1476,10 +1476,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-fr_values-fr.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-fi_values-fi.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-fr\\values-fr.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-fi/values-fi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1491,10 +1491,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-ms_values-ms.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-gu_values-gu.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-ms\\values-ms.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-gu/values-gu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1506,10 +1506,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-et_values-et.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-uz_values-uz.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-et\\values-et.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-uz/values-uz.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1521,10 +1521,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-fa_values-fa.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-is_values-is.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-fa\\values-fa.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-is/values-is.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1536,10 +1536,10 @@
             ]
         },
         {
-            "outputFile": "D:\\project\\github\\lib_tools\\lib_tools\\signwayDemo_5190\\build\\intermediates\\res\\merged\\debug\\values-nl_values-nl.arsc.flat",
+            "outputFile": "/home/dunn/project/github/lib_tools/lib_tools/signwayDemo_5190/build/intermediates/res/merged/debug/values-lv_values-lv.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\84368b089510d506637dc9796ba0b741\\res\\values-nl\\values-nl.xml",
+                    "source": "/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/res/values-lv/values-lv.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

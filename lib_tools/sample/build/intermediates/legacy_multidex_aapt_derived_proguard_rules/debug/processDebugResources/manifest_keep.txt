@@ -1,0 +1,4 @@
+# Referenced at /home/dunn/project/github/lib_tools/lib_tools/sample/build/intermediates/merged_manifests/debug/AndroidManifest.xml:18
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /home/dunn/project/github/lib_tools/lib_tools/sample/build/intermediates/merged_manifests/debug/AndroidManifest.xml:18
+-keep class androidx.multidex.MultiDexApplication { <init>(); }
