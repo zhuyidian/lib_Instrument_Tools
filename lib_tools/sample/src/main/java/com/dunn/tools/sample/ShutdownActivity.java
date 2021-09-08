@@ -14,6 +14,7 @@ import com.dunn.tools.time.Ability.IAbility;
 import com.dunn.tools.time.TimeTest;
 import com.dunn.tools.time.TimeUtil;
 import com.dunn.tools.time.bean.RemoteCommand;
+import com.dunn.tools.volume.VolumeUtil;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -29,6 +30,7 @@ public class ShutdownActivity extends AppCompatActivity{
     @Override
     protected void onResume() {
         super.onResume();
+        VolumeUtil.setVolume(this,30);
     }
 
     @Override

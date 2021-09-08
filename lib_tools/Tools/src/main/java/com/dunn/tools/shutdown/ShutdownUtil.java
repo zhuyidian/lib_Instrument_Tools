@@ -234,13 +234,4 @@ public class ShutdownUtil {
 
         return process;
     }
-
-    try {
-        LogUtil.i("time", "set volume volume=" + volume);
-        AudioManager manager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
-        manager.setStreamVolume(AudioManager.STREAM_MUSIC, volume, AudioManager.FLAG_SHOW_UI);
-    } catch (Exception e) {
-        e.printStackTrace();
-        LogUtil.e("time", "e1=" + e);
-    }
 }
