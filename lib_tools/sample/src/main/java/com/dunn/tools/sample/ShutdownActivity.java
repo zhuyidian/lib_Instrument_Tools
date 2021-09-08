@@ -29,8 +29,6 @@ public class ShutdownActivity extends AppCompatActivity{
     @Override
     protected void onResume() {
         super.onResume();
-
-        ShutdownUtil.rebootForPowerManager(this.getApplicationContext());
     }
 
     @Override
