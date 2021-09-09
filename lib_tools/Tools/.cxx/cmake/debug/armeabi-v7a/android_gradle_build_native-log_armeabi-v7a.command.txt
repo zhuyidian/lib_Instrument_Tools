@@ -1,0 +1,7 @@
+Executable : /home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/armeabi-v7a
+native-log
+jvmArgs : 
+

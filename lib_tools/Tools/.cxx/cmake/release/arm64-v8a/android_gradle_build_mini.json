@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "/home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/CMakeLists.txt",
+    "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/release/arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/release/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-log-Release-arm64-v8a": {
+      "artifactName": "native-log",
+      "buildCommand": "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/release/arm64-v8a\" native-log",
+      "abi": "arm64-v8a",
+      "output": "/home/dunn/project/github/lib_tools/lib_tools/Tools/build/intermediates/cmake/release/obj/arm64-v8a/libnative-log.so"
+    }
+  }
+}

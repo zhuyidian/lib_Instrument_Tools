@@ -1,16 +1,13 @@
-#Wed Sep 08 23:42:06 CST 2021
-path.3=classes.dex
-path.2=classes.dex
+#Thu Sep 09 03:44:06 CST 2021
+path.3=classes_1.dex
+path.2=classes_0.dex
 path.1=classes.dex
-renamed.4=classes5.dex
 path.0=classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
-base.4=/home/dunn/project/github/lib_tools/lib_tools/sample/build/intermediates/transforms/dexMerger/debug/4
 renamed.0=classes.dex
-base.3=/home/dunn/project/github/lib_tools/lib_tools/sample/build/intermediates/transforms/dexMerger/debug/3
-base.2=/home/dunn/project/github/lib_tools/lib_tools/sample/build/intermediates/transforms/dexMerger/debug/2
-base.1=/home/dunn/project/github/lib_tools/lib_tools/sample/build/intermediates/transforms/dexMerger/debug/1
-base.0=/home/dunn/project/github/lib_tools/lib_tools/sample/build/intermediates/transforms/dexMerger/debug/0
-path.4=classes.dex
+base.3=/home/dunn/project/github/lib_tools/lib_tools/sample/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_1.dex
+base.2=/home/dunn/project/github/lib_tools/lib_tools/sample/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_0.dex
+base.1=/home/dunn/project/github/lib_tools/lib_tools/sample/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.0=/home/dunn/project/github/lib_tools/lib_tools/sample/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex

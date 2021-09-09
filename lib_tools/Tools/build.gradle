@@ -15,6 +15,7 @@ android {
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
         multiDexEnabled rootProject.ext.android.multiDexEnabled
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
                 cppFlags ""
@@ -39,6 +40,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
     compileOnly rootProject.ext.dependencies["appcompat-v7"]
+    testImplementation 'junit:junit:4.12'
     implementation rootProject.ext.dependencies.gson7
     implementation rootProject.ext.dependencies.aspectj
 }

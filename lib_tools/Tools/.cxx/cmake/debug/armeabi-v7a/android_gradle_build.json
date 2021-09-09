@@ -1,0 +1,47 @@
+{
+  "stringTable": {
+    "0": "/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi17 --gcc-toolchain=/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dnative_log_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++11"
+  },
+  "buildFiles": [
+    "/home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/CMakeLists.txt",
+    "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-log-Debug-armeabi-v7a": {
+      "buildCommand": "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/armeabi-v7a\" native-log",
+      "buildType": "debug",
+      "toolchain": "4036897525",
+      "abi": "armeabi-v7a",
+      "artifactName": "native-log",
+      "files": [
+        {
+          "src": "/home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/native-log.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/TXFileLogger.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/home/dunn/project/github/lib_tools/lib_tools/Tools/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-log.so"
+    }
+  },
+  "toolchains": {
+    "4036897525": {
+      "cppCompilerExecutable": "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
