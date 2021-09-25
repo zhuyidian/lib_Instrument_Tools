@@ -3178,19 +3178,20 @@ public final class R {
     public static final int activity_log=0x7f09001c;
     public static final int activity_main=0x7f09001d;
     public static final int activity_navigationbar=0x7f09001e;
-    public static final int activity_shutdown=0x7f09001f;
-    public static final int activity_threadsafety=0x7f090020;
-    public static final int notification_action=0x7f090021;
-    public static final int notification_action_tombstone=0x7f090022;
-    public static final int notification_template_custom_big=0x7f090023;
-    public static final int notification_template_icon_group=0x7f090024;
-    public static final int notification_template_part_chronometer=0x7f090025;
-    public static final int notification_template_part_time=0x7f090026;
-    public static final int select_dialog_item_material=0x7f090027;
-    public static final int select_dialog_multichoice_material=0x7f090028;
-    public static final int select_dialog_singlechoice_material=0x7f090029;
-    public static final int support_simple_spinner_dropdown_item=0x7f09002a;
-    public static final int ui_defualt_navigation_bar=0x7f09002b;
+    public static final int activity_reflect=0x7f09001f;
+    public static final int activity_shutdown=0x7f090020;
+    public static final int activity_threadsafety=0x7f090021;
+    public static final int notification_action=0x7f090022;
+    public static final int notification_action_tombstone=0x7f090023;
+    public static final int notification_template_custom_big=0x7f090024;
+    public static final int notification_template_icon_group=0x7f090025;
+    public static final int notification_template_part_chronometer=0x7f090026;
+    public static final int notification_template_part_time=0x7f090027;
+    public static final int select_dialog_item_material=0x7f090028;
+    public static final int select_dialog_multichoice_material=0x7f090029;
+    public static final int select_dialog_singlechoice_material=0x7f09002a;
+    public static final int support_simple_spinner_dropdown_item=0x7f09002b;
+    public static final int ui_defualt_navigation_bar=0x7f09002c;
   }
   public static final class mipmap {
     public static final int back=0x7f0a0000;

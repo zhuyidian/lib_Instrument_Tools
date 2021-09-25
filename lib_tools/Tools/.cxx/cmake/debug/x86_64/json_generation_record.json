@@ -5,35 +5,7 @@
   },
   {
     "level": "INFO",
-    "message": "rebuilding JSON /home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/android_gradle_build.json due to:"
-  },
-  {
-    "level": "INFO",
-    "message": "- force flag, will remove stale json folder"
-  },
-  {
-    "level": "INFO",
-    "message": "removing stale contents from \u0027/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64\u0027"
-  },
-  {
-    "level": "INFO",
-    "message": "created folder \u0027/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64\u0027"
-  },
-  {
-    "level": "INFO",
-    "message": "executing cmake Executable : /home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/cmake\narguments : \n-H/home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp\n-B/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64\n-DANDROID_ABI\u003dx86_64\n-DANDROID_PLATFORM\u003dandroid-17\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/home/dunn/project/github/lib_tools/lib_tools/Tools/build/intermediates/cmake/debug/obj/x86_64\n-DCMAKE_BUILD_TYPE\u003dDebug\n-DANDROID_NDK\u003d/home/dunn/software/Android/Sdk/ndk/21.3.6528147\n-DCMAKE_CXX_FLAGS\u003d\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_ANDROID_ARCH_ABI\u003dx86_64\n-DCMAKE_SYSTEM_VERSION\u003d17\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_ANDROID_NDK\u003d/home/dunn/software/Android/Sdk/ndk/21.3.6528147\n-DCMAKE_TOOLCHAIN_FILE\u003d/home/dunn/software/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake\n-G Ninja\n-DCMAKE_MAKE_PROGRAM\u003d/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja\njvmArgs : \n\n"
-  },
-  {
-    "level": "INFO",
-    "message": "done executing cmake"
-  },
-  {
-    "level": "INFO",
-    "message": "write build output /home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/build_output.txt"
-  },
-  {
-    "level": "INFO",
-    "message": "write command file /home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/build_command.txt"
+    "message": "JSON \u0027/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/android_gradle_build.json\u0027 was up-to-date"
   },
   {
     "level": "INFO",

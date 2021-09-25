@@ -87,12 +87,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dunn/
 		ADDED from /home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:15:9-35
 	android:theme
 		ADDED from /home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:20:9-40
-activity#com.dunn.tools.sample.LogActivity
+activity#com.dunn.tools.sample.ReflectActivity
 ADDED from /home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:21:9-28:20
 	android:theme
 		ADDED from /home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:23:13-69
 	android:name
-		ADDED from /home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:22:13-40
+		ADDED from /home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:22:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN

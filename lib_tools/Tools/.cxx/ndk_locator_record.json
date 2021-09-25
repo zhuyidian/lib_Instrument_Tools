@@ -7,7 +7,7 @@
     },
     {
       "level": "INFO",
-      "message": "ndk.dir in local.properties is not set"
+      "message": "ndk.dir in local.properties is /home/dunn/software/Android/Sdk/ndk/21.3.6528147"
     },
     {
       "level": "INFO",
@@ -19,7 +19,15 @@
     },
     {
       "level": "INFO",
+      "message": "Considering /home/dunn/software/Android/Sdk/ndk/21.3.6528147 by ndk.dir"
+    },
+    {
+      "level": "INFO",
       "message": "Considering /home/dunn/software/Android/Sdk/ndk-bundle in SDK ndk-bundle folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /home/dunn/software/Android/Sdk/ndk/23.0.7599858 in SDK ndk folder"
     },
     {
       "level": "INFO",
@@ -27,7 +35,7 @@
     },
     {
       "level": "INFO",
-      "message": "No user requested version, choosing /home/dunn/software/Android/Sdk/ndk/21.3.6528147 which is version 21.3.6528147"
+      "message": "Found requested ndk.dir (/home/dunn/software/Android/Sdk/ndk/21.3.6528147) which has version 21.3.6528147"
     }
   ]
 }

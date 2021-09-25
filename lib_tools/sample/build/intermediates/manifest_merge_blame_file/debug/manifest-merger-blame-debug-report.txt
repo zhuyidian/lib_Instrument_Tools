@@ -54,8 +54,8 @@
 30-->/home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:20:9-40
 31        <activity
 31-->/home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:21:9-28:20
-32            android:name="com.dunn.tools.sample.LogActivity"
-32-->/home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:22:13-40
+32            android:name="com.dunn.tools.sample.ReflectActivity"
+32-->/home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:22:13-44
 33            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
 33-->/home/dunn/project/github/lib_tools/lib_tools/sample/src/main/AndroidManifest.xml:23:13-69
 34            <intent-filter>

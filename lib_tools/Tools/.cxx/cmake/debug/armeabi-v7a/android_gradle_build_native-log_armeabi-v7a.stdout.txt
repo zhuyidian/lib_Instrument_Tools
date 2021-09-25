@@ -1,4 +1,2 @@
 ninja: Entering directory `/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/armeabi-v7a'
-[1/3] Building CXX object CMakeFiles/native-log.dir/native-log.cpp.o
-[2/3] Building CXX object CMakeFiles/native-log.dir/TXFileLogger.cpp.o
-[3/3] Linking CXX shared library /home/dunn/project/github/lib_tools/lib_tools/Tools/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-log.so
+ninja: no work to do.

@@ -1,4 +1,4 @@
 # ninja log v5
-9	1829	1631130244	CMakeFiles/native-log.dir/native-log.cpp.o	54b87a03e3927b4e
-0	2429	1631130244	CMakeFiles/native-log.dir/TXFileLogger.cpp.o	78ccdc7a01d25b34
-2429	2568	1631130244	/home/dunn/project/github/lib_tools/lib_tools/Tools/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-log.so	3bc9ece1eaa94382
+4	1444	1631370031	CMakeFiles/native-log.dir/native-log.cpp.o	54b87a03e3927b4e
+0	1560	1631370032	CMakeFiles/native-log.dir/TXFileLogger.cpp.o	78ccdc7a01d25b34
+1560	1892	1631370032	/home/dunn/project/github/lib_tools/lib_tools/Tools/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-log.so	3bc9ece1eaa94382
