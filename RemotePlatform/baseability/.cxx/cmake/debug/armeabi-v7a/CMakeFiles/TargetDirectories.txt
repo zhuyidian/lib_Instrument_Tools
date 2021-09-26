@@ -1,0 +1,8 @@
+D:/project/gitLab/RemotePlatform/baseability/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/project/gitLab/RemotePlatform/baseability/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/project/gitLab/RemotePlatform/baseability/.cxx/cmake/debug/armeabi-v7a/src/main/jni/CMakeFiles/termux.dir
+D:/project/gitLab/RemotePlatform/baseability/.cxx/cmake/debug/armeabi-v7a/src/main/jni/CMakeFiles/edit_cache.dir
+D:/project/gitLab/RemotePlatform/baseability/.cxx/cmake/debug/armeabi-v7a/src/main/jni/CMakeFiles/rebuild_cache.dir
+D:/project/gitLab/RemotePlatform/baseability/.cxx/cmake/debug/armeabi-v7a/src/main/jni/rtc/CMakeFiles/edit_cache.dir
+D:/project/gitLab/RemotePlatform/baseability/.cxx/cmake/debug/armeabi-v7a/src/main/jni/rtc/CMakeFiles/rtc.dir
+D:/project/gitLab/RemotePlatform/baseability/.cxx/cmake/debug/armeabi-v7a/src/main/jni/rtc/CMakeFiles/rebuild_cache.dir

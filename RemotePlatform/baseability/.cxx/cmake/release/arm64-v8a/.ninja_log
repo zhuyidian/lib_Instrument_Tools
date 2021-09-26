@@ -1,0 +1,7 @@
+# ninja log v5
+1	329	652166003	src/main/jni/CMakeFiles/termux.dir/termux.c.o	fde3d3515b319425
+50	846	652166004	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	243d03e11f28d8de
+331	855	652166004	../../../../build/intermediates/cmake/release/obj/arm64-v8a/libtermux.so	12ecab2249671197
+847	999	652166004	../../../../build/intermediates/cmake/release/obj/arm64-v8a/librtc.so	7e4405e3abd60322
+0	7	0	clean	81a0c8a35c45b8df
+0	7	0	clean	81a0c8a35c45b8df

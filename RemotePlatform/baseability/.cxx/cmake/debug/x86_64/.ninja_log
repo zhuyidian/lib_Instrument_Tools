@@ -1,0 +1,15 @@
+# ninja log v5
+0	177	651423986	src/main/jni/CMakeFiles/termux.dir/termux.c.o	a311841360471663
+178	265	651423986	../../../../build/intermediates/cmake/debug/obj/x86_64/libtermux.so	7c5def2b94bfe5a4
+33	491	651423986	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	cfcdcf9e17ebce2c
+491	587	651423987	../../../../build/intermediates/cmake/debug/obj/x86_64/librtc.so	58b7420dee28bd3c
+0	7	0	clean	81a0c8a35c45b8df
+3	197	652256419	src/main/jni/CMakeFiles/termux.dir/termux.c.o	a311841360471663
+47	503	652256419	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	cfcdcf9e17ebce2c
+197	602	652256419	../../../../build/intermediates/cmake/debug/obj/x86_64/libtermux.so	7c5def2b94bfe5a4
+503	621	652256419	../../../../build/intermediates/cmake/debug/obj/x86_64/librtc.so	58b7420dee28bd3c
+0	6	0	clean	81a0c8a35c45b8df
+2	162	652267117	src/main/jni/CMakeFiles/termux.dir/termux.c.o	a311841360471663
+31	464	652267118	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	cfcdcf9e17ebce2c
+162	572	652267118	../../../../build/intermediates/cmake/debug/obj/x86_64/libtermux.so	7c5def2b94bfe5a4
+464	586	652267118	../../../../build/intermediates/cmake/debug/obj/x86_64/librtc.so	58b7420dee28bd3c

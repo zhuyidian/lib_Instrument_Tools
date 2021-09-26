@@ -1,0 +1,29 @@
+{
+  "buildFiles": [
+    "D:\\project\\gitLab\\RemotePlatform\\baseability\\CMakeLists.txt",
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
+    "D:\\project\\gitLab\\RemotePlatform\\baseability\\src\\main\\jni\\CMakeLists.txt",
+    "D:\\project\\gitLab\\RemotePlatform\\baseability\\src\\main\\jni\\rtc\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\gitLab\\RemotePlatform\\baseability\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\project\\gitLab\\RemotePlatform\\baseability\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "termux-Debug-arm64-v8a": {
+      "artifactName": "termux",
+      "buildCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\gitLab\\RemotePlatform\\baseability\\.cxx\\cmake\\debug\\arm64-v8a\" termux",
+      "abi": "arm64-v8a",
+      "output": "D:\\project\\gitLab\\RemotePlatform\\baseability\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libtermux.so",
+      "runtimeFiles": []
+    },
+    "rtc-Debug-arm64-v8a": {
+      "artifactName": "rtc",
+      "buildCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\gitLab\\RemotePlatform\\baseability\\.cxx\\cmake\\debug\\arm64-v8a\" rtc",
+      "abi": "arm64-v8a",
+      "output": "D:\\project\\gitLab\\RemotePlatform\\baseability\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\librtc.so",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.coocaa.toolkit.app:app_toolkit:2.5.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a46f69727f5f5750a8f237181d0e3983/app_toolkit-2.5.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a46f69727f5f5750a8f237181d0e3983/app_toolkit-2.5.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a46f69727f5f5750a8f237181d0e3983/app_toolkit-2.5.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,2 +1,2 @@
-ninja: Entering directory `/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/armeabi-v7a'
+ninja: Entering directory `D:\project\github\lib_tools\lib_tools\Tools\.cxx\cmake\debug\armeabi-v7a'
 ninja: no work to do.

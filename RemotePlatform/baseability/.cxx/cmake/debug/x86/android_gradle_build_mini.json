@@ -1,0 +1,29 @@
+{
+  "buildFiles": [
+    "D:\\project\\gitLab\\RemotePlatform\\baseability\\CMakeLists.txt",
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
+    "D:\\project\\gitLab\\RemotePlatform\\baseability\\src\\main\\jni\\CMakeLists.txt",
+    "D:\\project\\gitLab\\RemotePlatform\\baseability\\src\\main\\jni\\rtc\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\gitLab\\RemotePlatform\\baseability\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\project\\gitLab\\RemotePlatform\\baseability\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "rtc-Debug-x86": {
+      "artifactName": "rtc",
+      "buildCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\gitLab\\RemotePlatform\\baseability\\.cxx\\cmake\\debug\\x86\" rtc",
+      "abi": "x86",
+      "output": "D:\\project\\gitLab\\RemotePlatform\\baseability\\build\\intermediates\\cmake\\debug\\obj\\x86\\librtc.so",
+      "runtimeFiles": []
+    },
+    "termux-Debug-x86": {
+      "artifactName": "termux",
+      "buildCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\gitLab\\RemotePlatform\\baseability\\.cxx\\cmake\\debug\\x86\" termux",
+      "abi": "x86",
+      "output": "D:\\project\\gitLab\\RemotePlatform\\baseability\\build\\intermediates\\cmake\\debug\\obj\\x86\\libtermux.so",
+      "runtimeFiles": []
+    }
+  }
+}

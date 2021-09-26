@@ -1,43 +1,45 @@
 {
   "stringTable": {
-    "0": "/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/arm64-v8a",
-    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dnative_log_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++11"
+    "0": "D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dnative_log_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++11"
   },
   "buildFiles": [
-    "/home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/CMakeLists.txt",
-    "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
-    "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake"
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\compiler_id.cmake",
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android-legacy.toolchain.cmake",
+    "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\\CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/arm64-v8a\" clean"
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
   ],
-  "buildTargetsCommand": "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "native-log-Debug-arm64-v8a": {
-      "buildCommand": "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/arm64-v8a\" native-log",
+      "buildCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\arm64-v8a\" native-log",
       "buildType": "debug",
-      "toolchain": "4036897525",
+      "toolchain": "2573373575",
       "abi": "arm64-v8a",
       "artifactName": "native-log",
       "files": [
         {
-          "src": "/home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/native-log.cpp",
+          "src": "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\\native-log.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "/home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/TXFileLogger.cpp",
+          "src": "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\\TXFileLogger.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "/home/dunn/project/github/lib_tools/lib_tools/Tools/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-log.so"
+      "output": "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libnative-log.so"
     }
   },
   "toolchains": {
-    "4036897525": {
-      "cppCompilerExecutable": "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    "2573373575": {
+      "cppCompilerExecutable": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
     }
   },
   "cFileExtensions": [],

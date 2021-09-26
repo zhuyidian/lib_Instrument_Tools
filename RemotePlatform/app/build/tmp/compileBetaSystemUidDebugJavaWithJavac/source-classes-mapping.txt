@@ -1,0 +1,6 @@
+com/coocaa/remoteplatform/BuildConfig.java
+ com.coocaa.remoteplatform.BuildConfig
+com/coocaa/remoteplatform/MyApplication.java
+ com.coocaa.remoteplatform.MyApplication
+com/coocaa/remoteplatform/TestActivity.java
+ com.coocaa.remoteplatform.TestActivity

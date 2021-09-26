@@ -1,0 +1,2 @@
+com.coocaa.remoteplatform.sdk
+drawable remoteplatform_notification_icon

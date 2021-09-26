@@ -1,7 +1,7 @@
-Executable : /home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
+Executable : C:\Users\Administrator\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
 arguments : 
 -C
-/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/armeabi-v7a
+D:\project\github\lib_tools\lib_tools\Tools\.cxx\cmake\debug\armeabi-v7a
 native-log
 jvmArgs : 
 

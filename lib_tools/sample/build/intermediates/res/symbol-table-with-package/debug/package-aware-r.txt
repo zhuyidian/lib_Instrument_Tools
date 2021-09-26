@@ -316,6 +316,15 @@ color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
 color addcamera_info_bg
+color app_loading_center_bg_color
+color app_loading_progress_bg_color
+color app_loading_progress_end_color
+color app_loading_progress_start_color
+color app_loading_top_btn_bg_color
+color app_loading_top_btn_bg_color1
+color app_loading_top_btn_bg_color2
+color app_loading_txt_black_color
+color app_loading_txt_white_color
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -332,6 +341,11 @@ color bg_blue
 color bg_e1
 color bg_e6e4e4
 color bg_f0
+color bg_focus_color
+color bg_focus_interval_color
+color bg_no_focus1_color
+color bg_no_focus2_color
+color bg_no_focus_color
 color black
 color blue_btn_bg_color
 color bright_foreground_disabled_material_dark
@@ -345,6 +359,7 @@ color button_material_light
 color button_press
 color button_unpress
 color cache_color_hint
+color center_translate
 color color1
 color color10
 color color2
@@ -404,6 +419,8 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color draw_test_bule
+color draw_test_yellow
 color encode_view
 color error_color_material_dark
 color error_color_material_light
@@ -468,6 +485,12 @@ color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
 color select
+color source_background1_color
+color source_background2_color
+color source_background_color
+color source_focus_stroke_color
+color source_no_focus_color
+color source_signal_color
 color status_text
 color sweet_dialog_bg_color
 color switch_thumb_disabled_material_dark
@@ -499,6 +522,11 @@ color tc_b1b0b0
 color tc_f36766
 color tc_fbe75e
 color tc_fdbf33
+color text_focus1_color
+color text_focus_color
+color text_no_focus_color
+color text_title1_color
+color text_title_color
 color theme
 color theme_bg
 color theme_color
@@ -514,6 +542,7 @@ color transparent2
 color transparent3
 color transparentHalf
 color transparentPush
+color txt_focused_color
 color unselect
 color video_camera_remark
 color viewfinder_mask
@@ -730,6 +759,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable source_hdmi_focus
+drawable source_hdmi_no_focus
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -805,6 +836,7 @@ id ifRoom
 id image
 id info
 id italic
+id layout
 id left
 id line1
 id line3
@@ -907,6 +939,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_draw
 layout activity_log
 layout activity_main
 layout activity_navigationbar

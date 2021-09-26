@@ -1,0 +1,13 @@
+ninja: Entering directory `D:\project\gitLab\RemotePlatform\baseability\.cxx\cmake\release\arm64-v8a'
+[1/4] Building C object src/main/jni/CMakeFiles/termux.dir/termux.c.o
+[2/4] Building CXX object src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o
+../../../../src/main/jni/rtc/rtc.cpp:48:30: warning: format specifies type 'long long' but the argument has type 'jlong' (aka 'long') [-Wformat]
+    LOGV(TAG,"millis :%lld", millis);
+                      ~~~~   ^~~~~~
+                      %ld
+../../../../src/main/jni/rtc/rtc.cpp:19:70: note: expanded from macro 'LOGV'
+#define LOGV(TAG, ...) __android_log_print(ANDROID_LOG_VERBOSE, TAG, __VA_ARGS__)
+                                                                     ^~~~~~~~~~~
+1 warning generated.
+[3/4] Linking C shared library ..\..\..\..\build\intermediates\cmake\release\obj\arm64-v8a\libtermux.so
+[4/4] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\release\obj\arm64-v8a\librtc.so

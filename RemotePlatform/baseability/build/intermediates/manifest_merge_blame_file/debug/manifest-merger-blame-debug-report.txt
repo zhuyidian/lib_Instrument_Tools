@@ -1,0 +1,84 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.coocaa.remoteplatform.baseability"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+11-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:5:5-81
+11-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.REBOOT" />
+12-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:6:5-65
+12-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:6:22-62
+13
+14    <application>
+14-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:8:5-41:19
+15        <receiver
+15-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:9:9-17:20
+16            android:name="com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmBootReceiver"
+16-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:10:13-60
+17            android:enabled="true"
+17-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:11:13-35
+18            android:exported="true"
+18-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:12:13-36
+19            android:process=":baseability" >
+19-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:13:13-43
+20            <intent-filter>
+20-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:14:13-16:29
+21                <action android:name="android.intent.action.BOOT_COMPLETED" />
+21-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:15:17-79
+21-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:15:25-76
+22            </intent-filter>
+23        </receiver>
+24        <receiver
+24-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:18:9-22:46
+25            android:name="com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmReceiver"
+25-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:19:13-56
+26            android:enabled="true"
+26-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:20:13-35
+27            android:exported="true"
+27-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:21:13-36
+28            android:process=":baseability" />
+28-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:22:13-43
+29        <receiver
+29-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:23:9-27:46
+30            android:name="com.coocaa.remoteplatform.baseability.abilities.reboot.RebootAlarmBroadcastReceiver"
+30-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:24:13-74
+31            android:enabled="true"
+31-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:25:13-35
+32            android:exported="true"
+32-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:26:13-36
+33            android:process=":baseability" />
+33-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:27:13-43
+34
+35        <service
+35-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:29:9-40:19
+36            android:name="com.coocaa.remoteplatform.baseability.BaseAbilityClient"
+36-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:30:13-46
+37            android:exported="true"
+37-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:31:13-36
+38            android:process=":baseability" >
+38-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:32:13-43
+39            <meta-data
+39-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:33:13-35:73
+40                android:name="id"
+40-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:34:17-34
+41                android:value="com.coocaa.remoteplatform.baseability" />
+41-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:35:17-70
+42
+43            <intent-filter>
+43-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:37:13-39:29
+44                <action android:name="coocaa.intent.action.remote.platform.client" />
+44-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:38:17-86
+44-->D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:38:25-83
+45            </intent-filter>
+46        </service>
+47    </application>
+48
+49</manifest>

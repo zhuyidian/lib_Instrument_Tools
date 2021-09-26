@@ -1,13 +1,13 @@
 [
 {
-  "directory": "/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/release/x86_64",
-  "command": "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-none-linux-android21 --gcc-toolchain=/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dnative_log_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC   -std=c++11 -o CMakeFiles/native-log.dir/native-log.cpp.o -c /home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/native-log.cpp",
-  "file": "/home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/native-log.cpp"
+  "directory": "D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/release/x86_64",
+  "command": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_log_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC   -std=c++11 -o CMakeFiles\\native-log.dir\\native-log.cpp.o -c D:\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\\native-log.cpp",
+  "file": "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\\native-log.cpp"
 },
 
 {
-  "directory": "/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/release/x86_64",
-  "command": "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-none-linux-android21 --gcc-toolchain=/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/dunn/software/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dnative_log_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC   -std=c++11 -o CMakeFiles/native-log.dir/TXFileLogger.cpp.o -c /home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/TXFileLogger.cpp",
-  "file": "/home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/TXFileLogger.cpp"
+  "directory": "D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/release/x86_64",
+  "command": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_log_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC   -std=c++11 -o CMakeFiles\\native-log.dir\\TXFileLogger.cpp.o -c D:\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\\TXFileLogger.cpp",
+  "file": "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\\TXFileLogger.cpp"
 }
 ]

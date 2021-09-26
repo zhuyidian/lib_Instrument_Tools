@@ -1,0 +1,15 @@
+# ninja log v5
+0	183	651407013	src/main/jni/CMakeFiles/termux.dir/termux.c.o	6c95ed0037a9b49
+185	268	651407013	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libtermux.so	dfbffed61646d017
+32	480	651407013	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	41eb3d617d26238b
+481	577	651407013	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/librtc.so	ace0782fe6056b72
+0	16	0	clean	81a0c8a35c45b8df
+3	318	652256416	src/main/jni/CMakeFiles/termux.dir/termux.c.o	6c95ed0037a9b49
+69	764	652256417	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	41eb3d617d26238b
+318	838	652256417	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libtermux.so	dfbffed61646d017
+764	905	652256417	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/librtc.so	ace0782fe6056b72
+0	6	0	clean	81a0c8a35c45b8df
+2	237	652267116	src/main/jni/CMakeFiles/termux.dir/termux.c.o	6c95ed0037a9b49
+36	482	652267116	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	41eb3d617d26238b
+237	656	652267116	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libtermux.so	dfbffed61646d017
+482	666	652267116	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/librtc.so	ace0782fe6056b72

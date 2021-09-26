@@ -1,0 +1,7 @@
+# ninja log v5
+1	439	652102035	src/main/jni/CMakeFiles/termux.dir/termux.c.o	e26c5fec56483fa3
+49	909	652102035	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	5d22daebdffd0dae
+441	1104	652102035	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libtermux.so	5a063ac2bac710c8
+909	1123	652102035	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/librtc.so	5d1c7192ef2ddca4
+0	8	0	clean	81a0c8a35c45b8df
+0	6	0	clean	81a0c8a35c45b8df

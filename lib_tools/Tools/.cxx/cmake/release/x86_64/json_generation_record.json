@@ -5,7 +5,63 @@
   },
   {
     "level": "INFO",
-    "message": "JSON \u0027/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/release/x86_64/android_gradle_build.json\u0027 was up-to-date"
+    "message": "Trying to locate CMake in local SDK repository."
+  },
+  {
+    "level": "INFO",
+    "message": "- CMake found in SDK at \u0027C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\u0027 had version \u00273.10.2\u0027"
+  },
+  {
+    "level": "INFO",
+    "message": "CMake \u00273.18.1\u0027 found in SDK did not match requested version \u00273.10.2\u0027."
+  },
+  {
+    "level": "INFO",
+    "message": "rebuilding JSON D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\release\\x86_64\\android_gradle_build.json due to:"
+  },
+  {
+    "level": "INFO",
+    "message": "- command changed from previous, will remove stale json folder"
+  },
+  {
+    "level": "INFO",
+    "message": "- a dependent build file changed"
+  },
+  {
+    "level": "INFO",
+    "message": "  - D:\\home\\dunn\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\\CMakeLists.txt"
+  },
+  {
+    "level": "INFO",
+    "message": "  - D:\\home\\dunn\\software\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake"
+  },
+  {
+    "level": "INFO",
+    "message": "  - D:\\home\\dunn\\software\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\platforms.cmake"
+  },
+  {
+    "level": "INFO",
+    "message": "removing stale contents from \u0027D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\release\\x86_64\u0027"
+  },
+  {
+    "level": "INFO",
+    "message": "created folder \u0027D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\release\\x86_64\u0027"
+  },
+  {
+    "level": "INFO",
+    "message": "executing cmake Executable : C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe\narguments : \n-HD:\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\n-BD:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\release\\x86_64\n-DANDROID_ABI\u003dx86_64\n-DANDROID_PLATFORM\u003dandroid-17\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\project\\github\\lib_tools\\lib_tools\\Tools\\build\\intermediates\\cmake\\release\\obj\\x86_64\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DANDROID_NDK\u003dC:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\n-DCMAKE_CXX_FLAGS\u003d\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_ANDROID_ARCH_ABI\u003dx86_64\n-DCMAKE_SYSTEM_VERSION\u003d17\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_ANDROID_NDK\u003dC:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\n-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android.toolchain.cmake\n-G Ninja\n-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe\njvmArgs : \n\n"
+  },
+  {
+    "level": "INFO",
+    "message": "done executing cmake"
+  },
+  {
+    "level": "INFO",
+    "message": "write build output D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\release\\x86_64\\build_output.txt"
+  },
+  {
+    "level": "INFO",
+    "message": "write command file D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\release\\x86_64\\build_command.txt"
   },
   {
     "level": "INFO",

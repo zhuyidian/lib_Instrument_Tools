@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Application upgrade platform</string>
+    <string name="ui_please_connect_net">Please connect to the Internet</string>
+    <string name="upgrade_check_md5_error">MD5 checksum error, upgrade failure</string>
+    <string name="upgrade_content">Update content: </string>
+    <string name="upgrade_download_error">Network anomalies, download fail</string>
+    <string name="upgrade_download_error_no_space">The space is insufficient, download failed</string>
+    <string name="upgrade_download_now">Download Now</string>
+    <string name="upgrade_download_unknown_error">Download failed</string>
+    <string name="upgrade_ensure">Confirm</string>
+    <string name="upgrade_immediately">Upgrade Now</string>
+    <string name="upgrade_install">Installing</string>
+    <string name="upgrade_net_disconnect">Network disconnection, download fail</string>
+    <string name="upgrade_no_space">Insufficient space (%1$sMB space), download fail</string>
+    <string name="upgrade_release_space">Release Space</string>
+    <string name="upgrade_space_insufficient_tip">Detection of system space is not enough, may affect the normal use of television.</string>
+    <string name="upgrade_version">Version</string>
+</resources>

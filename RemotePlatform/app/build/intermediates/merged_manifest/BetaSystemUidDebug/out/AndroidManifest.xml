@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coocaa.remoteplatform"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="210200124"
+    android:versionName="2.1.2.124" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- TODO check: if change to com.tianci.push -->
+    <permission
+        android:name="getui.permission.GetuiService.com.coocaa.remoteplatform"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="getui.permission.GetuiService.com.coocaa.remoteplatform" />
+    <uses-permission android:name="coocaa.permission.ACCESS_SERVER_CONFIG" />
+    <uses-permission android:name="com.tianci.user.permission.READ_CONTENT" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.DUMP" />
+
+    <application
+        android:name="com.coocaa.remoteplatform.MyApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.coocaa.remoteplatform.TestActivity" />
+
+        <meta-data
+            android:name="SOCKET_ADDRESS"
+            android:value="https://beta-fusionmedia.skysrt.com/ccp2p" />
+        <meta-data
+            android:name="HTTP_ADDRESS"
+            android:value="https://beta-fusionmedia.skysrt.com/ccp2p/" />
+        <meta-data
+            android:name="FILE_ADDRESS"
+            android:value="https://beta-fusionmedia.skysrt.com/ccp2p/file/upload" />
+        <meta-data
+            android:name="PUSH_ADDRESS"
+            android:value="172.20.151.204" />
+        <meta-data
+            android:name="PUSH_PORT"
+            android:value="50031" />
+        <meta-data
+            android:name="REQUEST_ADDRESS"
+            android:value="https://beta-fusionmedia.skysrt.com/ccdevice/control/" />
+        <meta-data
+            android:name="SOCKET_SALT"
+            android:value="MFZAa@=R!rTli+:e" />
+
+        <service
+            android:name="com.coocaa.remoteplatform.core.connection.push.PushReceiveService"
+            android:exported="true" >
+            <meta-data
+                android:name="CC_PUSH_APP_ID"
+                android:value="vq5jOXoD" />
+            <meta-data
+                android:name="CC_PUSH_APP_TOKEN"
+                android:value="2EsmBbDO" />
+
+            <intent-filter>
+                <action android:name="com.coocaa.push.PUSH" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.coocaa.remoteplatform.core.service.RemotePlatformService"
+            android:exported="true"
+            android:priority="1000" >
+            <intent-filter>
+                <action android:name="coocaa.intent.action.remote.platform.service" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.coocaa.remoteplatform.core.reply.ReplyService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="coocaa.intent.action.remote.platform.reply" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.coocaa.remoteplatform.core.service.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.coocaa.pushlib.MonitorActivity"
+            android:multiprocess="false"
+            android:process=":cc_push" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.coocaa.push.MAIN_ACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coocaa.pushlib.ui.MessageDetailActivity" />
+
+        <service
+            android:name="com.coocaa.pushlib.PushService"
+            android:exported="true"
+            android:process=":cc_push" >
+            <intent-filter>
+                <action android:name="com.tianci.push" />
+                <action android:name="com.tianci.push.action" />
+                <action android:name="com.tianci.push.agent" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.coocaa.pushlib.PreIntentService"
+            android:exported="false"
+            android:process=":cc_push" /> <!-- 配置SDK核心服务 -->
+        <service android:name="com.coocaa.pushlib.third.igeXin.GeXinIntentService" /> <!-- 个推SDK配置结束 -->
+        <service
+            android:name="com.coocaa.pushlib.third.igeXin.GeXinPushService"
+            android:exported="true"
+            android:label="PushService" />
+
+        <receiver android:name="com.coocaa.pushlib.test.PushRegReceiver" >
+            <intent-filter>
+                <action android:name="com.coocaa.push.BC.REG" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coocaa.pushlib.test.PushMsgReceiver" >
+            <intent-filter>
+                <action android:name="com.coocaa.push.BC.MSG" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.igexin.sdk.PushReceiver" />
+        <receiver android:name="com.coocaa.pushlib.receiver.RecoveryReceiver" >
+            <intent-filter>
+                <action android:name="com.skyworth.broadcast.recovery.start" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="hIOCaSCDF98Sjjgj5MO8r8" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="vjSng5TDDeAVwL1I5drbh9" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="YTtb0pv0iX88vbsxVYhkT1" />
+
+        <receiver
+            android:name="com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmBootReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":baseability" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":baseability" />
+        <receiver
+            android:name="com.coocaa.remoteplatform.baseability.abilities.reboot.RebootAlarmBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":baseability" />
+
+        <service
+            android:name="com.coocaa.remoteplatform.baseability.BaseAbilityClient"
+            android:exported="true"
+            android:process=":baseability" >
+            <meta-data
+                android:name="id"
+                android:value="com.coocaa.remoteplatform.baseability" />
+
+            <intent-filter>
+                <action android:name="coocaa.intent.action.remote.platform.client" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.coocaa.libs.upgrader.runtime.service.UpgraderService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="coocaa.intent.action.UPGRADE_SERVICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

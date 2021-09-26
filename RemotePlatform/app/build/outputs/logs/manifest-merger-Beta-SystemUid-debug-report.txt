@@ -1,0 +1,486 @@
+-- Merging decision tree log ---
+manifest
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:2:1-38:12
+MERGED from [com.android.support:multidex:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9019ecff0875a2c334576b13f8471e1d\multidex-1.0.3\AndroidManifest.xml:17:1-22:12
+MERGED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-56:12
+MERGED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:2:1-97:12
+MERGED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-49:12
+MERGED from [:sdk] D:\project\gitLab\RemotePlatform\sdk\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:common] D:\project\gitLab\RemotePlatform\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.NaikSoftware:StompProtocolAndroid:1.6.6] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\227419b88fe46cc48f43b216836a6522\StompProtocolAndroid-1.6.6\AndroidManifest.xml:2:1-13:12
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:2:1-31:12
+MERGED from [com.coocaa.toolkit.app:app_toolkit:2.5.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a46f69727f5f5750a8f237181d0e3983\app_toolkit-2.5.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:recyclerview-v7:23.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b6412b3819ab80a2509ec09722ab5efb\recyclerview-v7-23.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d1fd92dd3a0ffa8a39e414a84580146a\support-v4-23.2.0\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:2:1-38:12
+	package
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+	android:sharedUserId
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:4:5-41
+	android:versionName
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+meta-data#SOCKET_ADDRESS
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:15:9-17:49
+	android:value
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:17:13-46
+	android:name
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:16:13-42
+meta-data#HTTP_ADDRESS
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:18:9-20:47
+	android:value
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:20:13-44
+	android:name
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:19:13-40
+meta-data#FILE_ADDRESS
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:21:9-23:47
+	android:value
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:23:13-44
+	android:name
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:22:13-40
+meta-data#PUSH_ADDRESS
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:24:9-26:47
+	android:value
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:26:13-44
+	android:name
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:25:13-40
+meta-data#PUSH_PORT
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:27:9-29:44
+	android:value
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:29:13-41
+	android:name
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:28:13-37
+meta-data#REQUEST_ADDRESS
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:30:9-32:50
+	android:value
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:32:13-47
+	android:name
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:31:13-43
+meta-data#SOCKET_SALT
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:33:9-35:46
+	android:value
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:34:13-39
+uses-sdk
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:multidex:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9019ecff0875a2c334576b13f8471e1d\multidex-1.0.3\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9019ecff0875a2c334576b13f8471e1d\multidex-1.0.3\AndroidManifest.xml:20:5-43
+MERGED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-11:73
+MERGED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-11:73
+MERGED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:8:5-10:41
+MERGED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:8:5-10:41
+MERGED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:sdk] D:\project\gitLab\RemotePlatform\sdk\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:sdk] D:\project\gitLab\RemotePlatform\sdk\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:common] D:\project\gitLab\RemotePlatform\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:common] D:\project\gitLab\RemotePlatform\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.NaikSoftware:StompProtocolAndroid:1.6.6] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\227419b88fe46cc48f43b216836a6522\StompProtocolAndroid-1.6.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.NaikSoftware:StompProtocolAndroid:1.6.6] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\227419b88fe46cc48f43b216836a6522\StompProtocolAndroid-1.6.6\AndroidManifest.xml:7:5-9:41
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:7:5-9:41
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:7:5-9:41
+MERGED from [com.coocaa.toolkit.app:app_toolkit:2.5.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a46f69727f5f5750a8f237181d0e3983\app_toolkit-2.5.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.coocaa.toolkit.app:app_toolkit:2.5.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a46f69727f5f5750a8f237181d0e3983\app_toolkit-2.5.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:23.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b6412b3819ab80a2509ec09722ab5efb\recyclerview-v7-23.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b6412b3819ab80a2509ec09722ab5efb\recyclerview-v7-23.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d1fd92dd3a0ffa8a39e414a84580146a\support-v4-23.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d1fd92dd3a0ffa8a39e414a84580146a\support-v4-23.2.0\AndroidManifest.xml:20:5-43
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-70
+	android:targetSdkVersion
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+		INJECTED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml
+application
+ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:6:5-36:19
+MERGED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-54:19
+MERGED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-54:19
+MERGED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:28:5-95:19
+MERGED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:28:5-95:19
+MERGED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-47:19
+MERGED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-47:19
+MERGED from [com.github.NaikSoftware:StompProtocolAndroid:1.6.6] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\227419b88fe46cc48f43b216836a6522\StompProtocolAndroid-1.6.6\AndroidManifest.xml:11:5-20
+MERGED from [com.github.NaikSoftware:StompProtocolAndroid:1.6.6] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\227419b88fe46cc48f43b216836a6522\StompProtocolAndroid-1.6.6\AndroidManifest.xml:11:5-20
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:18:5-29:19
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:18:5-29:19
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d1fd92dd3a0ffa8a39e414a84580146a\support-v4-23.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d1fd92dd3a0ffa8a39e414a84580146a\support-v4-23.2.0\AndroidManifest.xml:22:5-20
+	android:supportsRtl
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:10:9-41
+	android:largeHeap
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:11:9-33
+	android:icon
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:8:9-35
+	android:usesCleartextTraffic
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:18-53
+	android:name
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:7:9-38
+activity#com.coocaa.remoteplatform.TestActivity
+ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:13:9-50
+	android:name
+		ADDED from D:\project\gitLab\RemotePlatform\app\src\main\AndroidManifest.xml:13:19-47
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-77
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-74
+uses-permission#android.permission.INTERNET
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-67
+MERGED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:17:5-67
+MERGED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:17:5-67
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:11:5-67
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-64
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-73
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-70
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-81
+MERGED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
+MERGED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:22-78
+service#com.coocaa.remoteplatform.core.connection.push.PushReceiveService
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-32:19
+	android:exported
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-36
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-93
+meta-data#CC_PUSH_APP_ID
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-24:44
+	android:value
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:17-41
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:17-46
+meta-data#CC_PUSH_APP_TOKEN
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-27:44
+	android:value
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:17-41
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:17-49
+intent-filter#action:name:com.coocaa.push.PUSH
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-31:29
+action#com.coocaa.push.PUSH
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:17-63
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:25-60
+service#com.coocaa.remoteplatform.core.service.RemotePlatformService
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-40:19
+	android:exported
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:13-36
+	android:priority
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:13-36
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-88
+intent-filter#action:name:coocaa.intent.action.remote.platform.service
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-39:29
+action#coocaa.intent.action.remote.platform.service
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:17-87
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:25-84
+service#com.coocaa.remoteplatform.core.reply.ReplyService
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:9-47:19
+	android:exported
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-36
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-77
+intent-filter#action:name:coocaa.intent.action.remote.platform.reply
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-46:29
+action#coocaa.intent.action.remote.platform.reply
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:17-85
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:25-82
+receiver#com.coocaa.remoteplatform.core.service.BootReceiver
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:9-53:20
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:19-85
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:13-52:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:17-79
+	android:name
+		ADDED from [:core] D:\project\gitLab\RemotePlatform\core\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:25-76
+permission#getui.permission.GetuiService.${applicationId}
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:13:5-15:44
+	android:protectionLevel
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:15:9-41
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:14:9-70
+permission#getui.permission.GetuiService.com.coocaa.remoteplatform
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:13:5-15:44
+	android:protectionLevel
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:15:9-41
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:14:9-70
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:18:5-79
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:12:5-79
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:12:5-79
+MERGED from [com.coocaa.toolkit.app:app_toolkit:2.5.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a46f69727f5f5750a8f237181d0e3983\app_toolkit-2.5.0\AndroidManifest.xml:11:5-79
+MERGED from [com.coocaa.toolkit.app:app_toolkit:2.5.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a46f69727f5f5750a8f237181d0e3983\app_toolkit-2.5.0\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:18:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:19:5-76
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:19:22-73
+uses-permission#android.permission.GET_TASKS
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:20:5-68
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:13:5-68
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:13:5-68
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:20:22-65
+uses-permission#android.permission.INSTALL_PACKAGES
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:21:5-23:47
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:14:5-75
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:14:5-75
+	tools:ignore
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:23:9-44
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:22:9-59
+uses-permission#getui.permission.GetuiService.${applicationId}
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:24:5-86
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:24:22-83
+uses-permission#getui.permission.GetuiService.com.coocaa.remoteplatform
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:24:5-86
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:24:22-83
+uses-permission#coocaa.permission.ACCESS_SERVER_CONFIG
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:25:5-78
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:16:5-78
+MERGED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:16:5-78
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:25:22-75
+uses-permission#com.tianci.user.permission.READ_CONTENT
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:26:22-76
+activity#com.coocaa.pushlib.MonitorActivity
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:33:9-43:20
+	android:process
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:36:13-39
+	android:multiprocess
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:35:13-41
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:34:13-62
+intent-filter#action:name:android.intent.action.MAIN+action:name:com.coocaa.push.MAIN_ACT+category:name:android.intent.category.DEFAULT
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:37:13-42:29
+action#android.intent.action.MAIN
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:38:17-69
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:38:25-66
+action#com.coocaa.push.MAIN_ACT
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:39:17-67
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:39:25-64
+category#android.intent.category.DEFAULT
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:41:17-76
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:41:27-73
+activity#com.coocaa.pushlib.ui.MessageDetailActivity
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:44:9-80
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:44:19-77
+service#com.coocaa.pushlib.PushService
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:46:9-55:19
+	android:process
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:49:13-39
+	android:exported
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:48:13-36
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:47:13-58
+intent-filter#action:name:com.tianci.push+action:name:com.tianci.push.action+action:name:com.tianci.push.agent
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:50:13-54:29
+action#com.tianci.push
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:51:17-58
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:51:25-55
+action#com.tianci.push.action
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:52:17-65
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:52:25-62
+action#com.tianci.push.agent
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:53:17-64
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:53:25-61
+service#com.coocaa.pushlib.PreIntentService
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:56:9-59:42
+	android:process
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:59:13-39
+	android:exported
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:58:13-37
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:57:13-63
+service#com.coocaa.pushlib.third.igeXin.GeXinIntentService
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:62:9-86
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:62:18-83
+service#com.coocaa.pushlib.third.igeXin.GeXinPushService
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:64:9-67:43
+	android:label
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:67:13-40
+	android:exported
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:66:13-36
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:65:13-76
+receiver#com.coocaa.pushlib.test.PushRegReceiver
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:69:9-73:20
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:69:19-73
+intent-filter#action:name:com.coocaa.push.BC.REG
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:70:13-72:29
+action#com.coocaa.push.BC.REG
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:71:17-65
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:71:25-62
+receiver#com.coocaa.pushlib.test.PushMsgReceiver
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:74:9-78:20
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:74:19-73
+intent-filter#action:name:com.coocaa.push.BC.MSG
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:75:13-77:29
+action#com.coocaa.push.BC.MSG
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:76:17-65
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:76:25-62
+receiver#com.igexin.sdk.PushReceiver
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:79:9-64
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:79:19-61
+receiver#com.coocaa.pushlib.receiver.RecoveryReceiver
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:80:9-84:20
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:80:19-78
+intent-filter#action:name:com.skyworth.broadcast.recovery.start
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:81:13-83:29
+action#com.skyworth.broadcast.recovery.start
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:82:17-80
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:82:25-77
+meta-data#PUSH_APPID
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:86:9-88:54
+	android:value
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:88:13-51
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:87:13-38
+meta-data#PUSH_APPKEY
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:89:9-91:54
+	android:value
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:91:13-51
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:90:13-39
+meta-data#PUSH_APPSECRET
+ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:92:9-94:54
+	android:value
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:94:13-51
+	android:name
+		ADDED from [PushLib-release-1.17.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a2971ac274e335a1851c4c294d6266f0\PushLib-release-1.17\AndroidManifest.xml:93:13-42
+uses-permission#android.permission.REBOOT
+ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-65
+	android:name
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-62
+receiver#com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmBootReceiver
+ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-23:20
+	android:process
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-43
+	android:enabled
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-35
+	android:exported
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-36
+	android:name
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-97
+receiver#com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmReceiver
+ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-28:46
+	android:process
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-43
+	android:enabled
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-35
+	android:exported
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-36
+	android:name
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-93
+receiver#com.coocaa.remoteplatform.baseability.abilities.reboot.RebootAlarmBroadcastReceiver
+ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:9-33:46
+	android:process
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-43
+	android:enabled
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-36
+	android:name
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-111
+service#com.coocaa.remoteplatform.baseability.BaseAbilityClient
+ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:9-46:19
+	android:process
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-43
+	android:exported
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-36
+	android:name
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:13-83
+meta-data#id
+ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-41:73
+	android:value
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:17-70
+	android:name
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:17-34
+intent-filter#action:name:coocaa.intent.action.remote.platform.client
+ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-45:29
+action#coocaa.intent.action.remote.platform.client
+ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:17-86
+	android:name
+		ADDED from [:baseability] D:\project\gitLab\RemotePlatform\baseability\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:25-83
+uses-permission#android.permission.DUMP
+ADDED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:15:5-63
+	android:name
+		ADDED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:15:22-60
+service#com.coocaa.libs.upgrader.runtime.service.UpgraderService
+ADDED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:19:9-28:19
+	android:enabled
+		ADDED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:21:13-35
+	android:exported
+		ADDED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:22:13-36
+	android:name
+		ADDED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:20:13-84
+intent-filter#action:name:coocaa.intent.action.UPGRADE_SERVICE+category:name:android.intent.category.DEFAULT
+ADDED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:23:13-27:29
+action#coocaa.intent.action.UPGRADE_SERVICE
+ADDED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:24:17-79
+	android:name
+		ADDED from [swaiotos.support:upgrader:1.0.92] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\40abd397b557d3ec3f17fd203b06b7ba\upgrader-1.0.92\AndroidManifest.xml:24:25-76
