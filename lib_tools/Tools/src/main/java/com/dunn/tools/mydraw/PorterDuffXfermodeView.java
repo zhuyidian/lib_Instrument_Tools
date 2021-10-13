@@ -20,7 +20,7 @@ import com.dunn.tools.R;
 /**
  * Author:Administrator
  * Date:2021/9/26 15:52
- * Description:PorterDuffXfermodeView
+ * Description:PorterDuff.Mode 测试
  */
 public class PorterDuffXfermodeView extends View {
     private Paint mPaint;

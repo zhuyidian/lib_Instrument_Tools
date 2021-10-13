@@ -54,8 +54,8 @@
 30-->D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:20:9-40
 31        <activity
 31-->D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:21:9-28:20
-32            android:name="com.dunn.tools.sample.DrawActivity"
-32-->D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:22:13-41
+32            android:name="com.dunn.tools.sample.ScreenActivity"
+32-->D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:22:13-43
 33            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
 33-->D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:23:13-69
 34            <intent-filter>

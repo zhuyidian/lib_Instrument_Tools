@@ -12,7 +12,6 @@ import java.util.concurrent.TimeUnit;
 
 public class ThreadManager {
     private final static String TAG = "ThreadManager";
-
     private volatile static ThreadManager instance;
     /**
      * 网络IO线程池
@@ -39,7 +38,6 @@ public class ThreadManager {
         uiThread = new Handler(Looper.getMainLooper());
         HandlerThread ht = new HandlerThread(TAG);
         ht.start();
-
         delayHandler = new Handler(ht.getLooper());
 
         ioThread = new ThreadPoolExecutor(5, 20, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new ThreadFactory() {

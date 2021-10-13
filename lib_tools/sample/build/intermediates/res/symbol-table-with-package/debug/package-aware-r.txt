@@ -939,11 +939,13 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_db
 layout activity_draw
 layout activity_log
 layout activity_main
 layout activity_navigationbar
 layout activity_reflect
+layout activity_screen
 layout activity_shutdown
 layout activity_threadsafety
 layout notification_action

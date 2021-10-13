@@ -44,6 +44,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../Tools/build/generated/res/resValues/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../Tools/src/main/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../Tools/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../Tools/src/main/cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../Tools/src/main/cpp" />
       <excludeFolder url="file://$MODULE_DIR$/../../../Tools/.cxx" />
       <excludeFolder url="file://$MODULE_DIR$/../../../Tools/.externalNativeBuild" />

@@ -1,9 +1,7 @@
 {
   "buildFiles": [
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\compiler_id.cmake",
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\platforms.cmake",
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android-legacy.toolchain.cmake",
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\build\\cmake\\platforms.cmake",
     "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\\CMakeLists.txt"
   ],
   "cleanCommands": [

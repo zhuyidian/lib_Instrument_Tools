@@ -3,6 +3,7 @@ package com.dunn.tools.volume;
 import android.content.Context;
 import android.media.AudioManager;
 
+import com.dunn.tools.common.CommonUtil;
 import com.dunn.tools.log.LogUtil;
 
 public class VolumeUtil {
@@ -37,7 +38,7 @@ public class VolumeUtil {
             AudioManager manager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
             int maxVolume = getMaxVolume(context, AudioManager.STREAM_SYSTEM);
             int currentVolume = getCurrentVolume(context, AudioManager.STREAM_SYSTEM);
-            volume = convertVolume(volume, maxVolume);
+            volume = CommonUtil.convertVolume(volume, maxVolume);
             LogUtil.i("volume", "set volume maxVolume=" + maxVolume + ", currentVolume=" + currentVolume + ", convert volume=" + volume);
             setVolume(context, AudioManager.STREAM_SYSTEM, volume,/*AudioManager.FLAG_SHOW_UI | AudioManager.FLAG_VIBRATE*/AudioManager.FLAG_PLAY_SOUND);
         } catch (Exception e) {
@@ -175,12 +176,5 @@ public class VolumeUtil {
             e.printStackTrace();
             LogUtil.e("volume", "e=" + e);
         }
-    }
-
-    private static int convertVolume(int targetVolume, int maxValue) {
-        int target = (int) ((float) targetVolume / 100 * maxValue);
-        if (target > maxValue) target = maxValue;
-        if (target < 0) target = 0;
-        return target;
     }
 }

@@ -1,5 +1,7 @@
 package com.dunn.tools.reflect;
 
+import android.text.TextUtils;
+
 import com.dunn.tools.log.LogUtil;
 
 import java.lang.reflect.Array;
@@ -8,6 +10,16 @@ import java.lang.reflect.Field;
 public class ReflectUtil {
     private ReflectUtil() {
         throw new UnsupportedOperationException();
+    }
+
+    public static <T> T createClassObject(String className) {
+        if (!TextUtils.isEmpty(className))
+            try {
+                return (T) Class.forName(className).newInstance();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        return null;
     }
 
     /**
