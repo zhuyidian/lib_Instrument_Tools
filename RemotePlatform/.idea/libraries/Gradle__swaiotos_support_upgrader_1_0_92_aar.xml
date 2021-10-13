@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: swaiotos.support:upgrader:1.0.92@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40abd397b557d3ec3f17fd203b06b7ba/upgrader-1.0.92/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40abd397b557d3ec3f17fd203b06b7ba/upgrader-1.0.92/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40abd397b557d3ec3f17fd203b06b7ba/upgrader-1.0.92/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/6.7.1/caches/transforms-2/files-2.1/40abd397b557d3ec3f17fd203b06b7ba/upgrader-1.0.92/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/6.7.1/caches/transforms-2/files-2.1/40abd397b557d3ec3f17fd203b06b7ba/upgrader-1.0.92/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/6.7.1/caches/transforms-2/files-2.1/40abd397b557d3ec3f17fd203b06b7ba/upgrader-1.0.92/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

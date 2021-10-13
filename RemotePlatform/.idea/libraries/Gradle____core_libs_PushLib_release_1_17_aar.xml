@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: ./core/libs/PushLib-release-1.17.aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a2971ac274e335a1851c4c294d6266f0/PushLib-release-1.17/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/6.7.1/caches/transforms-2/files-2.1/a2971ac274e335a1851c4c294d6266f0/PushLib-release-1.17/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a2971ac274e335a1851c4c294d6266f0/PushLib-release-1.17/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a2971ac274e335a1851c4c294d6266f0/PushLib-release-1.17/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a2971ac274e335a1851c4c294d6266f0/PushLib-release-1.17/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a2971ac274e335a1851c4c294d6266f0/PushLib-release-1.17/jars/libs/GetuiSDK2.12.5.0.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/6.7.1/caches/transforms-2/files-2.1/a2971ac274e335a1851c4c294d6266f0/PushLib-release-1.17/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/6.7.1/caches/transforms-2/files-2.1/a2971ac274e335a1851c4c294d6266f0/PushLib-release-1.17/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/6.7.1/caches/transforms-2/files-2.1/a2971ac274e335a1851c4c294d6266f0/PushLib-release-1.17/jars/libs/GetuiSDK2.12.5.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/6.7.1/caches/transforms-2/files-2.1/a2971ac274e335a1851c4c294d6266f0/PushLib-release-1.17/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

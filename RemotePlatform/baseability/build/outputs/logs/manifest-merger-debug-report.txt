@@ -1,23 +1,23 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:3:5-52
 		INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml
 		INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-43:12
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-44:12
 		INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-43:12
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:1-44:12
 		INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:2:11-69
@@ -29,64 +29,68 @@ uses-permission#android.permission.REBOOT
 ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:6:5-65
 	android:name
 		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:6:22-62
+uses-permission#android.permission.SHUTDOWN
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:8:5-41:19
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:9:5-42:19
 receiver#com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmBootReceiver
-ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:9:9-17:20
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:10:9-18:20
 	android:process
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:13:13-43
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:14:13-43
 	android:enabled
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:11:13-35
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:12:13-35
 	android:exported
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:12:13-36
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:13:13-36
 	android:name
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:10:13-60
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:11:13-60
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:14:13-16:29
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:15:13-17:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:15:17-79
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:16:17-79
 	android:name
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:15:25-76
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:16:25-76
 receiver#com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmReceiver
-ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:18:9-22:46
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:19:9-23:46
 	android:process
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:22:13-43
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:23:13-43
 	android:enabled
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:20:13-35
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:21:13-35
 	android:exported
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:21:13-36
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:22:13-36
 	android:name
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:19:13-56
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:20:13-56
 receiver#com.coocaa.remoteplatform.baseability.abilities.reboot.RebootAlarmBroadcastReceiver
-ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:23:9-27:46
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:24:9-28:46
 	android:process
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:27:13-43
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:28:13-43
 	android:enabled
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:25:13-35
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:26:13-35
 	android:exported
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:26:13-36
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:24:13-74
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:25:13-74
 service#com.coocaa.remoteplatform.baseability.BaseAbilityClient
-ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:29:9-40:19
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:30:9-41:19
 	android:process
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:32:13-43
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:33:13-43
 	android:exported
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:31:13-36
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:32:13-36
 	android:name
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:30:13-46
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:31:13-46
 meta-data#id
-ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:33:13-35:73
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:34:13-36:73
 	android:value
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:35:17-70
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:36:17-70
 	android:name
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:34:17-34
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:35:17-34
 intent-filter#action:name:coocaa.intent.action.remote.platform.client
-ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:37:13-39:29
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:38:13-40:29
 action#coocaa.intent.action.remote.platform.client
-ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:38:17-86
+ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:39:17-86
 	android:name
-		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:38:25-83
+		ADDED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml:39:25-83
 uses-sdk
 INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\project\gitLab\RemotePlatform\baseability\src\main\AndroidManifest.xml

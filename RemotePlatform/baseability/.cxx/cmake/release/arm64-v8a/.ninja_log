@@ -5,3 +5,17 @@
 847	999	652166004	../../../../build/intermediates/cmake/release/obj/arm64-v8a/librtc.so	7e4405e3abd60322
 0	7	0	clean	81a0c8a35c45b8df
 0	7	0	clean	81a0c8a35c45b8df
+1	30	0	clean	81a0c8a35c45b8df
+0	9	0	clean	81a0c8a35c45b8df
+0	6	0	clean	81a0c8a35c45b8df
+1	7	0	clean	81a0c8a35c45b8df
+0	6	0	clean	81a0c8a35c45b8df
+4	276	652880990	src/main/jni/CMakeFiles/termux.dir/termux.c.o	fde3d3515b319425
+276	375	652880991	../../../../build/intermediates/cmake/release/obj/arm64-v8a/libtermux.so	12ecab2249671197
+44	704	652880991	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	243d03e11f28d8de
+704	835	652880991	../../../../build/intermediates/cmake/release/obj/arm64-v8a/librtc.so	7e4405e3abd60322
+0	7	0	clean	81a0c8a35c45b8df
+2	202	652881212	src/main/jni/CMakeFiles/termux.dir/termux.c.o	fde3d3515b319425
+34	556	652881212	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	243d03e11f28d8de
+202	584	652881212	../../../../build/intermediates/cmake/release/obj/arm64-v8a/libtermux.so	12ecab2249671197
+557	680	652881212	../../../../build/intermediates/cmake/release/obj/arm64-v8a/librtc.so	7e4405e3abd60322

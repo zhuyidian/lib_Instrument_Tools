@@ -1,22 +1,10 @@
-#Fri Sep 03 11:09:47 CST 2021
-path.1=classes.dex
+#Wed Oct 13 11:21:45 CST 2021
+path.2=classes3.dex
+path.1=classes2.dex
 path.0=classes.dex
-renamed.6=classes7.dex
-renamed.5=classes6.dex
-renamed.4=classes5.dex
-renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.6=D\:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\dex\\BetaSystemUidDebug\\mergeLibDexBetaSystemUidDebug\\classes_3.dex
-base.5=D\:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\dex\\BetaSystemUidDebug\\mergeLibDexBetaSystemUidDebug\\classes_2.dex
-base.4=D\:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\dex\\BetaSystemUidDebug\\mergeLibDexBetaSystemUidDebug\\classes_1.dex
-base.3=D\:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\dex\\BetaSystemUidDebug\\mergeLibDexBetaSystemUidDebug\\classes_0.dex
-base.2=D\:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\dex\\BetaSystemUidDebug\\mergeExtDexBetaSystemUidDebug\\classes2.dex
-base.1=D\:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\dex\\BetaSystemUidDebug\\mergeProjectDexBetaSystemUidDebug\\classes.dex
-base.0=D\:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\dex\\BetaSystemUidDebug\\mergeExtDexBetaSystemUidDebug\\classes.dex
-path.6=classes_3.dex
-path.5=classes_2.dex
-path.4=classes_1.dex
-path.3=classes_0.dex
-path.2=classes2.dex
+base.2=D\:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\dex\\BetaSystemUidDebug\\mergeDexBetaSystemUidDebug\\classes3.dex
+base.1=D\:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\dex\\BetaSystemUidDebug\\mergeDexBetaSystemUidDebug\\classes2.dex
+base.0=D\:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\dex\\BetaSystemUidDebug\\mergeDexBetaSystemUidDebug\\classes.dex

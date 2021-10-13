@@ -4,7 +4,7 @@
             "outputFile": "D:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\res\\merged\\BetaSystemUid\\debug\\values-en_values-en.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\40abd397b557d3ec3f17fd203b06b7ba\\upgrader-1.0.92\\res\\values-en\\values-en.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\6.7.1\\caches\\transforms-2\\files-2.1\\40abd397b557d3ec3f17fd203b06b7ba\\upgrader-1.0.92\\res\\values-en\\values-en.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -19,7 +19,7 @@
             "outputFile": "D:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\res\\merged\\BetaSystemUid\\debug\\values-w820dp-v13_values-w820dp-v13.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a2971ac274e335a1851c4c294d6266f0\\PushLib-release-1.17\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\6.7.1\\caches\\transforms-2\\files-2.1\\a2971ac274e335a1851c4c294d6266f0\\PushLib-release-1.17\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -33,23 +33,6 @@
         {
             "outputFile": "D:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\res\\merged\\BetaSystemUid\\debug\\values_values.arsc.flat",
             "map": [
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\b6412b3819ab80a2509ec09722ab5efb\\recyclerview-v7-23.2.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "3,4,5,6,2",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "327,402,478,550,55",
-                        "endColumns": "74,75,71,65,271",
-                        "endOffsets": "397,473,545,611,322"
-                    },
-                    "to": {
-                        "startLines": "22,23,24,25,46",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "1058,1133,1209,1281,2544",
-                        "endColumns": "74,75,71,65,271",
-                        "endOffsets": "1128,1204,1276,1342,2811"
-                    }
-                },
                 {
                     "source": "D:\\project\\gitLab\\RemotePlatform\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
@@ -68,7 +51,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\40abd397b557d3ec3f17fd203b06b7ba\\upgrader-1.0.92\\res\\values\\values.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\6.7.1\\caches\\transforms-2\\files-2.1\\a2971ac274e335a1851c4c294d6266f0\\PushLib-release-1.17\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,146,193,244,285,343,444,482",
+                        "endColumns": "45,46,50,40,57,55,37,112",
+                        "endOffsets": "141,188,239,280,338,394,477,590"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,20,21,27,45",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "140,186,233,284,944,1002,1399,2431",
+                        "endColumns": "45,46,50,40,57,55,37,112",
+                        "endOffsets": "181,228,279,320,997,1053,1432,2539"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\6.7.1\\caches\\transforms-2\\files-2.1\\40abd397b557d3ec3f17fd203b06b7ba\\upgrader-1.0.92\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -85,20 +85,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a2971ac274e335a1851c4c294d6266f0\\PushLib-release-1.17\\res\\values\\values.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\6.7.1\\caches\\transforms-2\\files-2.1\\b6412b3819ab80a2509ec09722ab5efb\\recyclerview-v7-23.2.0\\res\\values\\values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "100,146,193,244,285,343,444,482",
-                        "endColumns": "45,46,50,40,57,55,37,112",
-                        "endOffsets": "141,188,239,280,338,394,477,590"
+                        "startLines": "3,4,5,6,2",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "327,402,478,550,55",
+                        "endColumns": "74,75,71,65,271",
+                        "endOffsets": "397,473,545,611,322"
                     },
                     "to": {
-                        "startLines": "3,4,5,6,20,21,27,45",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "140,186,233,284,944,1002,1399,2431",
-                        "endColumns": "45,46,50,40,57,55,37,112",
-                        "endOffsets": "181,228,279,320,997,1053,1432,2539"
+                        "startLines": "22,23,24,25,46",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "1058,1133,1209,1281,2544",
+                        "endColumns": "74,75,71,65,271",
+                        "endOffsets": "1128,1204,1276,1342,2811"
                     }
                 }
             ]

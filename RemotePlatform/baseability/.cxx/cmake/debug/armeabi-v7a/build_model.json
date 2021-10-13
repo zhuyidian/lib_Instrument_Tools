@@ -171,7 +171,6 @@
       "project": {
         "compilerSettingsCacheFolder": "D:\\project\\gitLab\\RemotePlatform\\.cxx",
         "cxxFolder": "D:\\project\\gitLab\\RemotePlatform\\.cxx",
-        "ideBuildTargetAbi": "armeabi-v7a,armeabi",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
@@ -195,7 +194,10 @@
     "objFolder": "D:\\project\\gitLab\\RemotePlatform\\baseability\\build\\intermediates\\cmake\\debug\\obj",
     "variantName": "debug",
     "validAbiList": [
-      "ARMEABI_V7A"
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
     ],
     "prefabDirectory": "D:\\project\\gitLab\\RemotePlatform\\baseability\\.cxx\\cmake\\debug\\prefab",
     "prefabPackageDirectoryList": []

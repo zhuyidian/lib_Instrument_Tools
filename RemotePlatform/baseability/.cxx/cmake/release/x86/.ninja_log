@@ -5,3 +5,17 @@
 541	696	652166005	../../../../build/intermediates/cmake/release/obj/x86/librtc.so	4b014bc2207a1c13
 1	13	0	clean	81a0c8a35c45b8df
 0	7	0	clean	81a0c8a35c45b8df
+1	16	0	clean	81a0c8a35c45b8df
+0	6	0	clean	81a0c8a35c45b8df
+0	7	0	clean	81a0c8a35c45b8df
+0	6	0	clean	81a0c8a35c45b8df
+0	6	0	clean	81a0c8a35c45b8df
+36	257	652880991	src/main/jni/CMakeFiles/termux.dir/termux.c.o	a544bbdbde360850
+257	348	652880991	../../../../build/intermediates/cmake/release/obj/x86/libtermux.so	8b383cb01f3cc75e
+3	541	652880992	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	62e44568c123bc05
+541	640	652880992	../../../../build/intermediates/cmake/release/obj/x86/librtc.so	4b014bc2207a1c13
+0	6	0	clean	81a0c8a35c45b8df
+31	236	652881212	src/main/jni/CMakeFiles/termux.dir/termux.c.o	a544bbdbde360850
+2	519	652881213	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	62e44568c123bc05
+236	697	652881213	../../../../build/intermediates/cmake/release/obj/x86/libtermux.so	8b383cb01f3cc75e
+519	706	652881213	../../../../build/intermediates/cmake/release/obj/x86/librtc.so	4b014bc2207a1c13

@@ -8,12 +8,25 @@ com/coocaa/remoteplatform/baseability/abilities/AbsAbility.java
  com.coocaa.remoteplatform.baseability.abilities.AbsAbility
 com/coocaa/remoteplatform/baseability/abilities/reboot/RebootAlarmBroadcastReceiver.java
  com.coocaa.remoteplatform.baseability.abilities.reboot.RebootAlarmBroadcastReceiver
+com/coocaa/remoteplatform/baseability/common/FileUtils.java
+ com.coocaa.remoteplatform.baseability.common.FileUtils
+ com.coocaa.remoteplatform.baseability.common.FileUtils$1
+ com.coocaa.remoteplatform.baseability.common.FileUtils$2
+ com.coocaa.remoteplatform.baseability.common.FileUtils$IFileDownloadCallback
+ com.coocaa.remoteplatform.baseability.common.FileUtils$IFileUpLoadCallback
 com/coocaa/remoteplatform/baseability/abilities/terminal/TerminalOutput.java
  com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalOutput
+com/coocaa/remoteplatform/baseability/BaseAbilityImpl.java
+ com.coocaa.remoteplatform.baseability.BaseAbilityImpl
+ com.coocaa.remoteplatform.baseability.BaseAbilityImpl$InstanceClass
 com/coocaa/remoteplatform/baseability/abilities/volume/VolumeImpl.java
  com.coocaa.remoteplatform.baseability.abilities.volume.VolumeImpl
 com/coocaa/remoteplatform/baseability/BaseAbilityClient.java
  com.coocaa.remoteplatform.baseability.BaseAbilityClient
+com/coocaa/remoteplatform/baseability/abilities/terminal/ByteQueue.java
+ com.coocaa.remoteplatform.baseability.abilities.terminal.ByteQueue
+com/coocaa/remoteplatform/baseability/abilities/shutdown/Shutdown.java
+ com.coocaa.remoteplatform.baseability.abilities.shutdown.Shutdown
 com/coocaa/remoteplatform/baseability/abilities/socket/SocketData.java
  com.coocaa.remoteplatform.baseability.abilities.socket.SocketData
 com/coocaa/remoteplatform/baseability/abilities/terminal/TerminalImpl.java
@@ -22,10 +35,12 @@ com/coocaa/remoteplatform/baseability/abilities/terminal/TerminalImpl.java
  com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalImpl$1$1
  com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalImpl$2
  com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalImpl$TerminalContent
-com/coocaa/remoteplatform/baseability/abilities/time/bean/TimeTaskBean.java
- com.coocaa.remoteplatform.baseability.abilities.time.bean.TimeTaskBean
-com/coocaa/remoteplatform/baseability/common/DeviceInfoUtils.java
- com.coocaa.remoteplatform.baseability.common.DeviceInfoUtils
+com/coocaa/remoteplatform/baseability/abilities/file/FileImpl.java
+ com.coocaa.remoteplatform.baseability.abilities.file.FileImpl
+ com.coocaa.remoteplatform.baseability.abilities.file.FileImpl$1
+ com.coocaa.remoteplatform.baseability.abilities.file.FileImpl$2
+com/coocaa/remoteplatform/baseability/abilities/rtc/AlarmBootReceiver.java
+ com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmBootReceiver
 com/coocaa/remoteplatform/baseability/abilities/terminal/ClientConnect.java
  com.coocaa.remoteplatform.baseability.abilities.terminal.ClientConnect
  com.coocaa.remoteplatform.baseability.abilities.terminal.ClientConnect$1
@@ -35,10 +50,19 @@ com/coocaa/remoteplatform/baseability/abilities/terminal/ClientConnect.java
  com.coocaa.remoteplatform.baseability.abilities.terminal.ClientConnect$SessionChangedCallback
 com/coocaa/remoteplatform/baseability/abilities/rtc/AlarmReceiver.java
  com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmReceiver
+com/coocaa/remoteplatform/baseability/abilities/screenshot/ScreenShotImpl.java
+ com.coocaa.remoteplatform.baseability.abilities.screenshot.ScreenShotImpl
+ com.coocaa.remoteplatform.baseability.abilities.screenshot.ScreenShotImpl$1
+ com.coocaa.remoteplatform.baseability.abilities.screenshot.ScreenShotImpl$2
+com/coocaa/remoteplatform/baseability/abilities/terminal/TerminalSession.java
+ com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession
+ com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession$1
+ com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession$2
+ com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession$3
+ com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession$4
+ com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession$SessionChangedCallback
 com/coocaa/remoteplatform/baseability/BuildConfig.java
  com.coocaa.remoteplatform.baseability.BuildConfig
-com/coocaa/remoteplatform/baseability/abilities/time/constant/TimeConstant.java
- com.coocaa.remoteplatform.baseability.abilities.time.constant.TimeConstant
 com/coocaa/remoteplatform/baseability/abilities/screensync/ScreenSyncImpl.java
  com.coocaa.remoteplatform.baseability.abilities.screensync.ScreenSyncImpl
  com.coocaa.remoteplatform.baseability.abilities.screensync.ScreenSyncImpl$1
@@ -59,90 +83,22 @@ com/coocaa/remoteplatform/baseability/abilities/IAbility.java
 com/coocaa/remoteplatform/baseability/abilities/rtc/Alarm.java
  com.coocaa.remoteplatform.baseability.abilities.rtc.Alarm
  com.coocaa.remoteplatform.baseability.abilities.rtc.Alarm$Day
-com/coocaa/remoteplatform/baseability/abilities/time/task/Dispatcher.java
- com.coocaa.remoteplatform.baseability.abilities.time.task.Dispatcher
- com.coocaa.remoteplatform.baseability.abilities.time.task.Dispatcher$1
+com/coocaa/remoteplatform/baseability/abilities/shutdown/ShutdownImpl.java
+ com.coocaa.remoteplatform.baseability.abilities.shutdown.ShutdownImpl
 com/coocaa/remoteplatform/baseability/abilities/volume/Volume.java
  com.coocaa.remoteplatform.baseability.abilities.volume.Volume
-com/coocaa/remoteplatform/baseability/abilities/time/task/TimeRunnable.java
- com.coocaa.remoteplatform.baseability.abilities.time.task.TimeRunnable
+com/coocaa/remoteplatform/baseability/abilities/reboot/Reboot.java
+ com.coocaa.remoteplatform.baseability.abilities.reboot.Reboot
+com/coocaa/remoteplatform/baseability/abilities/rtc/AlarmImpl.java
+ com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmImpl
+ com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmImpl$MyDate
 com/coocaa/remoteplatform/baseability/abilities/screensync/ScreenSyncBean.java
  com.coocaa.remoteplatform.baseability.abilities.screensync.ScreenSyncBean
 com/coocaa/remoteplatform/baseability/abilities/socket/SocketImpl.java
  com.coocaa.remoteplatform.baseability.abilities.socket.SocketImpl
-com/coocaa/remoteplatform/baseability/abilities/rtc/AlarmBootReceiver.java
- com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmBootReceiver
-com/coocaa/remoteplatform/baseability/abilities/reboot/Reboot.java
- com.coocaa.remoteplatform.baseability.abilities.reboot.Reboot
-com/coocaa/remoteplatform/baseability/abilities/time/TimeManager.java
- com.coocaa.remoteplatform.baseability.abilities.time.TimeManager
- com.coocaa.remoteplatform.baseability.abilities.time.TimeManager$1
- com.coocaa.remoteplatform.baseability.abilities.time.TimeManager$InstanceClass
-com/coocaa/remoteplatform/baseability/abilities/time/bean/TimeAnalysis.java
- com.coocaa.remoteplatform.baseability.abilities.time.bean.TimeAnalysis
- com.coocaa.remoteplatform.baseability.abilities.time.bean.TimeAnalysis$1
- com.coocaa.remoteplatform.baseability.abilities.time.bean.TimeAnalysis$2
- com.coocaa.remoteplatform.baseability.abilities.time.bean.TimeAnalysis$3
- com.coocaa.remoteplatform.baseability.abilities.time.bean.TimeAnalysis$4
-com/coocaa/remoteplatform/baseability/abilities/time/filter/checkCmdTypeFilter.java
- com.coocaa.remoteplatform.baseability.abilities.time.filter.checkCmdTypeFilter
-com/coocaa/remoteplatform/baseability/abilities/time/task/TimeClient.java
- com.coocaa.remoteplatform.baseability.abilities.time.task.TimeClient
- com.coocaa.remoteplatform.baseability.abilities.time.task.TimeClient$1
- com.coocaa.remoteplatform.baseability.abilities.time.task.TimeClient$Builder
-com/coocaa/remoteplatform/baseability/common/FileUtils.java
- com.coocaa.remoteplatform.baseability.common.FileUtils
- com.coocaa.remoteplatform.baseability.common.FileUtils$1
- com.coocaa.remoteplatform.baseability.common.FileUtils$2
- com.coocaa.remoteplatform.baseability.common.FileUtils$IFileDownloadCallback
- com.coocaa.remoteplatform.baseability.common.FileUtils$IFileUpLoadCallback
-com/coocaa/remoteplatform/baseability/abilities/time/bean/TimeBean.java
- com.coocaa.remoteplatform.baseability.abilities.time.bean.TimeBean
- com.coocaa.remoteplatform.baseability.abilities.time.bean.TimeBean$DayBean
-com/coocaa/remoteplatform/baseability/BaseAbilityImpl.java
- com.coocaa.remoteplatform.baseability.BaseAbilityImpl
- com.coocaa.remoteplatform.baseability.BaseAbilityImpl$InstanceClass
-com/coocaa/remoteplatform/baseability/abilities/terminal/ByteQueue.java
- com.coocaa.remoteplatform.baseability.abilities.terminal.ByteQueue
-com/coocaa/remoteplatform/baseability/abilities/shutdown/Shutdown.java
- com.coocaa.remoteplatform.baseability.abilities.shutdown.Shutdown
-com/coocaa/remoteplatform/baseability/abilities/time/filter/ITimeTaskFilter.java
- com.coocaa.remoteplatform.baseability.abilities.time.filter.ITimeTaskFilter
-com/coocaa/remoteplatform/baseability/abilities/time/task/Call.java
- com.coocaa.remoteplatform.baseability.abilities.time.task.Call
-com/coocaa/remoteplatform/baseability/abilities/time/filter/checkPlanTypeFilter.java
- com.coocaa.remoteplatform.baseability.abilities.time.filter.checkPlanTypeFilter
-com/coocaa/remoteplatform/baseability/abilities/time/task/TimeTaskQueue.java
- com.coocaa.remoteplatform.baseability.abilities.time.task.TimeTaskQueue
- com.coocaa.remoteplatform.baseability.abilities.time.task.TimeTaskQueue$1
-com/coocaa/remoteplatform/baseability/abilities/time/task/Callback.java
- com.coocaa.remoteplatform.baseability.abilities.time.task.Callback
-com/coocaa/remoteplatform/baseability/abilities/file/FileImpl.java
- com.coocaa.remoteplatform.baseability.abilities.file.FileImpl
- com.coocaa.remoteplatform.baseability.abilities.file.FileImpl$1
- com.coocaa.remoteplatform.baseability.abilities.file.FileImpl$2
-com/coocaa/remoteplatform/baseability/abilities/screenshot/ScreenShotImpl.java
- com.coocaa.remoteplatform.baseability.abilities.screenshot.ScreenShotImpl
- com.coocaa.remoteplatform.baseability.abilities.screenshot.ScreenShotImpl$1
- com.coocaa.remoteplatform.baseability.abilities.screenshot.ScreenShotImpl$2
-com/coocaa/remoteplatform/baseability/abilities/terminal/TerminalSession.java
- com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession
- com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession$1
- com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession$2
- com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession$3
- com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession$4
- com.coocaa.remoteplatform.baseability.abilities.terminal.TerminalSession$SessionChangedCallback
-com/coocaa/remoteplatform/baseability/abilities/time/TimeTest.java
- com.coocaa.remoteplatform.baseability.abilities.time.TimeTest
-com/coocaa/remoteplatform/baseability/abilities/deviceinfo/DeviceInfoImpl.java
- com.coocaa.remoteplatform.baseability.abilities.deviceinfo.DeviceInfoImpl
-com/coocaa/remoteplatform/baseability/abilities/rtc/AlarmImpl.java
- com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmImpl
- com.coocaa.remoteplatform.baseability.abilities.rtc.AlarmImpl$MyDate
-com/coocaa/remoteplatform/baseability/abilities/time/task/RealCall.java
- com.coocaa.remoteplatform.baseability.abilities.time.task.RealCall
- com.coocaa.remoteplatform.baseability.abilities.time.task.RealCall$AsyncCall
 com/coocaa/remoteplatform/baseability/abilities/AbilityFactory.java
  com.coocaa.remoteplatform.baseability.abilities.AbilityFactory
-com/coocaa/remoteplatform/baseability/abilities/shutdown/ShutdownImpl.java
- com.coocaa.remoteplatform.baseability.abilities.shutdown.ShutdownImpl
+com/coocaa/remoteplatform/baseability/abilities/deviceinfo/DeviceInfoImpl.java
+ com.coocaa.remoteplatform.baseability.abilities.deviceinfo.DeviceInfoImpl
+com/coocaa/remoteplatform/baseability/common/DeviceInfoUtils.java
+ com.coocaa.remoteplatform.baseability.common.DeviceInfoUtils

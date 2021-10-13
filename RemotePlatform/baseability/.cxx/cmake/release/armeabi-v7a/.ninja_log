@@ -5,3 +5,17 @@
 909	1123	652102035	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/librtc.so	5d1c7192ef2ddca4
 0	8	0	clean	81a0c8a35c45b8df
 0	6	0	clean	81a0c8a35c45b8df
+0	26	0	clean	81a0c8a35c45b8df
+1	7	0	clean	81a0c8a35c45b8df
+0	6	0	clean	81a0c8a35c45b8df
+0	6	0	clean	81a0c8a35c45b8df
+0	7	0	clean	81a0c8a35c45b8df
+3	355	652880989	src/main/jni/CMakeFiles/termux.dir/termux.c.o	e26c5fec56483fa3
+355	506	652880990	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libtermux.so	5a063ac2bac710c8
+50	886	652880990	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	5d22daebdffd0dae
+886	1016	652880990	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/librtc.so	5d1c7192ef2ddca4
+0	7	0	clean	81a0c8a35c45b8df
+3	1289	652881211	src/main/jni/CMakeFiles/termux.dir/termux.c.o	e26c5fec56483fa3
+83	1584	652881211	src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o	5d22daebdffd0dae
+1289	1774	652881211	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libtermux.so	5a063ac2bac710c8
+1584	1786	652881211	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/librtc.so	5d1c7192ef2ddca4

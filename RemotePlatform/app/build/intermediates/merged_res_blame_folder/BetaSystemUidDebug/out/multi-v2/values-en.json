@@ -4,7 +4,7 @@
             "outputFile": "D:\\project\\gitLab\\RemotePlatform\\app\\build\\intermediates\\incremental\\mergeBetaSystemUidDebugResources\\merged.dir\\values-en\\values-en.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\40abd397b557d3ec3f17fd203b06b7ba\\upgrader-1.0.92\\res\\values-en\\values-en.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\6.7.1\\caches\\transforms-2\\files-2.1\\40abd397b557d3ec3f17fd203b06b7ba\\upgrader-1.0.92\\res\\values-en\\values-en.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

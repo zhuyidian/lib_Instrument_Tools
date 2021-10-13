@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.coocaa.remoteplatform"
     android:sharedUserId="android.uid.system"
-    android:versionCode="210200124"
-    android:versionName="2.1.2.124" >
+    android:versionCode="210200133"
+    android:versionName="2.1.2.133" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -25,6 +25,7 @@
     <uses-permission android:name="coocaa.permission.ACCESS_SERVER_CONFIG" />
     <uses-permission android:name="com.tianci.user.permission.READ_CONTENT" />
     <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.SHUTDOWN" />
     <uses-permission android:name="android.permission.DUMP" />
 
     <application
@@ -35,7 +36,6 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:usesCleartextTraffic="true" >
         <activity android:name="com.coocaa.remoteplatform.TestActivity" />
 

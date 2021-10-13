@@ -1,0 +1,137 @@
+plugins {
+    id 'com.android.application'
+}
+ext {
+    systemUidFlag = 3
+    major = 1
+    minor = 2
+}
+def ver_build = getCommitNum()
+
+android {
+    compileSdkVersion rootProject.ext.compile_sdk_version
+    buildToolsVersion rootProject.ext.build_tools_version
+
+    defaultConfig {
+        applicationId "com.coocaa.remoteplatform"
+        minSdkVersion rootProject.ext.min_sdk_version
+        targetSdkVersion rootProject.ext.target_sdk_version
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+    productFlavors {
+        Beta {
+            dimension "address"
+            manifestPlaceholders = ["SOCKET_ADDRESS": "https://beta-fusionmedia.skysrt.com/ccp2p",
+                                    "HTTP_ADDRESS"  : "https://beta-fusionmedia.skysrt.com/ccp2p/",
+                                    "FILE_ADDRESS"  : "https://beta-fusionmedia.skysrt.com/ccp2p/file/upload",
+                                    "PUSH_ADDRESS"  : "172.20.151.204",
+                                    "PUSH_PORT"     : "50031",
+				    "REQUEST_ADDRESS": "https://beta-fusionmedia.skysrt.com/ccdevice/control/",	
+                                    "SOCKET_SALT"   : "MFZAa@=R!rTli+:e"]
+        }
+        Production {
+            dimension "address"
+            manifestPlaceholders = ["SOCKET_ADDRESS": "https://fusionmedia.skysrt.com:4443/ccp2p",
+                                    "HTTP_ADDRESS"  : "https://fusionmedia.skysrt.com:4443/ccp2p/",
+                                    "FILE_ADDRESS"  : "https://fusionmedia.skysrt.com:4443/ccp2p/file/upload",
+                                    "PUSH_ADDRESS"  : "push2-fusionmedia.skysrt.com",
+                                    "PUSH_PORT"     : "50030",
+                                    "REQUEST_ADDRESS": "https://fusionmedia.skysrt.com/ccdevice/control/", 
+                                    "SOCKET_SALT"   : "uGai@t!s=0D+:DA"]
+        }
+
+        SystemUid {
+            dimension "SystemUid"
+            manifestPlaceholders = ["SYSTEM_UID": "android.uid.system"]
+            systemUidFlag = 2
+            versionCode getSelfDefinedVersion()
+            versionName systemUidFlag.toString() + "." + major.toString() + "." + minor.toString() + "." + ver_build
+        }
+
+        NonSystemUid {
+            dimension "SystemUid"
+            manifestPlaceholders = ["SYSTEM_UID": ""]
+            systemUidFlag = 1
+            versionCode getSelfDefinedVersion()
+            versionName systemUidFlag.toString() + "." + major.toString() + "." + minor.toString() + "." + ver_build
+        }
+    }
+
+    signingConfigs {
+        def path = '../keystores/platform.keystore'
+        releaseConfig {
+            keyAlias "skyworth"
+            keyPassword "android"
+            storeFile file(path)
+            storePassword "android"
+        }
+
+        debugConfig {
+            keyAlias "skyworth"
+            keyPassword "android"
+            storeFile file(path)
+            storePassword "android"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debugConfig
+        }
+        android.applicationVariants.all {
+            variant ->
+                variant.outputs.all {
+                    if (variant.flavorName.contains("SystemUid")) {
+                        systemUidFlag = 2
+                    }
+                    if (variant.flavorName.contains("NonSystemUid")) {
+                        systemUidFlag = 1
+                    }
+                    outputFileName = applicationId + '-' + variant.flavorName + '-' + systemUidFlag + "." + major + '.' + minor + '.' + ver_build + '.apk'
+                }
+        }
+    }
+    flavorDimensions "address", "SystemUid"
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.java_version
+        targetCompatibility rootProject.ext.java_version
+    }
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/io.netty.versions.properties'
+    }
+}
+
+def static getCommitNum() {
+    Process process = "git rev-list --count HEAD".execute()
+    process.waitFor()
+    return process.getText().toInteger()
+}
+
+def getSelfDefinedVersion() {
+    int commit_num = getCommitNum()
+    return (Integer.valueOf(systemUidFlag) * 1000 + Integer.valueOf(major) * 100 + Integer.valueOf(minor)) * 100000 + commit_num
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':core')
+    implementation project(':baseability')
+    implementation project(':sdk')
+    implementation project(':common')
+    implementation "com.android.support:multidex:1.0.3"
+}
