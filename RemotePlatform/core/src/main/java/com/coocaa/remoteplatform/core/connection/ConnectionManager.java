@@ -7,6 +7,7 @@ import com.coocaa.remoteplatform.core.connection.push.PushChannel;
 import com.coocaa.remoteplatform.core.connection.socket.SocketChannel;
 import com.coocaa.remoteplatform.core.dispatcher.IMessageDispatcher;
 import com.coocaa.remoteplatform.core.common.RemoteCommand;
+import com.remoteplatform.commom.LogUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,6 +50,8 @@ public class ConnectionManager implements IConnectionManager {
             boolean result = System.currentTimeMillis() - command.timestamp > COMMAND_OVERDUE_MS;
             if (result) {
                 command.replyError(mContext).withMessage("command timestamp > 30s").reply();
+                LogUtil.i("command", "filter: " + (command != null ? command.msgOrigin : "unknown") +
+                        "---> [Error] command timestamp > 30s");
             }
             return result;
         }
@@ -64,6 +67,7 @@ public class ConnectionManager implements IConnectionManager {
         public boolean filter(RemoteCommand command) {
             if (HOST_PACKAGE_NAME.equalsIgnoreCase(command.clientId)) {
                 if (CMD_TYPE_OPEN_SOCKET_CHANNEL == command.cmdType || CMD_TYPE_CLOSE_SOCKET_CHANNEL == command.cmdType) {
+                    LogUtil.i("command", "filter: go to open/close stomp");
                     mSocketChannel.handleMessage(command);
                     return true;
                 }
@@ -89,12 +93,14 @@ public class ConnectionManager implements IConnectionManager {
             if (command == null) {
                 return;
             }
+            LogUtil.i("command", "onReceiveCommand: <---" + (command != null ? command.msgOrigin : "unknown") +
+                    ", RemoteCommand=" + command);
             command.replyReceived(mContext).reply();
+            LogUtil.i("command", "onReceiveCommand: " + (command != null ? command.msgOrigin : "unknown") + "---> [Receive]");
             if (filterCommand(command)) {
                 return;
             }
             mMessageDispatcher.dispatchMessage(command);
-
         }
     };
 

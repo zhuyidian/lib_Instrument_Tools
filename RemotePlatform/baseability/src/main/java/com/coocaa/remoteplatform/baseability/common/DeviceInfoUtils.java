@@ -37,7 +37,7 @@ public class DeviceInfoUtils {
         float convertVom = (float) currentVolume / maxValue * 100;
         //int target = (int) convertVom;
         int target = Math.round(convertVom);
-        if (target > maxValue) target = maxValue;
+        if (target > 100) target = 100;
         if (target < 0) target = 0;
         return target;
     }

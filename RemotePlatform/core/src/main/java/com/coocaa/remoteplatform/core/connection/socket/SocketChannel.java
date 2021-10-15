@@ -14,6 +14,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.remoteplatform.commom.Constant;
+import com.remoteplatform.commom.LogUtil;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -83,6 +84,8 @@ public class SocketChannel implements IConnectChannel {
     @Override
     public void handleMessage(RemoteCommand command) {
         command.replyProcessing(mContext).reply();
+        LogUtil.i("command", "handleMessage: " + (command != null ? command.msgOrigin : "unknown") +
+                "---> [Processing]");
         SocketContent content = gson.fromJson(command.content, SocketContent.class);
         if (!"command".equalsIgnoreCase(content.topicName)) {
             return;
@@ -91,12 +94,18 @@ public class SocketChannel implements IConnectChannel {
         if (CMD_TYPE_OPEN_SOCKET_CHANNEL == command.cmdType) {
             if (connect()) {
                 command.replyFinish(mContext).withDeviceId(mAttachInfo.getDeviceId()).reply();
+                LogUtil.i("command", "handleMessage: " + (command != null ? command.msgOrigin : "unknown") +
+                        "---> [Finish] stomp connect success");
             } else {
                 command.replyError(mContext).withDeviceId(mAttachInfo.getDeviceId()).reply();
+                LogUtil.i("command", "handleMessage: " + (command != null ? command.msgOrigin : "unknown") +
+                        "---> [Error] stomp connect error");
             }
         } else if (CMD_TYPE_CLOSE_SOCKET_CHANNEL == command.cmdType) {
             disConnect();
             command.replyFinish(mContext).withDeviceId(mAttachInfo.getDeviceId()).reply();
+            LogUtil.i("command", "handleMessage: " + (command != null ? command.msgOrigin : "unknown") +
+                    "---> [Finish] stomp disConnect");
         }
     }
 
@@ -157,7 +166,8 @@ public class SocketChannel implements IConnectChannel {
         @Override
         public void accept(StompMessage stompMessage) throws Exception {
             String payLoad = stompMessage.getPayload();
-            Log.i(TAG, "on command receive: " + payLoad);
+            //Log.i(TAG, "on command receive: " + payLoad);
+            LogUtil.i("command", "accept: <---stomp payLoad=" + payLoad);
             if (mCallback != null) {
                 RemoteCommand result = com.coocaa.remoteplatform.core.connection.Utils.createRemoteCommandFromJson(payLoad);
                 result.msgOrigin = COMMAND_SOURCE_SOCKET;
@@ -175,6 +185,7 @@ public class SocketChannel implements IConnectChannel {
     private void handleHeartBeat(RemoteCommand remoteCommand) {
         Log.i(TAG, "handleHeartBeat: ");
         remoteCommand.replyFinish(mContext).reply();
+        LogUtil.i("command", "accept: stomp---> [Finish] heart beat");
     }
 
     private String getTopicAddress(String topic) {

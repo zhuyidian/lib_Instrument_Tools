@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="remote[" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="DeviceInfoImpl" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
@@ -32,7 +32,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ffe0b01-1c43-4313-9196-414737128a2a" name="Default Changelist" comment="1，远程控制音量兼容" />
+    <list default="true" id="1ffe0b01-1c43-4313-9196-414737128a2a" name="Default Changelist" comment="代码日志分析">
+      <change beforePath="$PROJECT_DIR$/baseability/src/main/java/com/coocaa/remoteplatform/baseability/abilities/deviceinfo/DeviceInfoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/baseability/src/main/java/com/coocaa/remoteplatform/baseability/abilities/deviceinfo/DeviceInfoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseability/src/main/java/com/coocaa/remoteplatform/baseability/common/DeviceInfoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/baseability/src/main/java/com/coocaa/remoteplatform/baseability/common/DeviceInfoUtils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +47,7 @@
       <option value="module" />
     </option>
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@172.20.147.26:5555]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\Administrator\.android\avd\Pixel_3a_API_30_x86.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -102,12 +105,16 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project\gitLab\RemotePlatform\core\libs" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.coocaa.remoteplatform.core" />
       <recent name="com.coocaa.remoteplatform.baseability" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\gitLab\RemotePlatform\baseability\libs" />
+      <recent name="D:\project\gitLab\RemotePlatform\baseability\src\main\java\android\os\signwaymanager" />
+      <recent name="D:\project\gitLab\RemotePlatform\baseability" />
+      <recent name="D:\project\gitLab\RemotePlatform\baseability\src\main\java\com\coocaa\remoteplatform\baseability\abilities\time" />
+      <recent name="D:\project\gitLab\RemotePlatform\common\src\main\java\com\remoteplatform\commom" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.coocaa.remoteplatform.core.request" />
@@ -116,12 +123,8 @@
       <recent name="com.remoteplatform.commom" />
       <recent name="com.coocaa.remoteplatform.baseability.abilities.time.bean" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\gitLab\RemotePlatform\baseability\libs" />
-      <recent name="D:\project\gitLab\RemotePlatform\baseability\src\main\java\android\os\signwaymanager" />
-      <recent name="D:\project\gitLab\RemotePlatform\baseability" />
-      <recent name="D:\project\gitLab\RemotePlatform\baseability\src\main\java\com\coocaa\remoteplatform\baseability\abilities\time" />
-      <recent name="D:\project\gitLab\RemotePlatform\common\src\main\java\com\remoteplatform\commom" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\gitLab\RemotePlatform\core\libs" />
     </key>
   </component>
   <component name="RunManager">
@@ -270,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634094615336</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="代码日志分析">
+      <created>1634279496727</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1634279496728</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,7 +305,8 @@
     <MESSAGE value="1,time定时功能业务调整&#10;2,服务器获取定时计划接口调整" />
     <MESSAGE value="分发接口调整" />
     <MESSAGE value="1，远程控制音量兼容" />
-    <option name="LAST_COMMIT_MESSAGE" value="1，远程控制音量兼容" />
+    <MESSAGE value="代码日志分析" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码日志分析" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -311,10 +322,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="273" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1632300356397" />
-    <state x="506" y="279" width="523" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1629960934949">
+    <state x="506" y="279" width="523" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1634288551664">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="506" y="279" width="523" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1629960934949" />
+    <state x="506" y="279" width="523" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1634288551664" />
     <state x="506" y="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1632300358515">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -339,22 +350,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1632382503671" />
-    <state width="1493" height="514" key="GridCell.Tab.0.bottom" timestamp="1634031930301">
+    <state width="1493" height="388" key="GridCell.Tab.0.bottom" timestamp="1634295333307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="514" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634031930301" />
-    <state width="1493" height="514" key="GridCell.Tab.0.center" timestamp="1634031930301">
+    <state width="1493" height="388" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634295333307" />
+    <state width="1493" height="388" key="GridCell.Tab.0.center" timestamp="1634295333307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="514" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634031930301" />
-    <state width="1493" height="514" key="GridCell.Tab.0.left" timestamp="1634031930301">
+    <state width="1493" height="388" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634295333307" />
+    <state width="1493" height="388" key="GridCell.Tab.0.left" timestamp="1634295333307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="514" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634031930301" />
-    <state width="1493" height="514" key="GridCell.Tab.0.right" timestamp="1634031930301">
+    <state width="1493" height="388" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634295333307" />
+    <state width="1493" height="388" key="GridCell.Tab.0.right" timestamp="1634295333307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="514" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634031930301" />
+    <state width="1493" height="388" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634295333307" />
     <state x="270" y="56" key="SettingsEditor" timestamp="1631007048605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -367,14 +378,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1630486610318" />
-    <state x="467" y="144" width="655" height="536" key="find.popup" timestamp="1634118664731">
+    <state x="334" y="48" width="970" height="671" key="find.popup" timestamp="1634288718141">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="144" width="655" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1634118664731" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1632470797989">
+    <state x="334" y="48" width="970" height="671" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1634288718141" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1634282661784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1632470797989" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1634282661784" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1631001180701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

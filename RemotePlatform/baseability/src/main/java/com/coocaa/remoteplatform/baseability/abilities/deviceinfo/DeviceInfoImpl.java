@@ -53,11 +53,14 @@ public class DeviceInfoImpl extends AbsAbility {
         reportInfo.deviceId = attachInfo.getDeviceId();
         reportInfo.activeId = attachInfo.getActiveId();
         try {
+            Log.i(TAG, "getInfo: mAudio.getVolume()=" + mAudio.getVolume() + ", maxVolume=" + DeviceInfoUtils.getMaxVolume(mContext));
             reportInfo.volume = DeviceInfoUtils.convertSystemVolume(mAudio.getVolume(), DeviceInfoUtils.getMaxVolume(mContext));
+            Log.i(TAG, "getInfo: reportInfo.volume=" + reportInfo.volume);
             reportInfo.minVolume = DeviceInfoUtils.getMinVolume(mContext);
             reportInfo.maxVolume = DeviceInfoUtils.getMaxVolume(mContext);
         } catch (Exception e) {
             e.printStackTrace();
+            Log.i(TAG, "getInfo: volume is e=" + e);
         }
         reportInfo.bootPlain = DeviceInfoUtils.getAlarm(mContext);
         reportInfo.supportOpen = DeviceInfoUtils.isSupportAlarm();

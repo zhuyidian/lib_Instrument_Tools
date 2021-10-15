@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.coocaa.remoteplatform.sdk"
-    android:versionCode="100000133"
-    android:versionName="1.0.133" >
+    android:versionCode="100000134"
+    android:versionName="1.0.134" >
 
     <uses-sdk
         android:minSdkVersion="16"

@@ -107,15 +107,9 @@ public class PushChannel implements IConnectChannel {
     }
 
     void onReceiveMessage(PushCommand pushCommand) {
-        LogUtil.i("time", "onReceiveMessage: pushCommand=" + pushCommand);
+        LogUtil.i("command", "onReceiveMessage: <---push PushCommand=" + pushCommand);
         if (mCallback != null) {
             mCallback.onReceiveCommand(convertPushCommandToCommand(pushCommand));
-        }
-    }
-
-    public void onReceiveMessage(RemoteCommand command) {
-        if (mCallback != null && command != null) {
-            mCallback.onReceiveCommand(command);
         }
     }
 

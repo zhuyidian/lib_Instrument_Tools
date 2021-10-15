@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.coocaa.remoteplatform"
     android:sharedUserId="android.uid.system"
-    android:versionCode="210200133"
-    android:versionName="2.1.2.133" >
+    android:versionCode="210200134"
+    android:versionName="2.1.2.134" >
 
     <uses-sdk
         android:minSdkVersion="16"

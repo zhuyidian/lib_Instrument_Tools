@@ -10,6 +10,7 @@ import com.coocaa.remoteplatform.core.common.IPCSocketData;
 import com.coocaa.remoteplatform.core.common.IIPCSocketReceiver;
 import com.coocaa.remoteplatform.core.common.Utils;
 import com.google.gson.Gson;
+import com.remoteplatform.commom.LogUtil;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -153,6 +154,7 @@ public class IPCSocketServer {
 
     private void handleNewClient(final LocalSocket client) {
         Log.i(TAG, "handle new Client: " + client);
+        LogUtil.i("command", "handleNewClient: new Client=" + client);
         if (client == null) {
             return;
         }
@@ -180,6 +182,7 @@ public class IPCSocketServer {
                 return;
             }
             Log.i(TAG, "onReceive: " + data.content);
+            LogUtil.i("command", "onReceive: <---IPC topic=" + data.topic + ", method=" + data.method + ", content=" + data.content);
             if ("data".equalsIgnoreCase(data.method)) {
                 RemoteCommand command = mGson.fromJson(data.content, RemoteCommand.class);
                 mSocketChannel.replyMessage(data.topic, command);
@@ -193,6 +196,7 @@ public class IPCSocketServer {
 
     private void handleConnect(String topic, LocalSocket client) {
         Log.i(TAG, "handleConnect: " + topic);
+        LogUtil.i("command", "handleConnect: socket channel subscribeTopic topic=" + topic);
         mSocketChannel.subscribeTopic(topic);
         ServerWrapper wrapper = null;
         synchronized (mNonTopicWrappers) {
@@ -212,6 +216,7 @@ public class IPCSocketServer {
 
     private void handleDisconnect(String topic, LocalSocket client) {
         Log.i(TAG, "handleDisconnect: " + topic);
+        LogUtil.i("command", "handleDisconnect: socket channel unSubscribeTopic topic=" + topic);
         mSocketChannel.unSubscribeTopic(topic);
         ServerWrapper wrapper = null;
         synchronized (mWrappers) {
@@ -231,6 +236,9 @@ public class IPCSocketServer {
         synchronized (mWrappers) {
             wrapper = mWrappers.get(topic);
         }
+        LogUtil.i("command", "enqueueMessage: IPC---> topic=" + topic +
+                ", method=" + (message != null ? message.method : "null") +
+                ", content=" + (message != null ? message.content : "null"));
         if (wrapper != null) {
             wrapper.enqueueMessage(message);
         } else {
