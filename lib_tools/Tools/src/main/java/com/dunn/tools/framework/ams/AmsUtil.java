@@ -1,6 +1,8 @@
 package com.dunn.tools.framework.ams;
 
+import android.app.Activity;
 import android.app.ActivityManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.os.Build;
 
@@ -12,6 +14,7 @@ import java.util.List;
  * Description:AmsUtil
  */
 public class AmsUtil {
+    private static String processName = null;
 
     /**
      * 获取当前应用程序的包名
@@ -28,6 +31,21 @@ public class AmsUtil {
         for (ActivityManager.RunningAppProcessInfo info : infos) {
             if (info.pid == pid)//得到当前应用
                 return info.processName;//返回包名
+        }
+        return "";
+    }
+
+    public static synchronized String getMyProcessName(Context c) {
+        if (processName != null)
+            return processName;
+        int pid = android.os.Process.myPid();
+        ActivityManager mActivityManager = (ActivityManager) c.getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningAppProcessInfo appProcess : mActivityManager
+                .getRunningAppProcesses()) {
+            if (appProcess.pid == pid) {
+                processName = appProcess.processName;
+                return processName;
+            }
         }
         return "";
     }
@@ -73,5 +91,45 @@ public class AmsUtil {
         }
 
         return pkgName;
+    }
+
+    public static boolean isAppRunningAtFront(Context c, String pkgname) {
+        try {
+            ActivityManager am = (ActivityManager) c.getSystemService(Activity.ACTIVITY_SERVICE);
+            List<ActivityManager.RunningTaskInfo> taskInfo = am.getRunningTasks(1);
+            ComponentName componentInfo = taskInfo.get(0).topActivity;
+            return componentInfo.getPackageName().equals(pkgname);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    public static String getCurrentProcessName(Context context) {
+        int pid = android.os.Process.myPid();
+        ActivityManager mActivityManager = (ActivityManager) context
+                .getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningAppProcessInfo appProcess : mActivityManager
+                .getRunningAppProcesses()) {
+            if (appProcess.pid == pid) {
+                return appProcess.processName;
+            }
+        }
+        return "";
+    }
+
+    /**
+     * 获取栈顶activity
+     * @return
+     */
+    public static ComponentName getTopActivity(Context context) {
+        ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        if(am != null) {
+            List<ActivityManager.RunningTaskInfo> runningTaskInfos = am.getRunningTasks(1);
+            if (runningTaskInfos != null && runningTaskInfos.size() > 0) {
+                return runningTaskInfos.get(0) == null ? null : runningTaskInfos.get(0).topActivity;
+            }
+        }
+        return null;
     }
 }

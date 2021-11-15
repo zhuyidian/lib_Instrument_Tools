@@ -1,8 +1,10 @@
 package com.dunn.tools.framework.pkms;
 
+import android.annotation.SuppressLint;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -12,6 +14,9 @@ import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
@@ -49,7 +54,7 @@ public class PkmsUtil {
      * @param packname 应用包名
      * @return
      */
-    public static Drawable getAppIcon(Context context, String packname){
+    public static Drawable getAppIcon1(Context context, String packname){
         try {
             //包管理操作管理类
             PackageManager pm = context.getPackageManager();
@@ -97,6 +102,69 @@ public class PkmsUtil {
             e.printStackTrace();
         }
         return packname;
+    }
+
+    /**
+     *
+     * @param context
+     * @param pkg
+     * @return
+     */
+    public static String getAppName1(Context context, String pkg) {
+        try {
+            PackageManager pm = context.getPackageManager();
+            ApplicationInfo applicationInfo = pm.getApplicationInfo(pkg, 0);
+            return pm.getApplicationLabel(applicationInfo).toString();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static Drawable getAppIcon(Context context, String pkg) {
+        try {
+            PackageManager pm = context.getPackageManager();
+            ApplicationInfo applicationInfo = pm.getApplicationInfo(pkg, 0);
+            return pm.getApplicationIcon(pkg);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static String getActivityName(Context context, ComponentName cn) {
+        try {
+            PackageManager pm = context.getPackageManager();
+            ActivityInfo ai = pm.getActivityInfo(cn, 0);
+            return ai.loadLabel(pm).toString();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static Drawable getActivityIcon(Context context, ComponentName cn) {
+        try {
+            PackageManager pm = context.getPackageManager();
+            ActivityInfo ai = pm.getActivityInfo(cn, 0);
+            return ai.loadIcon(pm);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static ComponentName getLauncherActivity_1(Context context, String packageName) {
+        PackageManager pm = context.getPackageManager();
+        Intent intent = new Intent(Intent.ACTION_MAIN, null);
+        intent.addCategory(Intent.CATEGORY_LAUNCHER);
+        intent.setPackage(packageName);
+        List<ResolveInfo> resolveInfo = pm.queryIntentActivities(intent, PackageManager.GET_DISABLED_COMPONENTS);
+        if (resolveInfo != null && resolveInfo.size() > 0) {
+            ResolveInfo info = resolveInfo.get(0);
+            return new ComponentName(packageName, info.activityInfo.name);
+        }
+        return null;
     }
 
     /*
@@ -158,7 +226,7 @@ public class PkmsUtil {
     }
 
     /***
-     * 利用Intent查询service
+     * 利用Intent的action查询service
      * Android L (lollipop, API 21) introduced a new problem when trying to invoke implicit intent,
      * "java.lang.IllegalArgumentException: Service Intent must be explicit"
      *
@@ -190,6 +258,94 @@ public class PkmsUtil {
         // Set the component to be explicit
         explicitIntent.setComponent(component);
         return explicitIntent;
+    }
+
+    /**
+     * 根据action查询禁用的组件
+     */
+    public static List<ComponentName> getComponentNames(Context context, String action) {
+        List<ComponentName> ret = new ArrayList<ComponentName>();
+        PackageManager pm = context.getPackageManager();
+        Intent intent = new Intent(action);
+        List<ResolveInfo> list = pm.queryBroadcastReceivers(intent, 0);
+        for (ResolveInfo i : list)
+            ret.add(new ComponentName(i.activityInfo.packageName, i.activityInfo.name));
+
+        list = pm.queryBroadcastReceivers(intent, PackageManager.GET_DISABLED_COMPONENTS);
+        for (ResolveInfo i : list)
+            ret.add(new ComponentName(i.activityInfo.packageName, i.activityInfo.name));
+        Collections.sort(ret, new Comparator<ComponentName>() {
+            public int compare(ComponentName arg0, ComponentName arg1) {
+
+                return arg0.getPackageName().compareTo(arg1.getPackageName());
+            }
+        });
+        return ret;
+    }
+
+    /**
+     * 根据包名查询禁用的组件
+     */
+    public static List<ComponentName> getCOMPLETEDComponentNamesByPkg(Context context, String pkg) {
+        List<ComponentName> ret = new ArrayList<ComponentName>();
+        PackageManager pm = context.getPackageManager();
+        Intent intent = new Intent(Intent.ACTION_BOOT_COMPLETED);
+        intent.setPackage(pkg);
+        List<ResolveInfo> list = pm.queryBroadcastReceivers(intent, PackageManager.GET_DISABLED_COMPONENTS);
+        if (list != null && list.size() > 0) {
+            for (ResolveInfo i : list) {
+                Log.d("completed", "getCOMPLETEDComponentNamesByPkg    pkg:" + i.activityInfo.packageName + " activity:" + i.activityInfo.name);
+                ret.add(new ComponentName(i.activityInfo.packageName, i.activityInfo.name));
+            }
+        }
+        return ret;
+    }
+
+    /**
+     * 设置ComponentName组件使能状态
+     * @param context
+     * @param comptName
+     * @param state
+     */
+    public static void setComponentEnabledSetting(Context context, ComponentName comptName,
+                                                  int state) {
+        try {
+            PackageManager pm = context.getPackageManager();
+            pm.setComponentEnabledSetting(comptName, state, PackageManager.DONT_KILL_APP);//PackageManager.DONT_KILL_APP);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 根据包名获取应用使能状态
+     * @param context
+     * @param packagename
+     * @return
+     */
+    public static int getApplicationEnabledSetting(Context context, String packagename) {
+        try {
+            return context.getPackageManager().getApplicationEnabledSetting(packagename);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    /**
+     * 根据ComponentName获取组件使能状态
+     * @param context
+     * @param comptName
+     * @return
+     */
+    public static int getComponentEnabledSetting(Context context, ComponentName comptName) {
+        try {
+            PackageManager pm = context.getPackageManager();
+            return pm.getComponentEnabledSetting(comptName);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
     }
 
     /**
@@ -239,5 +395,114 @@ public class PkmsUtil {
             }
         }
         return resources;
+    }
+
+    /**
+     * 获取Application的meta_data
+     * @param context
+     * @param packageName
+     * @param key
+     * @return
+     */
+    public static Object getMetaData(Context context, String packageName, String key) {
+        ApplicationInfo applicationInfo = null;
+        try {
+            applicationInfo = context.getPackageManager().getApplicationInfo(packageName,
+                    PackageManager.GET_META_DATA);
+            if (applicationInfo != null) {
+                Object value = null;
+                if (applicationInfo.metaData != null) {
+                    value = applicationInfo.metaData.get(key);
+                }
+                if (value == null) {
+                    return null;
+                }
+                return value;
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * 获取应用VersionCode
+     * @param context
+     * @param pkg
+     * @return
+     */
+    public static int getVersionCode(Context context, String pkg) {
+        PackageManager mPackageManager = context.getPackageManager();
+        try {
+            return mPackageManager.getPackageInfo(pkg, 0).versionCode;
+        } catch (Exception e) {
+            return -1;
+        }
+    }
+
+    /**
+     * 获取应用VersionName
+     * @param context
+     * @param pkg
+     * @return
+     */
+    public static String getVersionName(Context context, String pkg) {
+        Log.d("TEST", "getVersionName context:" + context + "  pkg:" + pkg);
+        PackageManager mPackageManager = context.getPackageManager();
+        try {
+            return mPackageManager.getPackageInfo(pkg, 0).versionName;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static boolean isInstalledOnSDCard(Context c, String pkg) {
+        PackageManager pm = c.getPackageManager();
+        try {
+            @SuppressLint("WrongConstant")
+            ApplicationInfo info = pm.getApplicationInfo(pkg, PackageManager.GET_DISABLED_COMPONENTS);
+//            LogUtils.d("install", " isInstalledOnSDCard:" + info.packageName);
+            if ((info.flags & ApplicationInfo.FLAG_EXTERNAL_STORAGE) != 0) {
+                return true;
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    public static String getAppNameByPkg(Context context, String pkg) {
+        String name = "";
+        try {
+            PackageManager packageManager = context.getPackageManager();
+            ApplicationInfo applicationInfo = packageManager.getApplicationInfo(pkg, 0);
+            name = (String) packageManager.getApplicationLabel(applicationInfo);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return name;
+    }
+
+    public static String getNameByActivity(Context context, String packageName, String activityName) {
+        try {
+            PackageManager pm = context.getPackageManager();
+            ActivityInfo ai = pm.getActivityInfo(new ComponentName(packageName,
+                    activityName), 0);
+            return ai.loadLabel(pm).toString();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+            return getAppNameByPkg(context, packageName);
+        }
+    }
+
+    public static List<String> getInstalledPackages(Context c) {
+        PackageManager pm = c.getPackageManager();
+        List<PackageInfo> list = pm.getInstalledPackages(0);
+        List<String> packages = new ArrayList<>();
+        for (PackageInfo pi : list)
+            packages.add(pi.packageName);
+        return packages;
     }
 }

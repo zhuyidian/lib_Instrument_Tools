@@ -6,6 +6,7 @@ import com.dunn.tools.log.LogUtil;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 public class ReflectUtil {
     private ReflectUtil() {
@@ -108,5 +109,50 @@ public class ReflectUtil {
 
     public static boolean objectEquals(Object a, Object b) {
         return (a == b) || (a != null && a.equals(b));
+    }
+
+    public static Object invokeReflectMethod(Object obj, String methodName, Object... params) {
+        try {
+            if (params != null) {
+                Class<?>[] clazzez = new Class<?>[params.length];
+                for (int i = 0; i < params.length; i++)
+                    clazzez[i] = params[i].getClass();
+
+                Method method = obj.getClass().getMethod(methodName, clazzez);
+                return method.invoke(obj, params);
+            } else {
+                Method method = obj.getClass().getMethod(methodName);
+                return method.invoke(obj);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static Object getStaticFieldValue(Class clazz, String fieldName) {
+        try {
+            Field field = clazz.getField(fieldName);
+            if (field != null) {
+                field.setAccessible(true);
+                return field.get(clazz);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static Object getFieldValue(Object obj, String fieldName) {
+        try {
+            Field field = obj.getClass().getField(fieldName);
+            if (field != null) {
+                field.setAccessible(true);
+                return field.get(obj);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
