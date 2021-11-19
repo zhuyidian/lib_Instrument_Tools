@@ -319,4 +319,6 @@ public class ScreenUtils {
             decorView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);    //关闭硬件加速
         }
     }
+
+    
 }
