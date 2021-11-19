@@ -1,3 +1,2 @@
 include ':Tools'
 include ':sample'
-include ':signwayDemo_5190'

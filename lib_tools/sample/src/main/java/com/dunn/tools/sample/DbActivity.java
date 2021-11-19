@@ -1,21 +1,14 @@
 package com.dunn.tools.sample;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.View;
-import android.widget.TextView;
 
 import com.dunn.tools.db.AppDataHelper;
 import com.dunn.tools.db.AppDatabase;
-import com.dunn.tools.log.LogUtil;
-import com.dunn.tools.screen.ScreenUtils;
 
 import java.util.List;
 import java.util.Map;
