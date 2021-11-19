@@ -320,5 +320,5 @@ public class ScreenUtils {
         }
     }
 
-    
+
 }

@@ -244,4 +244,27 @@ public class AmsUtil {
             }
         }
     }
+
+    /**
+     * 判断服务是否运行
+     * @param context
+     * @param serviceName
+     * @return
+     */
+    private boolean serviceAlive(Context context, String serviceName) {
+        boolean isWork = false;
+        ActivityManager myAM = (ActivityManager)context.getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningServiceInfo> myList = myAM.getRunningServices(100);
+        if (myList.size() <= 0) {
+            return false;
+        }
+        for (int i = 0; i < myList.size(); i++) {
+            String mName = myList.get(i).service.getClassName().toString();
+            if (mName.equals(serviceName)) {
+                isWork = true;
+                break;
+            }
+        }
+        return isWork;
+    }
 }
