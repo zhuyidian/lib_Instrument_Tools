@@ -37,20 +37,20 @@ CMAKE SERVER: {
   "type": "configure",
   "cacheArguments": [
     "",
-    "-DANDROID_ABI\u003dx86_64",
-    "-DANDROID_PLATFORM\u003dandroid-17",
-    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\project\\github\\lib_tools\\lib_tools\\Tools\\build\\intermediates\\cmake\\debug\\obj\\x86_64",
+    "-DCMAKE_FIND_ROOT_PATH\u003dD:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\prefab\\x86_64\\prefab",
     "-DCMAKE_BUILD_TYPE\u003dDebug",
-    "-DANDROID_NDK\u003dC:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858",
-    "-DCMAKE_CXX_FLAGS\u003d",
-    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
-    "-DCMAKE_ANDROID_ARCH_ABI\u003dx86_64",
-    "-DCMAKE_SYSTEM_VERSION\u003d17",
-    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
-    "-DCMAKE_ANDROID_NDK\u003dC:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858",
     "-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android.toolchain.cmake",
-    "-G Ninja",
-    "-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
+    "-DANDROID_ABI\u003dx86_64",
+    "-DANDROID_NDK\u003dC:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858",
+    "-DANDROID_PLATFORM\u003dandroid-17",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003dx86_64",
+    "-DCMAKE_ANDROID_NDK\u003dC:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\project\\github\\lib_tools\\lib_tools\\Tools\\build\\intermediates\\cmake\\debug\\obj\\x86_64",
+    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dD:\\project\\github\\lib_tools\\lib_tools\\Tools\\build\\intermediates\\cmake\\debug\\obj\\x86_64",
+    "-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_SYSTEM_VERSION\u003d17"
   ]
 }
 
@@ -74,7 +74,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
   CMakeLists.txt
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -84,7 +83,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   C:/Users/Administrator/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
   CMakeLists.txt
-
 
 CMAKE SERVER: 
 
@@ -114,7 +112,6 @@ Call Stack (most recent call first):
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -124,7 +121,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
 
 CMAKE SERVER: 
 
@@ -172,7 +168,6 @@ Call Stack (most recent call first):
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -182,7 +177,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
 
 CMAKE SERVER: 
 
@@ -230,7 +224,6 @@ Call Stack (most recent call first):
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -240,7 +233,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
 
 CMAKE SERVER: 
 
@@ -268,7 +260,6 @@ Call Stack (most recent call first):
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -278,7 +269,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
 
 CMAKE SERVER: 
 
@@ -306,7 +296,6 @@ Call Stack (most recent call first):
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -316,7 +305,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
 
 CMAKE SERVER: 
 
@@ -364,7 +352,6 @@ Call Stack (most recent call first):
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -374,7 +361,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
 
 CMAKE SERVER: 
 
@@ -422,7 +408,6 @@ Call Stack (most recent call first):
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -432,7 +417,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
 
 CMAKE SERVER: 
 
@@ -480,7 +464,6 @@ Call Stack (most recent call first):
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -490,7 +473,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
 
 CMAKE SERVER: 
 
@@ -518,7 +500,6 @@ Call Stack (most recent call first):
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -528,7 +509,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
 
 CMAKE SERVER: 
 
@@ -556,7 +536,6 @@ Call Stack (most recent call first):
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -566,7 +545,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
 
 CMAKE SERVER: 
 
@@ -594,7 +572,6 @@ Call Stack (most recent call first):
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
-
 CMAKE SERVER: CMake Warning at C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android-legacy.toolchain.cmake:416 (message):
   An old version of CMake is being used that cannot automatically detect
   compiler attributes.  Compiler identification is being bypassed.  Some
@@ -604,7 +581,6 @@ Call Stack (most recent call first):
   C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/23.0.7599858/build/cmake/android.toolchain.cmake:55 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
   D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
-
 
 CMAKE SERVER: 
 

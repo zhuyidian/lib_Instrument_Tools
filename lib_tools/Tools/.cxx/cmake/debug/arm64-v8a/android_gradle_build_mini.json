@@ -1,21 +1,33 @@
 {
   "buildFiles": [
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\compiler_id.cmake",
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\platforms.cmake",
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858\\build\\cmake\\android-legacy.toolchain.cmake",
     "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\\CMakeLists.txt"
   ],
-  "cleanCommands": [
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\arm64-v8a",
+      "clean"
+    ]
   ],
-  "buildTargetsCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
   "libraries": {
     "native-log-Debug-arm64-v8a": {
       "artifactName": "native-log",
-      "buildCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\arm64-v8a\" native-log",
+      "buildCommandComponents": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\arm64-v8a",
+        "native-log"
+      ],
       "abi": "arm64-v8a",
-      "output": "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libnative-log.so"
+      "output": "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libnative-log.so",
+      "runtimeFiles": []
     }
   }
 }

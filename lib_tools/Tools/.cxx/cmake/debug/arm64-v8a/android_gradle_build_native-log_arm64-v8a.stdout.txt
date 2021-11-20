@@ -1,2 +1,0 @@
-ninja: Entering directory `D:\project\github\lib_tools\lib_tools\Tools\.cxx\cmake\debug\arm64-v8a'
-ninja: no work to do.

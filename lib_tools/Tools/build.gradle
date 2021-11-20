@@ -16,11 +16,6 @@ android {
         versionName rootProject.ext.android.versionName
         multiDexEnabled rootProject.ext.android.multiDexEnabled
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        externalNativeBuild {
-            cmake {
-                cppFlags ""
-            }
-        }
     }
 
     buildTypes {
@@ -29,13 +24,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    externalNativeBuild {
-        cmake {
-            path "src/main/cpp/CMakeLists.txt"
-            version "3.10.2"
-        }
-    }
-    ndkVersion '23.0.7599858'
 }
 
 dependencies {

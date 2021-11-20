@@ -7,7 +7,7 @@
     },
     {
       "level": "INFO",
-      "message": "ndk.dir in local.properties is not set"
+      "message": "ndk.dir in local.properties is C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858"
     },
     {
       "level": "INFO",
@@ -16,6 +16,10 @@
     {
       "level": "INFO",
       "message": "sdkFolder is C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858 by ndk.dir"
     },
     {
       "level": "INFO",
@@ -43,7 +47,11 @@
     },
     {
       "level": "INFO",
-      "message": "Found requested NDK version 23.0.7599858 at C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858"
+      "message": "Considering C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620 in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Choosing C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7599858 from ndk.dir which had the requested version 23.0.7599858"
     }
   ]
 }

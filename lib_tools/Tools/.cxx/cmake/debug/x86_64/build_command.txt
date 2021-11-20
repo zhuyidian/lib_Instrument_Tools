@@ -1,20 +1,24 @@
-Executable : C:\Users\Administrator\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe
+                    Executable : C:\Users\Administrator\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe
 arguments : 
 -HD:\project\github\lib_tools\lib_tools\Tools\src\main\cpp
--BD:\project\github\lib_tools\lib_tools\Tools\.cxx\cmake\debug\x86_64
--DANDROID_ABI=x86_64
--DANDROID_PLATFORM=android-17
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\cmake\debug\obj\x86_64
+-DCMAKE_FIND_ROOT_PATH=D:\project\github\lib_tools\lib_tools\Tools\.cxx\cmake\debug\prefab\x86_64\prefab
 -DCMAKE_BUILD_TYPE=Debug
--DANDROID_NDK=C:\Users\Administrator\AppData\Local\Android\Sdk\ndk\23.0.7599858
--DCMAKE_CXX_FLAGS=
--DCMAKE_SYSTEM_NAME=Android
--DCMAKE_ANDROID_ARCH_ABI=x86_64
--DCMAKE_SYSTEM_VERSION=17
--DCMAKE_EXPORT_COMPILE_COMMANDS=ON
--DCMAKE_ANDROID_NDK=C:\Users\Administrator\AppData\Local\Android\Sdk\ndk\23.0.7599858
 -DCMAKE_TOOLCHAIN_FILE=C:\Users\Administrator\AppData\Local\Android\Sdk\ndk\23.0.7599858\build\cmake\android.toolchain.cmake
--G Ninja
+-DANDROID_ABI=x86_64
+-DANDROID_NDK=C:\Users\Administrator\AppData\Local\Android\Sdk\ndk\23.0.7599858
+-DANDROID_PLATFORM=android-17
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DCMAKE_ANDROID_NDK=C:\Users\Administrator\AppData\Local\Android\Sdk\ndk\23.0.7599858
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\cmake\debug\obj\x86_64
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\cmake\debug\obj\x86_64
 -DCMAKE_MAKE_PROGRAM=C:\Users\Administrator\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=17
+-BD:\project\github\lib_tools\lib_tools\Tools\.cxx\cmake\debug\x86_64
+-GNinja
 jvmArgs : 
 
+
+                    Build command args: []
+                    Version: 1
