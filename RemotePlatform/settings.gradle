@@ -1,6 +1,0 @@
-include ':common'
-include ':baseability'
-include ':core'
-include ':sdk'
-include ':app'
-rootProject.name = "RemotePlatform"

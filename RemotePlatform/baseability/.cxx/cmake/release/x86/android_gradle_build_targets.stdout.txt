@@ -1,5 +1,0 @@
-ninja: Entering directory `D:\project\gitLab\RemotePlatform\baseability\.cxx\cmake\release\x86'
-[1/4] Building C object src/main/jni/CMakeFiles/termux.dir/termux.c.o
-[2/4] Building CXX object src/main/jni/rtc/CMakeFiles/rtc.dir/rtc.cpp.o
-[3/4] Linking C shared library ..\..\..\..\build\intermediates\cmake\release\obj\x86\libtermux.so
-[4/4] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\release\obj\x86\librtc.so

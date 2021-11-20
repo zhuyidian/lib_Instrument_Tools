@@ -1,0 +1,4 @@
+# ninja log v5
+1	383	659123618	CMakeFiles/native-log.dir/native-log.cpp.o	7168e944e36a5854
+24	413	659123618	CMakeFiles/native-log.dir/TXFileLogger.cpp.o	6f978f045c0e04f3
+413	547	659123618	D:/project/github/lib_tools/lib_tools/Tools/build/intermediates/cmake/debug/obj/x86/libnative-log.so	f935bc4bf5132e88
