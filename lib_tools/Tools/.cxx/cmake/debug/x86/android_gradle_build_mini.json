@@ -1,19 +1,19 @@
 {
   "buildFiles": [
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\build\\cmake\\platforms.cmake",
-    "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\src\\main\\cpp\\CMakeLists.txt"
+    "/home/dunn/project/github/lib_tools/lib_tools/Tools/src/main/cpp/CMakeLists.txt",
+    "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/home/dunn/software/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake"
   ],
   "cleanCommands": [
-    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\x86\" clean"
+    "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86\" clean"
   ],
-  "buildTargetsCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "native-log-Debug-x86": {
       "artifactName": "native-log",
-      "buildCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\project\\github\\lib_tools\\lib_tools\\Tools\\.cxx\\cmake\\debug\\x86\" native-log",
+      "buildCommand": "/home/dunn/software/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/dunn/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/x86\" native-log",
       "abi": "x86",
-      "output": "D:\\project\\github\\lib_tools\\lib_tools\\Tools\\build\\intermediates\\cmake\\debug\\obj\\x86\\libnative-log.so"
+      "output": "/home/dunn/project/github/lib_tools/lib_tools/Tools/build/intermediates/cmake/debug/obj/x86/libnative-log.so"
     }
   }
 }

@@ -1,4 +1,0 @@
-# ninja log v5
-51	662	654346942	CMakeFiles/native-log.dir/native-log.cpp.o	415c332da7eea0b1
-0	742	654346942	CMakeFiles/native-log.dir/TXFileLogger.cpp.o	d9a332e54771a505
-742	885	654346942	D:/project/github/lib_tools/lib_tools/Tools/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-log.so	fd2d580f9250748b

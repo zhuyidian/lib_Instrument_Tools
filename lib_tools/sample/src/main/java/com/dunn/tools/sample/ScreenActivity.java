@@ -5,15 +5,10 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.dunn.tools.common.CommonUtil;
 import com.dunn.tools.log.LogUtil;
-import com.dunn.tools.mydraw.PorterDuffXfermodeView;
-import com.dunn.tools.screen.ScreenUtils;
-
-import static android.widget.RelativeLayout.CENTER_IN_PARENT;
+import com.dunn.tools.framework.screen.ScreenUtils;
 
 public class ScreenActivity extends Activity implements View.OnClickListener {
     private StringBuilder screenResultBuilder = new StringBuilder();

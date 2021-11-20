@@ -4,8 +4,11 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.List;
 
 /**
@@ -131,5 +134,137 @@ public class AmsUtil {
             }
         }
         return null;
+    }
+
+    /**
+     * 杀死apk，需要获得系统支持
+     */
+    public static void CloseAllApp(Context mContext) {
+        ActivityManager am = (ActivityManager) mContext.getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningTaskInfo> recentTaskInfos = am.getRunningTasks(100);
+        String str = null;
+        for (ActivityManager.RunningTaskInfo running : recentTaskInfos) {
+            System.out.println(running.baseActivity.getPackageName());
+            str = running.baseActivity.getPackageName();
+            if (
+                    str.equals("com.android.systemui")
+                            || str.equals("com.xygala.canbus")
+                            || str.equals("com.android.contacts")
+                            || str.equals("com.autonavi.xmgd.navigator")// 高德
+                            || str.equals("com.baidu.BaiduMap")// 百度
+                            || str.equals("cld.navi.c2739.mainframe")// 凯立德
+                            || str.equals("com.autonavi.amapauto")// 客户高德地图
+                            || str.equals("com.pve.onekeynavi")
+                            || str.equals("com.pve.navsetting")
+                            || str.equals("com.pve.logoselector")
+                            || str.equals("com.xy.brightsetting")
+                            || str.equals("com.xygala.pvcanset")
+                            || str.equals("com.pve.xysecurity")
+                            || str.equals("com.pve.wifi")
+                            || str.equals("com.pve.gpsinfo")
+                            || str.equals("com.pve.time")
+                            || str.equals("com.pve.wallpaper")
+                            || str.equals("com.pve.sysrestore")
+                            || str.equals("com.pve.language")
+                            || str.equals("com.pve.aps")
+                            || str.equals("com.pve.steering")
+                            || str.equals("com.android.xy.volumesetting")
+                            || str.equals("com.android.xysysteminfo")
+                            || str.equals("com.acloud.stub.calendar")
+                            || str.equals("com.acloud.stub.calculator")
+                            || str.equals("com.autochips.filebrowser")
+                            || str.equals("com.acloud.stub.onekeyclean")
+                            || str.equals("com.android.settings")// 设置
+                            || str.equals("android")
+                            || str.equals("com.estrongs.android.pop")// ES文件管理
+                            || str.equals("com.tencent.mm")// 微信
+                            || str.equals("com.tencent.mobileqq")// QQ
+                            || str.equals("com.ac83xx.android")// USB Switch
+            ) {
+                //如果当前运行的是这些apk，那么就不需要杀死
+            }
+            else {   //否则就杀死apk
+                Method method;
+
+                try {
+                    //这个方法必须获得系统的支持，才可以正常杀死apk
+                    //例如：如果在eclipse工程中使用这个方法，那么需要在AndroidManifest.xml中加上android:sharedUserId="android.uid.system"
+                    //或者例如：如果直接在android系统项目中使用这个方法，那么可以直接使用，因为项目是由系统编译的，已经获得了系统支持
+                    method = Class.forName("android.app.ActivityManager").getMethod("forceStopPackage", String.class);
+                    method.invoke(am, str);
+                } catch (NoSuchMethodException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IllegalArgumentException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (InvocationTargetException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            }
+
+        }
+    }
+
+    /**
+     * 杀死apk，需要被杀死的apk做相应的处理
+     * @param mContext
+     */
+    public static void CloseAllApp1(Context mContext) {
+        ActivityManager am = (ActivityManager)mContext.getSystemService(Context.ACTIVITY_SERVICE);
+        Method forceStopPackage;
+        List<ActivityManager.RunningTaskInfo> rti = am.getRunningTasks(100);
+        int rtiSize = rti.size();
+        int i = 0;
+        for (i=0; i<rtiSize; i++)
+        {
+            String  str =rti.get(i).baseActivity.getPackageName();
+
+            if(    str.equals("com.acloud.stub.cdplay")
+                    || str.equals("com.acloud.stub.localmusic")
+                    || str.equals("com.acloud.stub.music")
+                    || str.equals("com.acloud.stub.newonlinemusic")
+                    || str.equals("com.acloud.stub.newonlineradio")
+                    || str.equals("com.acloud.stub.news")
+                    || str.equals("com.acloud.stub.video")
+            ){
+                Intent back_intent = new Intent("com.acloud.intent.android.MAINUI_UPDATE");
+                //这里的getTopActivityPackageName要自己处理
+                //String[] infos = {"KillAppSync", "", "?" + getTopActivityPackageName() + "?"};
+                //back_intent.putExtra("extras", infos);
+                mContext.sendBroadcast(back_intent);
+            }
+        }
+    }
+
+    /**
+     * 判断服务是否运行
+     * @param context
+     * @param serviceName
+     * @return
+     */
+    private boolean serviceAlive(Context context, String serviceName) {
+        boolean isWork = false;
+        ActivityManager myAM = (ActivityManager)context.getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningServiceInfo> myList = myAM.getRunningServices(100);
+        if (myList.size() <= 0) {
+            return false;
+        }
+        for (int i = 0; i < myList.size(); i++) {
+            String mName = myList.get(i).service.getClassName().toString();
+            if (mName.equals(serviceName)) {
+                isWork = true;
+                break;
+            }
+        }
+        return isWork;
     }
 }
