@@ -1,3 +1,0 @@
-com.coocaa.remoteplatform.baseability
-drawable remoteplatform_notification_icon
-string app_name

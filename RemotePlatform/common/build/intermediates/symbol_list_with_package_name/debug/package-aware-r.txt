@@ -1,2 +1,0 @@
-com.remoteplatform.commom
-string app_name
