@@ -5,6 +5,7 @@ ext {
     ]
 
     android = [
+            //NDK : https://blog.csdn.net/xiafangxingg/article/details/53319059?spm=1035.2023.3001.6557&utm_medium=distribute.pc_relevant_bbs_down.none-task-blog-2~default~OPENSEARCH~default-3.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task-blog-2~default~OPENSEARCH~default-3.nonecase
             compileSdkVersion      : 29, //28,
             buildToolsVersion      : '29.0.2', //'28.0.3',
             applicationId          : 'com.example.sample',
