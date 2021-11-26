@@ -6,6 +6,7 @@ buildscript {
         jcenter()
         mavenCentral()
         maven { url "https://jitpack.io" }
+        //maven { url "http://172.20.135.19:8080/nexus/content/repositories/ccos-releases/" }
     }
     dependencies {
         //第三步：迁移androidX gradle版本要升级成3.4.1
@@ -25,6 +26,7 @@ allprojects {
         google()
         jcenter()
 	    maven { url "https://jitpack.io" }
+        //maven { url "http://172.20.135.19:8080/nexus/content/repositories/ccos-releases/" }
     }
 }
 

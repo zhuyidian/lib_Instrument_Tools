@@ -31,4 +31,5 @@ dependencies {
 
     implementation project(path: ':Tools')
     //implementation 'com.github.zhuyidian:lib_tools:V1.0.1'
+    //implementation "ccos.sdk:twocentersdk:+"
 }
