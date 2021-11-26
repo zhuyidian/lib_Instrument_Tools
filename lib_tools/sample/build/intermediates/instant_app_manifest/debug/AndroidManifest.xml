@@ -39,6 +39,14 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name="com.dunn.tools.sample.ReplyService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="coocaa.intent.action.remote.platform.reply" />
+            </intent-filter>
+        </service>
+
         <meta-data
             android:name="com.dunn.tools.get"
             android:value="true" />
