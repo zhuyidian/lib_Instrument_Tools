@@ -1,3 +1,0 @@
-D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/native-log.dir
-D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
-D:/project/github/lib_tools/lib_tools/Tools/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir

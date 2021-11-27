@@ -29,7 +29,8 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
     compileOnly rootProject.ext.dependencies["appcompat-v7"]
-    testImplementation 'junit:junit:4.12'
+    testImplementation rootProject.ext.dependencies.junit
+    implementation rootProject.ext.dependencies.annotations
     implementation rootProject.ext.dependencies.gson7
     implementation rootProject.ext.dependencies.aspectj
 }
