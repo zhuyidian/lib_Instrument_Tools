@@ -6,6 +6,7 @@ import android.app.usage.UsageStatsManager;
 import android.content.Context;
 import android.os.Build;
 import android.text.format.DateUtils;
+import android.util.Log;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -27,7 +28,7 @@ import static android.app.usage.UsageEvents.Event;
  * Description:UsageStatsUtils
  */
 public class UsmsUtil {
-    private static final String TAG = "UsageStatsUtils$";
+    private static final String TAG = "UsmsUtil";
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("M-d-yyyy HH:mm:ss");
 
     public static void queryAndAggregateUsageStats(final Context mContext){
@@ -230,10 +231,10 @@ public class UsmsUtil {
     }
 
     private static void printList(List<UsageStats> list) {
-//        CLog.d("UsageStats",TAG+"printList:size=" + list.size());
+        Log.d(TAG,"printList: size=" + list.size());
         for (UsageStats usageStats : list) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//                CLog.d("UsageStats",TAG+"printList:package=" + usageStats.getPackageName() + ", last time used=" + timestampToString(usageStats.getLastTimeUsed()));
+                Log.d(TAG,"printList: package=" + usageStats.getPackageName() + ", last time used=" + timestampToString(usageStats.getLastTimeUsed()));
             }
         }
     }

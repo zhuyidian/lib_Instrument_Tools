@@ -4,7 +4,7 @@ ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest
 INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:2:1-38:12
 INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:2:1-38:12
 INJECTED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:2:1-38:12
-MERGED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-24:12
+MERGED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Administrator\.gradle\caches\6.7.1\caches\transforms-2\files-2.1\2510dde67cc819813cb12ae1e1b95116\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Administrator\.gradle\caches\6.7.1\caches\transforms-2\files-2.1\55dad7ee59bd3ef6d44cded2dcdcbf1b\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Administrator\.gradle\caches\6.7.1\caches\transforms-2\files-2.1\2ab729e2ecff2e45a3f115ffb2a459d3\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -67,8 +67,8 @@ ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest
 		ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:12:22-62
 application
 ADDED from D:\project\github\lib_tools\lib_tools\sample\src\main\AndroidManifest.xml:14:5-36:19
-MERGED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-22:19
-MERGED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-22:19
+MERGED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-17:19
+MERGED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-17:19
 MERGED from [androidx.core:core:1.0.0] C:\Users\Administrator\.gradle\caches\6.7.1\caches\transforms-2\files-2.1\a3444da67690539a3b6b79dd3d80ff5a\core-1.0.0\AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.0] C:\Users\Administrator\.gradle\caches\6.7.1\caches\transforms-2\files-2.1\a3444da67690539a3b6b79dd3d80ff5a\core-1.0.0\AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Administrator\.gradle\caches\6.7.1\caches\transforms-2\files-2.1\4a75048e5154652b6d5c9c7655445c70\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
@@ -195,11 +195,3 @@ ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermedia
 		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-33
 	android:name
 		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-46
-receiver#com.dunn.tools.time.AlarmReceiver
-ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-21:39
-	android:enabled
-		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-35
-	android:exported
-		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-36
-	android:name
-		ADDED from [:Tools] D:\project\github\lib_tools\lib_tools\Tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-61

@@ -8,6 +8,8 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.dunn.tools.framework.usms.UsmsUtil;
+
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
 
@@ -21,38 +23,40 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                double count = 0;
-                while(true) {
-                    count++;
-                    Log.i(TAG, "send ---> thread=" + Thread.currentThread()+", count="+count);
-                    reply(Thread.currentThread().getName());
-                    try {
-                        Thread.sleep(2000);  //1776
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }).start();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                double count = 0;
-                while(true) {
-                    count++;
-                    Log.i(TAG, "send ---> thread=" + Thread.currentThread()+", count="+count);
-                    reply(Thread.currentThread().getName());
-                    try {
-                        Thread.sleep(3000);  //1188
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }).start();
+        UsmsUtil.queryAndAggregateUsageStats(MainActivity.this);
+
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                double count = 0;
+//                while(true) {
+//                    count++;
+//                    Log.i(TAG, "send ---> thread=" + Thread.currentThread()+", count="+count);
+//                    reply(Thread.currentThread().getName());
+//                    try {
+//                        Thread.sleep(2000);  //1776
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//        }).start();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                double count = 0;
+//                while(true) {
+//                    count++;
+//                    Log.i(TAG, "send ---> thread=" + Thread.currentThread()+", count="+count);
+//                    reply(Thread.currentThread().getName());
+//                    try {
+//                        Thread.sleep(3000);  //1188
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//        }).start();
     }
 
     @Override

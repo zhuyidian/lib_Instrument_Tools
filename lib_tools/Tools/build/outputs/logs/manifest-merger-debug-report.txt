@@ -1,23 +1,23 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-16:12
-INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-16:12
-INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-16:12
-INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-16:12
-INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-16:12
-INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-16:12
-INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-16:12
+ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-11:12
 	package
 		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:11-35
 		INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml
 		INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml
-		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-16:12
+		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-11:12
 		INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml
-		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-16:12
+		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:1:1-11:12
 		INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:2:5-63
@@ -26,21 +26,13 @@ ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.
 	android:name
 		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:4:22-76
 application
-ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:5:5-14:19
+ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:5:5-9:19
 meta-data#com.dunn.tools.get
 ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:6:9-8:36
 	android:value
 		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:8:13-33
 	android:name
 		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:7:13-46
-receiver#com.dunn.tools.time.AlarmReceiver
-ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:10:9-13:39
-	android:enabled
-		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:12:13-35
-	android:exported
-		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:13:13-36
-	android:name
-		ADDED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml:11:13-61
 uses-sdk
 INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\project\github\lib_tools\lib_tools\Tools\src\main\AndroidManifest.xml
