@@ -1,0 +1,4 @@
+# Referenced at D:\project\github\lib_Instrument_Tools\Tools\sample\build\intermediates\merged_manifests\debug\AndroidManifest.xml:21
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at D:\project\github\lib_Instrument_Tools\Tools\sample\build\intermediates\merged_manifests\debug\AndroidManifest.xml:21
+-keep class androidx.multidex.MultiDexApplication { <init>(); }

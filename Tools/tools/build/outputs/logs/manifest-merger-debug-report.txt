@@ -1,0 +1,53 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:1:1-13:12
+	package
+		ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:1:11-46
+		INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+		INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+		ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:1:1-13:12
+		INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+		ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:1:1-13:12
+		INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:2:5-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:4:5-79
+	android:name
+		ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:4:22-76
+uses-permission#android.permission.PACKAGE_USAGE_STATS
+ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:5:22-75
+application
+ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:7:5-11:19
+meta-data#com.dunn.instrument.tools.get
+ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:8:9-10:36
+	android:value
+		ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:10:13-33
+	android:name
+		ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml:9:13-57
+uses-sdk
+INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+		ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+		INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+		ADDED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml
+		INJECTED from D:\project\github\lib_Instrument_Tools\Tools\tools\src\main\AndroidManifest.xml

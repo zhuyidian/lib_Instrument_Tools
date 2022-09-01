@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+
+android {
+//    compileSdkVersion 29
+//    buildToolsVersion '29.0.0'
+    compileSdkVersion rootProject.ext.android.compileSdkVersion   //Android10（API 29）getExternalStorageDirectory没权限，暂时使用28
+    buildToolsVersion rootProject.ext.android.buildToolsVersion   //Android10（API 29）getExternalStorageDirectory没权限，暂时使用28
+    defaultConfig {
+        applicationId 'com.dunn.instrument.tools.sample'
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion  //29   //Android10（API 29）getExternalStorageDirectory没权限，暂时使用28
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled rootProject.ext.android.multiDexEnabled
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled rootProject.ext.android.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.dependencies.appcompat
+    testImplementation rootProject.ext.dependencies.junit
+    compileOnly rootProject.ext.dependencies["appcompat-v7"]
+    implementation project(path: ':tools')
+
+    //implementation 'com.github.zhuyidian:lib_tools:V1.0.1'
+    //implementation "ccos.sdk:twocentersdk:+"
+}

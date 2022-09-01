@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tools.iml" filepath="$PROJECT_DIR$/.idea/modules/Tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/Tools.sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/Tools.sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/Tools.sample.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/Tools.sample.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/Tools.sample.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/Tools.sample.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/Tools.sample.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/Tools.sample.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tools/Tools.tools.iml" filepath="$PROJECT_DIR$/.idea/modules/tools/Tools.tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tools/Tools.tools.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/tools/Tools.tools.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tools/Tools.tools.main.iml" filepath="$PROJECT_DIR$/.idea/modules/tools/Tools.tools.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tools/Tools.tools.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/tools/Tools.tools.unitTest.iml" />
+    </modules>
+  </component>
+</project>
