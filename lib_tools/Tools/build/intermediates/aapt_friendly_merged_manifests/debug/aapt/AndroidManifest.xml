@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dunn.tools"
+    package="com.dunn.instrument.tools"
     android:versionCode="3"
     android:versionName="1.0.0" >
 
@@ -9,10 +9,11 @@
         android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
 
     <application>
         <meta-data
-            android:name="com.dunn.tools.get"
+            android:name="com.dunn.instrument.tools.get"
             android:value="true" />
     </application>
 

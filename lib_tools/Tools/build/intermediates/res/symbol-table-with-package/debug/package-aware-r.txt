@@ -1,4 +1,4 @@
-com.dunn.tools
+com.dunn.instrument.tools
 color app_loading_center_bg_color
 color app_loading_progress_bg_color
 color app_loading_progress_end_color
