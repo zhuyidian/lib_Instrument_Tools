@@ -11,6 +11,7 @@ import java.util.Locale;
  */
 public class LogUtil {
     public static final boolean isLog = true;
+    public static String TAG = "";
 
     public static void v(String tag,String module,String msg) {
         if (isLog) {
@@ -20,7 +21,7 @@ public class LogUtil {
 
     public static void v(String module,String msg) {
         if (isLog) {
-            Log.v("tools[", getPrefix(module)+" "+msg);
+            Log.v(TAG, getPrefix(module)+" "+msg);
         }
     }
 
@@ -32,7 +33,7 @@ public class LogUtil {
 
     public static void i(String module,String msg) {
         if (isLog) {
-            Log.i("tools[", getPrefix(module)+" "+msg);
+            Log.i(TAG, getPrefix(module)+" "+msg);
         }
     }
 
@@ -44,7 +45,7 @@ public class LogUtil {
 
     public static void d(String module,String msg) {
         if (isLog) {
-            Log.d("tools[", getPrefix(module)+" "+msg);
+            Log.d(TAG, getPrefix(module)+" "+msg);
         }
     }
 
@@ -56,7 +57,7 @@ public class LogUtil {
 
     public static void e(String module,String msg) {
         if (isLog) {
-            Log.e("tools[", getPrefix(module)+" "+msg);
+            Log.e(TAG, getPrefix(module)+" "+msg);
         }
     }
 
