@@ -1,6 +1,7 @@
 package com.dunn.instrument.tools.framework.ram;
 
 import android.app.ActivityManager;
+import android.content.Context;
 import android.os.Build;
 import android.os.Debug;
 import android.util.Log;
@@ -25,38 +26,6 @@ public class MemTools {
     private static Reflector memReflector;
     private static final String MEMORY_FILE_PATH = "/proc/meminfo";
     private static final int INVALID = 0;
-
-    //安卓Q开始获取的不是实时数据
-    //Return total private dirty memory usage in kB
-    //在dongle上面发现Debug的getMemoryInfo获取内存不准确，但getProcessMemoryInfo通过getMemoryInfo获取却是准确的
-    public static Debug.MemoryInfo[] getProcessMemoryInfo(ActivityManager activityManager, int[] pids) {
-        if (pids == null || pids.length < 1) {
-            return new Debug.MemoryInfo[0];
-        }
-        long start = System.currentTimeMillis();
-        Debug.MemoryInfo[] memoryInfos = activityManager.getProcessMemoryInfo(pids);
-        LogUtil.i(TAG, "getProcessMemoryInfo cost: " + (System.currentTimeMillis() - start));
-        return memoryInfos;
-    }
-
-    public static Debug.MemoryInfo[] getMemoryInfos(int[] pids) {
-        long start = System.currentTimeMillis();
-        Debug.MemoryInfo[] memoryInfos = new Debug.MemoryInfo[pids.length];
-        try {
-            if (memReflector == null) {
-                memReflector = Reflector.on(Debug.class).method("getMemoryInfo", int.class, Debug.MemoryInfo.class);
-            }
-            for (int i = 0; i < pids.length; i++) {
-                memoryInfos[i] = new Debug.MemoryInfo();
-                memReflector.call(pids[i], memoryInfos[i]);
-                // Log.e(TAG, "getProcessMemoryInfo: " + i +" " + result);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        LogUtil.i(TAG, "getMemoryInfos cost: " + (System.currentTimeMillis() - start));
-        return memoryInfos;
-    }
 
     public static MemInfo getSystemMemInfo() {
         long start = System.currentTimeMillis();
@@ -100,6 +69,46 @@ public class MemTools {
         }
         LogUtil.i(TAG, "getSystemMemInfo cost: " + (System.currentTimeMillis() - start));
         return memInfo;
+    }
+
+    //安卓Q开始获取的不是实时数据
+    //Return total private dirty memory usage in kB
+    //在dongle上面发现Debug的getMemoryInfo获取内存不准确，但getProcessMemoryInfo通过getMemoryInfo获取却是准确的
+    public static Debug.MemoryInfo[] getProcessMemoryInfo(Context context, int[] pids) {
+        if (pids == null || pids.length < 1) {
+            return new Debug.MemoryInfo[0];
+        }
+        long start = System.currentTimeMillis();
+        ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        Debug.MemoryInfo[] memoryInfos = activityManager.getProcessMemoryInfo(pids);
+        LogUtil.i(TAG, "getProcessMemoryInfo cost: " + (System.currentTimeMillis() - start));
+        return memoryInfos;
+    }
+
+    public static Debug.MemoryInfo[] getMemoryInfos(int[] pids) {
+        long start = System.currentTimeMillis();
+        Debug.MemoryInfo[] memoryInfos = new Debug.MemoryInfo[pids.length];
+        try {
+            if (memReflector == null) {
+                memReflector = Reflector.on(Debug.class).method("getMemoryInfo", int.class, Debug.MemoryInfo.class);
+            }
+            for (int i = 0; i < pids.length; i++) {
+                memoryInfos[i] = new Debug.MemoryInfo();
+                memReflector.call(pids[i], memoryInfos[i]);
+                // Log.e(TAG, "getProcessMemoryInfo: " + i +" " + result);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        LogUtil.i(TAG, "getMemoryInfos cost: " + (System.currentTimeMillis() - start));
+        return memoryInfos;
+    }
+
+    public static ActivityManager.MemoryInfo getMemoryInfo(Context context){
+        ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
+        activityManager.getMemoryInfo(memoryInfo);
+        return memoryInfo;
     }
 
     //系统签名可以获取其他应用实时内存,安卓10开始使用这个
