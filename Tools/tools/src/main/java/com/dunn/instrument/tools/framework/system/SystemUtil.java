@@ -3,6 +3,7 @@ package com.dunn.instrument.tools.framework.system;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -45,52 +46,13 @@ public class SystemUtil {
         return uptime;
     }
 
-    public static boolean isHighPerformance() {
-        long KB = 1024;
-        long GB = 1024 * 1024 * 1024;
-        boolean highPerformance = false;
-        long mem = getmem_TOLAL() * KB;
-        if (mem >= 1.5f * GB){
-            highPerformance = true;
-        }else{
-            highPerformance = false;
-        }
-        return highPerformance;
-    }
-
-    public static long getmem_TOLAL() {
-        long mTotal;
-        // /proc/meminfo读出的内核信息进行解释
-        String path = "/proc/meminfo";
-        String content = null;
-        BufferedReader br = null;
-        try {
-            br = new BufferedReader(new FileReader(path), 8);
-            String line;
-            if ((line = br.readLine()) != null) {
-                content = line;
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (br != null) {
-                try {
-                    br.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-        // beginIndex
-        int begin = content.indexOf(':');
-        // endIndex
-        int end = content.indexOf('k');
-        // 截取字符串信息
-
-        content = content.substring(begin + 1, end).trim();
-        mTotal = Integer.parseInt(content);
-        return mTotal;
+    public static String getSystemVersions() {
+        // 系统API版本号-数字格式，例如：29，亦即表示Android API level 29
+        //int version = Build.VERSION.SDK_INT;
+        // 系统API版本号-字符串格式，例如：29，亦即表示Android API level 29
+        //String strVersion = Build.VERSION.SDK_INT;
+        // 系统版本号，例如：10，亦即表示Android 10
+        String strRelease = Build.VERSION.RELEASE;
+        return "Android "+strRelease;
     }
 }

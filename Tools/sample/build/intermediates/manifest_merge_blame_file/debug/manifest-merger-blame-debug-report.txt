@@ -52,46 +52,47 @@
 28-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:18:9-54
 29        android:supportsRtl="true"
 29-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:19:9-35
-30        android:theme="@style/AppTheme" >
-30-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:20:9-40
-31        <activity
-31-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:21:9-28:20
-32            android:name="com.dunn.instrument.tools.sample.MainActivity"
-32-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:22:13-41
-33            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-33-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:23:13-69
-34            <intent-filter>
-34-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:24:13-27:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:25:17-69
-35-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:25:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:26:17-77
-37-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:26:27-74
-38            </intent-filter>
-39        </activity>
-40
-41        <service
-41-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:29:9-35:19
-42            android:name="com.dunn.instrument.tools.sample.ReplyService"
-42-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:30:13-41
-43            android:exported="true" >
-43-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:31:13-36
-44            <intent-filter>
-44-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:32:13-34:29
-45                <action android:name="coocaa.intent.action.remote.platform.reply" />
-45-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:33:17-85
-45-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:33:25-82
-46            </intent-filter>
-47        </service>
-48
-49        <meta-data
-49-->[:tools] D:\project\github\lib_Instrument_Tools\Tools\tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-17:36
-50            android:name="com.dunn.instrument.tools.get"
-50-->[:tools] D:\project\github\lib_Instrument_Tools\Tools\tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-57
-51            android:value="true" />
-51-->[:tools] D:\project\github\lib_Instrument_Tools\Tools\tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-33
-52    </application>
-53
-54</manifest>
+30        android:testOnly="true"
+31        android:theme="@style/AppTheme" >
+31-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:20:9-40
+32        <activity
+32-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:21:9-28:20
+33            android:name="com.dunn.instrument.tools.sample.MainActivity"
+33-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:22:13-41
+34            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+34-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:23:13-69
+35            <intent-filter>
+35-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:24:13-27:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:25:17-69
+36-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:25:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:26:17-77
+38-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:26:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <service
+42-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:29:9-35:19
+43            android:name="com.dunn.instrument.tools.sample.ReplyService"
+43-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:30:13-41
+44            android:exported="true" >
+44-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:31:13-36
+45            <intent-filter>
+45-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:32:13-34:29
+46                <action android:name="coocaa.intent.action.remote.platform.reply" />
+46-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:33:17-85
+46-->D:\project\github\lib_Instrument_Tools\Tools\sample\src\main\AndroidManifest.xml:33:25-82
+47            </intent-filter>
+48        </service>
+49
+50        <meta-data
+50-->[:tools] D:\project\github\lib_Instrument_Tools\Tools\tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-17:36
+51            android:name="com.dunn.instrument.tools.get"
+51-->[:tools] D:\project\github\lib_Instrument_Tools\Tools\tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-57
+52            android:value="true" />
+52-->[:tools] D:\project\github\lib_Instrument_Tools\Tools\tools\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-33
+53    </application>
+54
+55</manifest>

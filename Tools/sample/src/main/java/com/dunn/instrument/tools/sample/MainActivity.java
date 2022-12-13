@@ -12,6 +12,9 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import com.dunn.instrument.tools.framework.system.SystemUtil;
+import com.dunn.instrument.tools.log.LogUtil;
+
 import java.io.File;
 import java.util.ArrayList;
 
@@ -28,73 +31,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
-//        UsmsUtil.queryAndAggregateUsageStats(MainActivity.this);
-
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                double count = 0;
-//                while(true) {
-//                    count++;
-//                    Log.i(TAG, "send ---> thread=" + Thread.currentThread()+", count="+count);
-//                    reply(Thread.currentThread().getName());
-//                    try {
-//                        Thread.sleep(2000);  //1776
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//            }
-//        }).start();
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                double count = 0;
-//                while(true) {
-//                    count++;
-//                    Log.i(TAG, "send ---> thread=" + Thread.currentThread()+", count="+count);
-//                    reply(Thread.currentThread().getName());
-//                    try {
-//                        Thread.sleep(3000);  //1188
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//            }
-//        }).start();
-
-
+        String version = SystemUtil.getSystemVersions();
+        LogUtil.i(TAG,"onResume: version="+version);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
     }
-
-    public void reply(String threadName) {
-        Intent intent = new Intent();
-        intent.putExtra("params", threadName);
-        intent.setAction("coocaa.intent.action.remote.platform.reply");
-        intent.setPackage("com.dunn.instrument.tools.sample");
-        if (Build.VERSION.SDK_INT >= 26) {
-            startForegroundService(intent);
-        } else {
-            startService(intent);
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
