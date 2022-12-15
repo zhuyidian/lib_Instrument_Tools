@@ -76,12 +76,12 @@ public class MemTools {
     //安卓Q开始获取的不是实时数据
     //Return total private dirty memory usage in kB
     //在dongle上面发现Debug的getMemoryInfo获取内存不准确，但getProcessMemoryInfo通过getMemoryInfo获取却是准确的
-    public static Debug.MemoryInfo[] getProcessMemoryInfo(Context context, int[] pids) {
+    public static Debug.MemoryInfo[] getProcessMemoryInfo(ActivityManager activityManager, int[] pids) {
         if (pids == null || pids.length < 1) {
             return new Debug.MemoryInfo[0];
         }
         long start = System.currentTimeMillis();
-        ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+//        ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
         Debug.MemoryInfo[] memoryInfos = activityManager.getProcessMemoryInfo(pids);
         LogUtil.i(TAG, "getProcessMemoryInfo cost: " + (System.currentTimeMillis() - start));
         return memoryInfos;
