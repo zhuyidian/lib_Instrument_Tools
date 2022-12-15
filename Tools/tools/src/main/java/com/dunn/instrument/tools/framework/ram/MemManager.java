@@ -37,6 +37,10 @@ public class MemManager {
         activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
     }
 
+    public ActivityManager.MemoryInfo getMemoryInfo(){
+        return MemTools.getMemoryInfo(activityManager);
+    }
+
     public ProcMemInfo getProcMemInfo(String pkgName) {
         ProcMemInfo mProcMemInfo = new ProcMemInfo();
 

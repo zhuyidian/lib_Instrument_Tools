@@ -106,8 +106,8 @@ public class MemTools {
         return memoryInfos;
     }
 
-    public static ActivityManager.MemoryInfo getMemoryInfo(Context context){
-        ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+    public static ActivityManager.MemoryInfo getMemoryInfo(ActivityManager activityManager){
+        //ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
         ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
         activityManager.getMemoryInfo(memoryInfo);
         return memoryInfo;
