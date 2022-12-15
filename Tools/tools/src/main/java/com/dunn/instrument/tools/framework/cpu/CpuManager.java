@@ -74,18 +74,18 @@ public class CpuManager {
 
     public static class CpuInfo {
         // CPU 总的使用
-        String cpuRate;
+        public String cpuRate;
 
         // 监控应用
-        String pkgName;
+        public String pkgName;
 
         // 应用CPU占用
-        String procCpuRate;
+        public String procCpuRate;
 
         // 应用进程数
-        String procProcessNum;
+        public String procProcessNum;
 
         // 应用线程数
-        String procThreadNum;
+        public String procThreadNum;
     }
 }
