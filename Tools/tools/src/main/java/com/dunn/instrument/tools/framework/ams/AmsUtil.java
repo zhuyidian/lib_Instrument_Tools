@@ -9,6 +9,7 @@ import android.os.Build;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -266,5 +267,24 @@ public class AmsUtil {
             }
         }
         return isWork;
+    }
+
+    public static List<ActivityManager.RunningAppProcessInfo> getPidForPackageName(ActivityManager activityManager, String packageName) {
+        long start = System.currentTimeMillis();
+        List<ActivityManager.RunningAppProcessInfo> mRunningProcess = activityManager.getRunningAppProcesses();
+        List<ActivityManager.RunningAppProcessInfo> pids = new ArrayList<>();
+        for (ActivityManager.RunningAppProcessInfo amProcess : mRunningProcess) {
+            for (String pkg : amProcess.pkgList) {
+                // Log.e(TAG, "getPidForPackageName: " + pkg + " processName:" + amProcess.processName);
+                if (packageName.equals(pkg)) {
+                    pids.add(amProcess);
+                }
+            }
+//            if (amProcess.processName.equals(packageName)) {
+//                pid = amProcess.pid;
+//                break;
+//            }
+        }
+        return pids;
     }
 }
