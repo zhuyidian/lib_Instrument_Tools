@@ -126,6 +126,20 @@ public class AmsUtil {
      * 获取栈顶activity
      * @return
      */
+    public static ComponentName getTopActivity(ActivityManager am) {
+        if(am != null) {
+            List<ActivityManager.RunningTaskInfo> runningTaskInfos = am.getRunningTasks(1);
+            if (runningTaskInfos != null && runningTaskInfos.size() > 0) {
+                return runningTaskInfos.get(0) == null ? null : runningTaskInfos.get(0).topActivity;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * 获取栈顶activity
+     * @return
+     */
     public static ComponentName getTopActivity(Context context) {
         ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
         if(am != null) {
